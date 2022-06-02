@@ -64,6 +64,9 @@
                                             <segment title="칼로리 검색"/>
                                             <segment title="운동 종류"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="searchFilterValueChanged:" destination="hEF-ma-Mpv" eventType="valueChanged" id="z0N-eN-uDg"/>
+                                        </connections>
                                     </segmentedControl>
                                     <searchBar contentMode="redraw" placeholder="칼로리 검색" translatesAutoresizingMaskIntoConstraints="NO" id="arP-wO-eL0">
                                         <rect key="frame" x="0.0" y="223" width="374" height="51"/>
@@ -117,6 +120,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="6sq-1A-T3p"/>
                     <connections>
+                        <outlet property="seachButton" destination="wOz-VG-AUF" id="WTt-Hm-5pK"/>
+                        <outlet property="searchBar" destination="arP-wO-eL0" id="9qb-ah-hcj"/>
+                        <outlet property="searchFilterSegment" destination="Pkc-LX-SsS" id="Rn7-IO-4eu"/>
+                        <outlet property="searchIdicator" destination="STN-oy-ET3" id="EQf-dB-b9J"/>
                         <segue destination="Pue-sR-3Nz" kind="show" identifier="goToUserCalorieVC" id="a2t-t2-OHd"/>
                         <segue destination="ttc-mO-SoX" kind="show" identifier="goToExerciseInformationVC" id="cMJ-ep-qpe"/>
                     </connections>
