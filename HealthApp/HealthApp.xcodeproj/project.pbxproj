@@ -20,6 +20,8 @@
 		3C3A409028486341008EB6C9 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A408F28486341008EB6C9 /* TimerVC.swift */; };
 		3C3A409228486351008EB6C9 /* ProFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A409128486351008EB6C9 /* ProFileVC.swift */; };
 		3CB57F0E284864DD000DCD92 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB57F0D284864DD000DCD92 /* CalendarVC.swift */; };
+		3CB57F102848B20D000DCD92 /* UserCalorieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB57F0F2848B20D000DCD92 /* UserCalorieVC.swift */; };
+		3CB57F132848B3AE000DCD92 /* ExerciseInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB57F122848B3AE000DCD92 /* ExerciseInformationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		3C3A408F28486341008EB6C9 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 		3C3A409128486351008EB6C9 /* ProFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFileVC.swift; sourceTree = "<group>"; };
 		3CB57F0D284864DD000DCD92 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		3CB57F0F2848B20D000DCD92 /* UserCalorieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCalorieVC.swift; sourceTree = "<group>"; };
+		3CB57F122848B3AE000DCD92 /* ExerciseInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInformationVC.swift; sourceTree = "<group>"; };
 		79B10F93B2F17329E85360C4 /* Pods-HealthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthApp.debug.xcconfig"; path = "Target Support Files/Pods-HealthApp/Pods-HealthApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,10 +89,10 @@
 			children = (
 				3C3A40932848635D008EB6C9 /* ViewController */,
 				3C3566EE28482C6400654989 /* AppDelegate.swift */,
-				3C3566F028482C6400654989 /* SceneDelegate.swift */,
-				3C3566F728482C6600654989 /* Assets.xcassets */,
 				3C3A408728482EA6008EB6C9 /* Main.storyboard */,
 				3C3566F928482C6600654989 /* LaunchScreen.storyboard */,
+				3C3566F728482C6600654989 /* Assets.xcassets */,
+				3C3566F028482C6400654989 /* SceneDelegate.swift */,
 				3C3566FC28482C6600654989 /* Info.plist */,
 			);
 			path = HealthApp;
@@ -99,13 +103,23 @@
 			children = (
 				3C3566F228482C6400654989 /* HomeVC.swift */,
 				3C3A408928486241008EB6C9 /* HouseVC.swift */,
-				3C3A408D2848632C008EB6C9 /* FoodVC.swift */,
+				3CB57F112848B32C000DCD92 /* Food Group */,
 				3C3A408B2848631F008EB6C9 /* ExerciseVC.swift */,
 				3CB57F0D284864DD000DCD92 /* CalendarVC.swift */,
 				3C3A409128486351008EB6C9 /* ProFileVC.swift */,
 				3C3A408F28486341008EB6C9 /* TimerVC.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CB57F112848B32C000DCD92 /* Food Group */ = {
+			isa = PBXGroup;
+			children = (
+				3C3A408D2848632C008EB6C9 /* FoodVC.swift */,
+				3CB57F122848B3AE000DCD92 /* ExerciseInformationVC.swift */,
+				3CB57F0F2848B20D000DCD92 /* UserCalorieVC.swift */,
+			);
+			path = "Food Group";
 			sourceTree = "<group>";
 		};
 		5D85142991285D1206460691 /* Pods */ = {
@@ -233,11 +247,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C3A409028486341008EB6C9 /* TimerVC.swift in Sources */,
+				3CB57F102848B20D000DCD92 /* UserCalorieVC.swift in Sources */,
 				3C3566F328482C6400654989 /* HomeVC.swift in Sources */,
 				3C3A408A28486241008EB6C9 /* HouseVC.swift in Sources */,
 				3C3A408E2848632C008EB6C9 /* FoodVC.swift in Sources */,
 				3C3A409228486351008EB6C9 /* ProFileVC.swift in Sources */,
 				3CB57F0E284864DD000DCD92 /* CalendarVC.swift in Sources */,
+				3CB57F132848B3AE000DCD92 /* ExerciseInformationVC.swift in Sources */,
 				3C3A408C2848631F008EB6C9 /* ExerciseVC.swift in Sources */,
 				3C3566EF28482C6400654989 /* AppDelegate.swift in Sources */,
 				3C3566F128482C6400654989 /* SceneDelegate.swift in Sources */,

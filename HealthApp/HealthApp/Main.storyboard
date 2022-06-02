@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8i-Xw-fWC">
-                                <rect key="frame" x="149" y="424" width="117" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8i-Xw-fWC">
+                                <rect key="frame" x="168" y="428.5" width="78.5" height="39.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="타이머">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
@@ -30,6 +29,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P4c-ky-RBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F8i-Xw-fWC" firstAttribute="centerY" secondItem="ncH-5x-atP" secondAttribute="centerY" id="dM5-fL-0GW"/>
+                            <constraint firstItem="F8i-Xw-fWC" firstAttribute="centerX" secondItem="ncH-5x-atP" secondAttribute="centerX" id="ePi-mi-z1E"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CMo-J1-Xat"/>
                 </viewController>
@@ -44,14 +47,111 @@
                     <view key="view" contentMode="scaleToFill" id="MoI-gf-CqV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-mN-eHM">
+                                <rect key="frame" x="20" y="156" width="374" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2022-06-02 오후 4.23.52" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-iK-h2U">
+                                        <rect key="frame" x="112" y="8" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="GhR-8z-4pt"/>
+                                            <constraint firstAttribute="height" constant="150" id="xKX-om-qof"/>
+                                        </constraints>
+                                    </imageView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pkc-LX-SsS">
+                                        <rect key="frame" x="112" y="174" width="150" height="32"/>
+                                        <segments>
+                                            <segment title="칼로리 검색"/>
+                                            <segment title="운동 종류"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstItem="Pkc-LX-SsS" firstAttribute="top" secondItem="KGz-iK-h2U" secondAttribute="bottom" constant="16" id="ElQ-sS-Yag"/>
+                                    <constraint firstItem="KGz-iK-h2U" firstAttribute="centerX" secondItem="ycd-mN-eHM" secondAttribute="centerX" id="Oo5-EH-CKj"/>
+                                    <constraint firstItem="KGz-iK-h2U" firstAttribute="trailing" secondItem="Pkc-LX-SsS" secondAttribute="trailing" id="Pwz-MK-Kvd"/>
+                                    <constraint firstItem="Pkc-LX-SsS" firstAttribute="leading" secondItem="KGz-iK-h2U" secondAttribute="leading" id="VXj-Eq-wZa"/>
+                                    <constraint firstItem="KGz-iK-h2U" firstAttribute="top" secondItem="ycd-mN-eHM" secondAttribute="top" constant="8" id="WKb-u2-42U"/>
+                                    <constraint firstItem="KGz-iK-h2U" firstAttribute="centerX" secondItem="ycd-mN-eHM" secondAttribute="centerX" id="aWu-Z5-gTe"/>
+                                    <constraint firstAttribute="height" constant="400" id="xpM-pL-VoN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="URI-39-6GH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ycd-mN-eHM" firstAttribute="top" secondItem="URI-39-6GH" secondAttribute="top" constant="16" id="MId-Qt-WO2"/>
+                            <constraint firstItem="URI-39-6GH" firstAttribute="trailing" secondItem="ycd-mN-eHM" secondAttribute="trailing" constant="20" id="OAZ-qk-ql5"/>
+                            <constraint firstItem="ycd-mN-eHM" firstAttribute="centerX" secondItem="MoI-gf-CqV" secondAttribute="centerX" id="WyL-EJ-vTB"/>
+                            <constraint firstItem="ycd-mN-eHM" firstAttribute="leading" secondItem="URI-39-6GH" secondAttribute="leading" constant="20" id="vQE-IG-tqq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6sq-1A-T3p"/>
+                    <connections>
+                        <segue destination="Pue-sR-3Nz" kind="show" identifier="goToUserCalorieVC" id="a2t-t2-OHd"/>
+                        <segue destination="ttc-mO-SoX" kind="show" identifier="goToExerciseInformationVC" id="cMJ-ep-qpe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sxa-js-ANc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3572" y="1654"/>
+            <point key="canvasLocation" x="-3571.0144927536235" y="2418.75"/>
+        </scene>
+        <!--User CalorieVC-->
+        <scene sceneID="kfb-oq-JZx">
+            <objects>
+                <viewController id="Pue-sR-3Nz" customClass="UserCalorieVC" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i61-KQ-0Me">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="칼로리 뷰컨트롤러 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVp-SL-t38">
+                                <rect key="frame" x="96.5" y="430" width="221" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m9r-ID-izR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YVp-SL-t38" firstAttribute="centerX" secondItem="i61-KQ-0Me" secondAttribute="centerX" id="hqk-2Z-w3H"/>
+                            <constraint firstItem="YVp-SL-t38" firstAttribute="centerY" secondItem="i61-KQ-0Me" secondAttribute="centerY" id="rjL-Bu-FuK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pbT-Qq-vu8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jiN-gq-5XW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4235" y="3117"/>
+        </scene>
+        <!--Exercise InformationVC-->
+        <scene sceneID="deg-0u-eKS">
+            <objects>
+                <viewController id="ttc-mO-SoX" customClass="ExerciseInformationVC" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VI1-ZR-WnG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="운동 뷰컨트롤러 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6R-pn-DXq">
+                                <rect key="frame" x="109.5" y="430" width="195" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UW5-DV-0ht"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T6R-pn-DXq" firstAttribute="centerY" secondItem="VI1-ZR-WnG" secondAttribute="centerY" id="Hk6-yt-MrS"/>
+                            <constraint firstItem="T6R-pn-DXq" firstAttribute="centerX" secondItem="VI1-ZR-WnG" secondAttribute="centerX" id="RtU-F6-GOO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lEx-jm-6gE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXj-X9-OKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2933" y="3117"/>
         </scene>
         <!--ExerciseVC-->
         <scene sceneID="JeT-0o-bgB">
@@ -67,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bV8-fr-DCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730" y="1654"/>
+            <point key="canvasLocation" x="-739" y="1653"/>
         </scene>
         <!--TimerVC-->
         <scene sceneID="nyU-Q7-hEG">
@@ -190,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ftE-05-MHh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7196" y="2536"/>
+            <point key="canvasLocation" x="-6471" y="2419"/>
         </scene>
         <!--Pro FileVC-->
         <scene sceneID="drj-rM-X83">
@@ -206,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ced-bp-gWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5299" y="1654"/>
+            <point key="canvasLocation" x="5299" y="1653"/>
         </scene>
         <!--CalendarVC-->
         <scene sceneID="QLw-2V-W3V">
@@ -215,14 +315,29 @@
                     <view key="view" contentMode="scaleToFill" id="geT-Tf-98f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-vA-4TQ" customClass="FSCalendar">
+                                <rect key="frame" x="15" y="113" width="384" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PJt-vJ-1sn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PJt-vJ-1sn" firstAttribute="trailing" secondItem="CaW-vA-4TQ" secondAttribute="trailing" constant="15" id="8lE-Vb-hjQ"/>
+                            <constraint firstItem="CaW-vA-4TQ" firstAttribute="leading" secondItem="PJt-vJ-1sn" secondAttribute="leading" constant="15" id="O4I-4U-sJv"/>
+                            <constraint firstItem="PJt-vJ-1sn" firstAttribute="bottom" secondItem="CaW-vA-4TQ" secondAttribute="bottom" constant="300" id="hvI-bd-Fo6"/>
+                            <constraint firstItem="CaW-vA-4TQ" firstAttribute="top" secondItem="PJt-vJ-1sn" secondAttribute="top" constant="25" id="oJC-1Z-z78"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ctq-SD-193"/>
+                    <connections>
+                        <outlet property="calendarView" destination="CaW-vA-4TQ" id="DlY-pQ-QYw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Beo-aI-6id" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2359" y="1654"/>
+            <point key="canvasLocation" x="2361" y="1653"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="byS-PJ-kSH">
@@ -276,7 +391,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hEF-ma-Mpv" kind="relationship" relationship="rootViewController" id="pDU-ub-j2D"/>
+                        <segue destination="fMI-FZ-mkh" kind="relationship" relationship="rootViewController" id="pDU-ub-j2D"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRB-ha-zCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -340,13 +455,36 @@
             </objects>
             <point key="canvasLocation" x="5300" y="708"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fpy-ux-Peq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fMI-FZ-mkh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="lc8-CR-rqN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5Bz-VJ-twk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hEF-ma-Mpv" kind="relationship" relationship="rootViewController" id="n7R-xC-EsB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWl-7j-Mc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3572.4637681159425" y="1653.3482142857142"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="스크린샷 2022-06-02 오후 4.23.52" width="3000" height="2000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
