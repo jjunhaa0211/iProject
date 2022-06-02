@@ -65,16 +65,44 @@
                                             <segment title="운동 종류"/>
                                         </segments>
                                     </segmentedControl>
+                                    <searchBar contentMode="redraw" placeholder="칼로리 검색" translatesAutoresizingMaskIntoConstraints="NO" id="arP-wO-eL0">
+                                        <rect key="frame" x="0.0" y="223" width="374" height="51"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOz-VG-AUF">
+                                        <rect key="frame" x="147" y="294" width="80" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hGR-iT-TQv"/>
+                                            <constraint firstAttribute="width" constant="80" id="llQ-Ru-Ybm"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="검색">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="STN-oy-ET3">
+                                        <rect key="frame" x="177" y="304" width="20" height="20"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="wOz-VG-AUF" firstAttribute="centerX" secondItem="ycd-mN-eHM" secondAttribute="centerX" id="7ae-rl-zss"/>
                                     <constraint firstItem="Pkc-LX-SsS" firstAttribute="top" secondItem="KGz-iK-h2U" secondAttribute="bottom" constant="16" id="ElQ-sS-Yag"/>
                                     <constraint firstItem="KGz-iK-h2U" firstAttribute="centerX" secondItem="ycd-mN-eHM" secondAttribute="centerX" id="Oo5-EH-CKj"/>
                                     <constraint firstItem="KGz-iK-h2U" firstAttribute="trailing" secondItem="Pkc-LX-SsS" secondAttribute="trailing" id="Pwz-MK-Kvd"/>
+                                    <constraint firstItem="STN-oy-ET3" firstAttribute="centerX" secondItem="wOz-VG-AUF" secondAttribute="centerX" id="Qae-On-T0v"/>
                                     <constraint firstItem="Pkc-LX-SsS" firstAttribute="leading" secondItem="KGz-iK-h2U" secondAttribute="leading" id="VXj-Eq-wZa"/>
                                     <constraint firstItem="KGz-iK-h2U" firstAttribute="top" secondItem="ycd-mN-eHM" secondAttribute="top" constant="8" id="WKb-u2-42U"/>
+                                    <constraint firstItem="arP-wO-eL0" firstAttribute="top" secondItem="Pkc-LX-SsS" secondAttribute="bottom" constant="18" id="WqG-1j-FeI"/>
                                     <constraint firstItem="KGz-iK-h2U" firstAttribute="centerX" secondItem="ycd-mN-eHM" secondAttribute="centerX" id="aWu-Z5-gTe"/>
+                                    <constraint firstItem="wOz-VG-AUF" firstAttribute="top" secondItem="arP-wO-eL0" secondAttribute="bottom" constant="20" id="h3g-bD-gDb"/>
+                                    <constraint firstItem="STN-oy-ET3" firstAttribute="centerY" secondItem="wOz-VG-AUF" secondAttribute="centerY" id="itb-o7-mT8"/>
+                                    <constraint firstItem="arP-wO-eL0" firstAttribute="leading" secondItem="ycd-mN-eHM" secondAttribute="leading" id="l6N-dC-iBS"/>
                                     <constraint firstAttribute="height" constant="400" id="xpM-pL-VoN"/>
+                                    <constraint firstAttribute="trailing" secondItem="arP-wO-eL0" secondAttribute="trailing" id="y4y-JT-iQv"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -483,8 +511,8 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
