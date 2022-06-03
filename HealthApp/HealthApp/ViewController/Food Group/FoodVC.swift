@@ -38,9 +38,18 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
             
             let nextVC = segue.destination as! UserCalorieVC
             
-            guard let userInputValue = self.searchBar.text else { return }
+            guard let calendarInputValue = self.searchBar.text else { return }
             
-            nextVC.vcTitle = userInputValue
+            nextVC.vcTitle = calendarInputValue
+            
+        case SEGUE_ID.ESERCISE_INFORMATION_VC:
+            
+            let nextVC = segue.destination as! ExerciseInformationVC
+            
+            guard let exerciseInputValue = self.searchBar.text else { return }
+            
+            nextVC.vcTitle = exerciseInputValue
+            
             
         default:
             print("default")
