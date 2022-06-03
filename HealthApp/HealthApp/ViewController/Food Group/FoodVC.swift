@@ -7,7 +7,6 @@
 
 import UIKit
 import Toast_Swift
-import SwiftUI
 
 class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
 
@@ -18,7 +17,7 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
     
     @IBOutlet var searchIdicator: UIActivityIndicatorView!
     
-    @IBOutlet var seachButton: UIButton!
+    @IBOutlet var searchButton: UIButton!
     
     var KeyboardDismissTabGesture : UITapGestureRecognizer = UITapGestureRecognizer(target: FoodVC.self, action: nil)
 //---------------------------------
@@ -30,6 +29,7 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
         //UI 설정
         self.config()
     }
+    
     
     //화면이 넘어가기 전 준비 과정(prepare == 준비하다)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -59,7 +59,7 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
     fileprivate func config(){
         
         //UI 설정
-        self.seachButton.layer.cornerRadius = 10
+        self.searchButton.layer.cornerRadius = 10
         
         self.searchBar.searchBarStyle = .minimal
         
@@ -78,10 +78,15 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
         
         //키보드가 올라가는 이벤트
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool){
         super.viewWillDisappear(animated)
+        //키보드 노티 해제
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardDidHideNotification, object: nil)
+        
     }
     //Make - fileprivate
     fileprivate func pushVC(){
@@ -107,11 +112,24 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
     }
     
     @objc func keyboardWillShow(notification: NSNotification){
-        
+        //키보드 사이즈 가져오기
+
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+
+            if(keyboardSize.height < searchButton.frame.origin.y) {
+                print("키버드가 버튼을 덮었다.")
+
+                let distance = keyboardSize.height - searchButton.frame.origin.y
+                self.view.frame.origin.y = distance + searchButton.frame.height
+            }
+
+        }
+        self.view.frame.origin.y = -100
     }
-    
+
     @objc func keyboardWillHide(){
-        
+
+        self.view.frame.origin.y = 0
     }
     
     //Make - IBAction
@@ -160,14 +178,14 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
         
         //searchBar에 값을 입력했을 때 검색이 표시됨
         if(searchText.isEmpty){
-            self.seachButton.isHidden = true
+            self.searchButton.isHidden = true
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.01, execute: {
                 //포커싱 해제
                 searchBar.resignFirstResponder()
             })
         } else {
-            self.seachButton.isHidden = false
+            self.searchButton.isHidden = false
         }
     }
     //입력 제안 집어 넣기

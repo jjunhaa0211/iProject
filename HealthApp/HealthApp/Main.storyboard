@@ -125,8 +125,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="6sq-1A-T3p"/>
                     <connections>
-                        <outlet property="seachButton" destination="wOz-VG-AUF" id="WTt-Hm-5pK"/>
                         <outlet property="searchBar" destination="arP-wO-eL0" id="9qb-ah-hcj"/>
+                        <outlet property="searchButton" destination="wOz-VG-AUF" id="y4z-c8-UHq"/>
                         <outlet property="searchFilterSegment" destination="Pkc-LX-SsS" id="Rn7-IO-4eu"/>
                         <outlet property="searchIdicator" destination="STN-oy-ET3" id="EQf-dB-b9J"/>
                         <segue destination="Pue-sR-3Nz" kind="show" identifier="goToUserCalorieVC" id="a2t-t2-OHd"/>
