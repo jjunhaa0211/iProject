@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExerciseInformationVC: UIViewController {
+class ExerciseInformationVC: BassVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

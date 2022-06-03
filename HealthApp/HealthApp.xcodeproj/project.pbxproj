@@ -13,6 +13,7 @@
 		3C3566F328482C6400654989 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3566F228482C6400654989 /* HomeVC.swift */; };
 		3C3566F828482C6600654989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C3566F728482C6600654989 /* Assets.xcassets */; };
 		3C3566FB28482C6600654989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3566F928482C6600654989 /* LaunchScreen.storyboard */; };
+		3C39D7252849C3B600B7EF9E /* FoodConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39D7242849C3B600B7EF9E /* FoodConstants.swift */; };
 		3C3A408828482EA6008EB6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3A408728482EA6008EB6C9 /* Main.storyboard */; };
 		3C3A408A28486241008EB6C9 /* HouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A408928486241008EB6C9 /* HouseVC.swift */; };
 		3C3A408C2848631F008EB6C9 /* ExerciseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A408B2848631F008EB6C9 /* ExerciseVC.swift */; };
@@ -22,6 +23,7 @@
 		3CB57F0E284864DD000DCD92 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB57F0D284864DD000DCD92 /* CalendarVC.swift */; };
 		3CB57F102848B20D000DCD92 /* UserCalorieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB57F0F2848B20D000DCD92 /* UserCalorieVC.swift */; };
 		3CB57F132848B3AE000DCD92 /* ExerciseInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB57F122848B3AE000DCD92 /* ExerciseInformationVC.swift */; };
+		3CFCA6D5284A1FDF0087F1EF /* BassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFCA6D4284A1FDF0087F1EF /* BassVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		3C3566F728482C6600654989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C3566FA28482C6600654989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C3566FC28482C6600654989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C39D7242849C3B600B7EF9E /* FoodConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodConstants.swift; sourceTree = "<group>"; };
 		3C3A408728482EA6008EB6C9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3C3A408928486241008EB6C9 /* HouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseVC.swift; sourceTree = "<group>"; };
 		3C3A408B2848631F008EB6C9 /* ExerciseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseVC.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		3CB57F0D284864DD000DCD92 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		3CB57F0F2848B20D000DCD92 /* UserCalorieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCalorieVC.swift; sourceTree = "<group>"; };
 		3CB57F122848B3AE000DCD92 /* ExerciseInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInformationVC.swift; sourceTree = "<group>"; };
+		3CFCA6D4284A1FDF0087F1EF /* BassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BassVC.swift; sourceTree = "<group>"; };
 		79B10F93B2F17329E85360C4 /* Pods-HealthApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthApp.debug.xcconfig"; path = "Target Support Files/Pods-HealthApp/Pods-HealthApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,8 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				3C3A408D2848632C008EB6C9 /* FoodVC.swift */,
+				3C39D7242849C3B600B7EF9E /* FoodConstants.swift */,
 				3CB57F122848B3AE000DCD92 /* ExerciseInformationVC.swift */,
 				3CB57F0F2848B20D000DCD92 /* UserCalorieVC.swift */,
+				3CFCA6D4284A1FDF0087F1EF /* BassVC.swift */,
 			);
 			path = "Food Group";
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				3C3A409028486341008EB6C9 /* TimerVC.swift in Sources */,
 				3CB57F102848B20D000DCD92 /* UserCalorieVC.swift in Sources */,
 				3C3566F328482C6400654989 /* HomeVC.swift in Sources */,
+				3C39D7252849C3B600B7EF9E /* FoodConstants.swift in Sources */,
 				3C3A408A28486241008EB6C9 /* HouseVC.swift in Sources */,
 				3C3A408E2848632C008EB6C9 /* FoodVC.swift in Sources */,
 				3C3A409228486351008EB6C9 /* ProFileVC.swift in Sources */,
@@ -257,6 +264,7 @@
 				3C3A408C2848631F008EB6C9 /* ExerciseVC.swift in Sources */,
 				3C3566EF28482C6400654989 /* AppDelegate.swift in Sources */,
 				3C3566F128482C6400654989 /* SceneDelegate.swift in Sources */,
+				3CFCA6D5284A1FDF0087F1EF /* BassVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

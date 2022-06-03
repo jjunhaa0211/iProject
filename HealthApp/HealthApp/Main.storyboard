@@ -48,8 +48,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-mN-eHM">
-                                <rect key="frame" x="20" y="156" width="374" height="400"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-mN-eHM">
+                                <rect key="frame" x="20" y="34" width="374" height="400"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2022-06-02 오후 4.23.52" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-iK-h2U">
                                         <rect key="frame" x="112" y="8" width="150" height="150"/>
@@ -68,11 +68,11 @@
                                             <action selector="searchFilterValueChanged:" destination="hEF-ma-Mpv" eventType="valueChanged" id="z0N-eN-uDg"/>
                                         </connections>
                                     </segmentedControl>
-                                    <searchBar contentMode="redraw" placeholder="칼로리 검색" translatesAutoresizingMaskIntoConstraints="NO" id="arP-wO-eL0">
+                                    <searchBar contentMode="redraw" text="" placeholder="음식 칼로리 입력" translatesAutoresizingMaskIntoConstraints="NO" id="arP-wO-eL0">
                                         <rect key="frame" x="0.0" y="223" width="374" height="51"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOz-VG-AUF">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOz-VG-AUF">
                                         <rect key="frame" x="147" y="294" width="80" height="40"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                                         <constraints>
@@ -84,6 +84,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="검색">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onSearchButtonClicked:" destination="hEF-ma-Mpv" eventType="touchUpInside" id="fHU-xv-qp9"/>
+                                        </connections>
                                     </button>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="STN-oy-ET3">
                                         <rect key="frame" x="177" y="304" width="20" height="20"/>
@@ -112,10 +115,12 @@
                         <viewLayoutGuide key="safeArea" id="URI-39-6GH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ycd-mN-eHM" firstAttribute="top" secondItem="URI-39-6GH" secondAttribute="top" constant="16" id="MId-Qt-WO2"/>
+                            <constraint firstItem="ycd-mN-eHM" firstAttribute="top" secondItem="URI-39-6GH" secondAttribute="top" id="29s-pL-Y6E"/>
+                            <constraint firstItem="ycd-mN-eHM" firstAttribute="top" secondItem="URI-39-6GH" secondAttribute="top" id="D5G-yN-Slb"/>
+                            <constraint firstItem="ycd-mN-eHM" firstAttribute="top" secondItem="URI-39-6GH" secondAttribute="top" id="MId-Qt-WO2"/>
                             <constraint firstItem="URI-39-6GH" firstAttribute="trailing" secondItem="ycd-mN-eHM" secondAttribute="trailing" constant="20" id="OAZ-qk-ql5"/>
-                            <constraint firstItem="ycd-mN-eHM" firstAttribute="centerX" secondItem="MoI-gf-CqV" secondAttribute="centerX" id="WyL-EJ-vTB"/>
                             <constraint firstItem="ycd-mN-eHM" firstAttribute="leading" secondItem="URI-39-6GH" secondAttribute="leading" constant="20" id="vQE-IG-tqq"/>
+                            <constraint firstItem="ycd-mN-eHM" firstAttribute="centerX" secondItem="MoI-gf-CqV" secondAttribute="centerX" id="ydj-xF-E0r"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6sq-1A-T3p"/>

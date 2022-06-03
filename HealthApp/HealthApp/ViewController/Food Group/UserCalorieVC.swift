@@ -7,8 +7,17 @@
 
 import UIKit
 
-class UserCalorieVC: UIViewController {
+class UserCalorieVC: BassVC {
 
+    var vcTitle : String = "" {
+        didSet{
+            
+            self.title = vcTitle
+            
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("UsercalorieVC - viewDidLoad called")
