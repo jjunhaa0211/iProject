@@ -72,6 +72,17 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
         self.searchBar.becomeFirstResponder() //포커싱 주기
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //키보드가 올라가는 이벤트
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool){
+        super.viewWillDisappear(animated)
+    }
     //Make - fileprivate
     fileprivate func pushVC(){
         
@@ -93,6 +104,14 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
         
         //화면 이동
         self.performSegue(withIdentifier: segueId, sender: self)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification){
+        
+    }
+    
+    @objc func keyboardWillHide(){
+        
     }
     
     //Make - IBAction
