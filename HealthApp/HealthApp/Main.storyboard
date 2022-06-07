@@ -11,15 +11,17 @@
         <!--HouseVC-->
         <scene sceneID="Lgm-qB-rPF">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UWn-iD-BZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="QsQ-a1-3ax" customClass="HouseVC" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ncH-5x-atP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8i-Xw-fWC">
-                                <rect key="frame" x="168" y="428.5" width="78.5" height="39.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8i-Xw-fWC">
+                                <rect key="frame" x="186" y="416" width="59" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="타이머">
+                                <buttonConfiguration key="configuration" style="plain" image="timer" catalog="system" title="">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -29,16 +31,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P4c-ky-RBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="F8i-Xw-fWC" firstAttribute="centerY" secondItem="ncH-5x-atP" secondAttribute="centerY" id="dM5-fL-0GW"/>
-                            <constraint firstItem="F8i-Xw-fWC" firstAttribute="centerX" secondItem="ncH-5x-atP" secondAttribute="centerX" id="ePi-mi-z1E"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CMo-J1-Xat"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UWn-iD-BZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6471.0144927536239" y="1653.3482142857142"/>
+            <point key="canvasLocation" x="-6471.0144927536239" y="1623.8839285714284"/>
         </scene>
         <!--FoodVC-->
         <scene sceneID="rXP-v0-Qa0">
@@ -192,22 +189,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXj-X9-OKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2933" y="3117"/>
-        </scene>
-        <!--ExerciseVC-->
-        <scene sceneID="JeT-0o-bgB">
-            <objects>
-                <viewController id="ci9-3e-l1Q" customClass="ExerciseVC" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hCx-Zi-p7J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="u1o-W9-2Dh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="4bf-oO-AzR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bV8-fr-DCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-739" y="1653"/>
         </scene>
         <!--TimerVC-->
         <scene sceneID="nyU-Q7-hEG">
@@ -377,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Beo-aI-6id" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="1653"/>
+            <point key="canvasLocation" x="2361" y="1624"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="byS-PJ-kSH">
@@ -398,7 +379,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Skc-Mh-1v3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-739" y="-30"/>
+            <point key="canvasLocation" x="-730" y="-33"/>
         </scene>
         <!--홈-->
         <scene sceneID="VzT-JY-pTY">
@@ -450,12 +431,53 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ci9-3e-l1Q" kind="relationship" relationship="rootViewController" id="Vf8-2z-Ar3"/>
+                        <segue destination="cdf-Mf-GR8" kind="relationship" relationship="rootViewController" id="PbR-Cq-wW8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ve-0l-cnk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-730" y="708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ujL-Lh-K52">
+            <objects>
+                <viewController id="cdf-Mf-GR8" customClass="ViewController" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Smt-aR-zfa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LE5-Ub-vI3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier=" " id="1Y7-93-XIQ">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Y7-93-XIQ" id="fI4-6I-FhY">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L5w-HD-S6G"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LE5-Ub-vI3" firstAttribute="top" secondItem="L5w-HD-S6G" secondAttribute="top" id="4M1-u1-G1S"/>
+                            <constraint firstItem="L5w-HD-S6G" firstAttribute="trailing" secondItem="LE5-Ub-vI3" secondAttribute="trailing" id="Jpk-f9-4Rf"/>
+                            <constraint firstItem="L5w-HD-S6G" firstAttribute="bottom" secondItem="LE5-Ub-vI3" secondAttribute="bottom" id="L5D-Pd-96p"/>
+                            <constraint firstItem="LE5-Ub-vI3" firstAttribute="leading" secondItem="L5w-HD-S6G" secondAttribute="leading" id="tK3-jh-itd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Way-wV-v4n"/>
+                    <connections>
+                        <outlet property="tableView" destination="LE5-Ub-vI3" id="wJf-yY-0Lq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRV-8a-u7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-730" y="1653"/>
         </scene>
         <!--달력-->
         <scene sceneID="7Wr-Fo-k1V">
@@ -516,6 +538,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="timer" catalog="system" width="128" height="121"/>
         <image name="스크린샷 2022-06-02 오후 4.23.52" width="3000" height="2000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

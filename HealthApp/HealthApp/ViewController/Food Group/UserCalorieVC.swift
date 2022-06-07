@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class UserCalorieVC: BassVC {
 
@@ -14,6 +15,7 @@ class UserCalorieVC: BassVC {
         super.viewDidLoad()
         print("UsercalorieVC - viewDidLoad called")
     }
+    
 
 
 }
