@@ -470,7 +470,13 @@
                             <constraint firstItem="LE5-Ub-vI3" firstAttribute="leading" secondItem="L5w-HD-S6G" secondAttribute="leading" id="tK3-jh-itd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Way-wV-v4n"/>
+                    <navigationItem key="navigationItem" id="Way-wV-v4n">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="xbg-W7-gFW">
+                            <connections>
+                                <action selector="didTapAdd" destination="cdf-Mf-GR8" id="OPy-mC-JNL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="LE5-Ub-vI3" id="wJf-yY-0Lq"/>
                     </connections>
@@ -478,6 +484,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRV-8a-u7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-730" y="1653"/>
+        </scene>
+        <!--Task View Controller-->
+        <scene sceneID="SiG-LB-Uau">
+            <objects>
+                <viewController storyboardIdentifier=" " id="R5c-fe-C0Y" customClass="TaskViewController" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mn3-gC-4Qv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mTq-kv-HwC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZkX-mb-NxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="1653"/>
+        </scene>
+        <!--Entry View Controller-->
+        <scene sceneID="cNW-Tp-yh8">
+            <objects>
+                <viewController storyboardIdentifier="entry" id="cYC-SL-sWI" customClass="EntryViewController" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anb-vi-Z1q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fF1-dd-0hj">
+                                <rect key="frame" x="20" y="64" width="374" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="bcH-fX-0VA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7tP-t3-Vdw"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="fF1-dd-0hj" firstAttribute="leading" secondItem="7tP-t3-Vdw" secondAttribute="leading" constant="20" id="3Bh-Yc-vge"/>
+                            <constraint firstItem="7tP-t3-Vdw" firstAttribute="trailing" secondItem="fF1-dd-0hj" secondAttribute="trailing" constant="20" id="xpR-SY-zwy"/>
+                            <constraint firstItem="fF1-dd-0hj" firstAttribute="top" secondItem="7tP-t3-Vdw" secondAttribute="top" constant="20" id="yyf-8K-pME"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="field" destination="fF1-dd-0hj" id="0bS-lE-U2D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zf-kU-swQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-755" y="2364"/>
         </scene>
         <!--달력-->
         <scene sceneID="7Wr-Fo-k1V">
@@ -540,6 +594,9 @@
     <resources>
         <image name="timer" catalog="system" width="128" height="121"/>
         <image name="스크린샷 2022-06-02 오후 4.23.52" width="3000" height="2000"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
