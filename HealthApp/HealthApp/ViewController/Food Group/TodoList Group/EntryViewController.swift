@@ -11,6 +11,7 @@ class EntryViewController: UIViewController, UITextViewDelegate, UITextFieldDele
 
     @IBOutlet var field: UITextField!
     
+    var update: (() -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +44,10 @@ class EntryViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         UserDefaults().set(newCount, forKey: "count")
         
         UserDefaults().set(text, forKey: "task_\(newCount)")
+        
+        update?()
+        
+        navigationController?.popViewController(animated: true)
         
     }
 }

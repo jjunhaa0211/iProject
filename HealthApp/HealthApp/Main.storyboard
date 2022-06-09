@@ -492,13 +492,30 @@
                     <view key="view" contentMode="scaleToFill" id="Mn3-gC-4Qv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRB-n5-B8d">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="mTq-kv-HwC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YRB-n5-B8d" firstAttribute="top" secondItem="mTq-kv-HwC" secondAttribute="top" constant="12" id="2ym-7K-QZb"/>
+                            <constraint firstItem="mTq-kv-HwC" firstAttribute="bottom" secondItem="YRB-n5-B8d" secondAttribute="bottom" constant="12" id="7Yf-xd-gr0"/>
+                            <constraint firstItem="YRB-n5-B8d" firstAttribute="leading" secondItem="mTq-kv-HwC" secondAttribute="leading" constant="12" id="G9e-r6-f3O"/>
+                            <constraint firstItem="mTq-kv-HwC" firstAttribute="trailing" secondItem="YRB-n5-B8d" secondAttribute="trailing" constant="12" id="zdf-Mz-fya"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lable" destination="YRB-n5-B8d" id="9nq-4I-ZHc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZkX-mb-NxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="506" y="1653"/>
+            <point key="canvasLocation" x="-70" y="2360"/>
         </scene>
         <!--Entry View Controller-->
         <scene sceneID="cNW-Tp-yh8">
@@ -531,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zf-kU-swQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-755" y="2364"/>
+            <point key="canvasLocation" x="-1261" y="2360"/>
         </scene>
         <!--달력-->
         <scene sceneID="7Wr-Fo-k1V">

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EA4EBE2284F595000FAAD93 /* TaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4EBE1284F595000FAAD93 /* TaskVC.swift */; };
 		0EA4EBE5284F914900FAAD93 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4EBE4284F914900FAAD93 /* EntryViewController.swift */; };
 		0EA4EBE7284F917200FAAD93 /* taskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4EBE6284F917200FAAD93 /* taskViewController.swift */; };
 		355A21F5CD1927B80C510F38 /* Pods_HealthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8668C543A4CC4D5065048448 /* Pods_HealthApp.framework */; };
@@ -30,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0EA4EBE1284F595000FAAD93 /* TaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVC.swift; sourceTree = "<group>"; };
 		0EA4EBE4284F914900FAAD93 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		0EA4EBE6284F917200FAAD93 /* taskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskViewController.swift; sourceTree = "<group>"; };
 		27BD8EEC4DB6AE47B60696A7 /* Pods-HealthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthApp.release.xcconfig"; path = "Target Support Files/Pods-HealthApp/Pods-HealthApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				3C3A408B2848631F008EB6C9 /* ViewController.swift */,
 				0EA4EBE4284F914900FAAD93 /* EntryViewController.swift */,
 				0EA4EBE6284F917200FAAD93 /* taskViewController.swift */,
-				0EA4EBE1284F595000FAAD93 /* TaskVC.swift */,
 			);
 			path = "TodoList Group";
 			sourceTree = "<group>";
@@ -272,7 +269,6 @@
 				3C3A409028486341008EB6C9 /* TimerVC.swift in Sources */,
 				3CB57F102848B20D000DCD92 /* UserCalorieVC.swift in Sources */,
 				3C3566F328482C6400654989 /* HomeVC.swift in Sources */,
-				0EA4EBE2284F595000FAAD93 /* TaskVC.swift in Sources */,
 				3C39D7252849C3B600B7EF9E /* FoodConstants.swift in Sources */,
 				0EA4EBE7284F917200FAAD93 /* taskViewController.swift in Sources */,
 				3C3A408A28486241008EB6C9 /* HouseVC.swift in Sources */,
