@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0F9AFB285320AC00B9FB4B /* MyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F9AFA285320AC00B9FB4B /* MyLogger.swift */; };
+		0E0F9AFD2853234400B9FB4B /* MyApiStatusLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F9AFC2853234400B9FB4B /* MyApiStatusLogger.swift */; };
+		0E0F9AFF2853256700B9FB4B /* MysearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F9AFE2853256700B9FB4B /* MysearchRouter.swift */; };
 		0EA4EBE5284F914900FAAD93 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4EBE4284F914900FAAD93 /* EntryViewController.swift */; };
 		0EA4EBE7284F917200FAAD93 /* taskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4EBE6284F917200FAAD93 /* taskViewController.swift */; };
+		0EB33A372852B4870071A62D /* MyAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB33A362852B4870071A62D /* MyAPIManager.swift */; };
+		0EB33A392852D4E10071A62D /* BaseIntercaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB33A382852D4E10071A62D /* BaseIntercaptor.swift */; };
 		355A21F5CD1927B80C510F38 /* Pods_HealthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8668C543A4CC4D5065048448 /* Pods_HealthApp.framework */; };
 		3C3566EF28482C6400654989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3566EE28482C6400654989 /* AppDelegate.swift */; };
 		3C3566F128482C6400654989 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3566F028482C6400654989 /* SceneDelegate.swift */; };
@@ -29,8 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E0F9AFA285320AC00B9FB4B /* MyLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLogger.swift; sourceTree = "<group>"; };
+		0E0F9AFC2853234400B9FB4B /* MyApiStatusLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApiStatusLogger.swift; sourceTree = "<group>"; };
+		0E0F9AFE2853256700B9FB4B /* MysearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysearchRouter.swift; sourceTree = "<group>"; };
 		0EA4EBE4284F914900FAAD93 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		0EA4EBE6284F917200FAAD93 /* taskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskViewController.swift; sourceTree = "<group>"; };
+		0EB33A362852B4870071A62D /* MyAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIManager.swift; sourceTree = "<group>"; };
+		0EB33A382852D4E10071A62D /* BaseIntercaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIntercaptor.swift; sourceTree = "<group>"; };
 		27BD8EEC4DB6AE47B60696A7 /* Pods-HealthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthApp.release.xcconfig"; path = "Target Support Files/Pods-HealthApp/Pods-HealthApp.release.xcconfig"; sourceTree = "<group>"; };
 		3C3566EB28482C6400654989 /* HealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C3566EE28482C6400654989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,9 +86,22 @@
 			path = "TodoList Group";
 			sourceTree = "<group>";
 		};
+		0EB33A352852B4530071A62D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0EB33A362852B4870071A62D /* MyAPIManager.swift */,
+				0E0F9AFE2853256700B9FB4B /* MysearchRouter.swift */,
+				0EB33A382852D4E10071A62D /* BaseIntercaptor.swift */,
+				0E0F9AFA285320AC00B9FB4B /* MyLogger.swift */,
+				0E0F9AFC2853234400B9FB4B /* MyApiStatusLogger.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		3C3566E228482C6400654989 = {
 			isa = PBXGroup;
 			children = (
+				0EB33A352852B4530071A62D /* API */,
 				3C3566ED28482C6400654989 /* HealthApp */,
 				3C3566EC28482C6400654989 /* Products */,
 				5D85142991285D1206460691 /* Pods */,
@@ -124,8 +147,8 @@
 		3CB57F112848B32C000DCD92 /* Food Group */ = {
 			isa = PBXGroup;
 			children = (
-				3C3A408D2848632C008EB6C9 /* FoodVC.swift */,
 				3C39D7242849C3B600B7EF9E /* FoodConstants.swift */,
+				3C3A408D2848632C008EB6C9 /* FoodVC.swift */,
 				3CB57F122848B3AE000DCD92 /* ExerciseInformationVC.swift */,
 				3CB57F0F2848B20D000DCD92 /* UserCalorieVC.swift */,
 				3CFCA6D4284A1FDF0087F1EF /* BassVC.swift */,
@@ -274,12 +297,17 @@
 				3C3A408A28486241008EB6C9 /* HouseVC.swift in Sources */,
 				3C3A408E2848632C008EB6C9 /* FoodVC.swift in Sources */,
 				3C3A409228486351008EB6C9 /* ProFileVC.swift in Sources */,
+				0EB33A372852B4870071A62D /* MyAPIManager.swift in Sources */,
 				3CB57F0E284864DD000DCD92 /* CalendarVC.swift in Sources */,
 				3CB57F132848B3AE000DCD92 /* ExerciseInformationVC.swift in Sources */,
 				3C3A408C2848631F008EB6C9 /* ViewController.swift in Sources */,
+				0E0F9AFF2853256700B9FB4B /* MysearchRouter.swift in Sources */,
 				0EA4EBE5284F914900FAAD93 /* EntryViewController.swift in Sources */,
 				3C3566EF28482C6400654989 /* AppDelegate.swift in Sources */,
 				3C3566F128482C6400654989 /* SceneDelegate.swift in Sources */,
+				0E0F9AFB285320AC00B9FB4B /* MyLogger.swift in Sources */,
+				0EB33A392852D4E10071A62D /* BaseIntercaptor.swift in Sources */,
+				0E0F9AFD2853234400B9FB4B /* MyApiStatusLogger.swift in Sources */,
 				3CFCA6D5284A1FDF0087F1EF /* BassVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

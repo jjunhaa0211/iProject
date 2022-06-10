@@ -11,7 +11,6 @@
         <!--HouseVC-->
         <scene sceneID="Lgm-qB-rPF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UWn-iD-BZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="QsQ-a1-3ax" customClass="HouseVC" customModule="HealthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ncH-5x-atP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -34,6 +33,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="CMo-J1-Xat"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UWn-iD-BZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6471.0144927536239" y="1623.8839285714284"/>
         </scene>
@@ -535,7 +535,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7tP-t3-Vdw"/>
-                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fF1-dd-0hj" firstAttribute="leading" secondItem="7tP-t3-Vdw" secondAttribute="leading" constant="20" id="3Bh-Yc-vge"/>
                             <constraint firstItem="7tP-t3-Vdw" firstAttribute="trailing" secondItem="fF1-dd-0hj" secondAttribute="trailing" constant="20" id="xpR-SY-zwy"/>
@@ -611,8 +611,8 @@
     <resources>
         <image name="timer" catalog="system" width="128" height="121"/>
         <image name="스크린샷 2022-06-02 오후 4.23.52" width="3000" height="2000"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

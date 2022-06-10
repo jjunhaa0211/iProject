@@ -7,6 +7,7 @@
 
 import UIKit
 import Toast_Swift
+import Alamofire
 
 class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
 
@@ -135,7 +136,32 @@ class FoodVC: UIViewController,UISearchBarDelegate,UIGestureRecognizerDelegate{
     //Make - IBAction
     @IBAction func onSearchButtonClicked(_ sender: UIButton) {
         //화면 이동
-        pushVC()
+        
+        let url = API.BASE_URL + "search/photos"
+        
+        guard let userInput = self.searchBar.text else { return }
+        
+        //키 벨류 형식 딕셔너리
+        let queryParam = ["query" : userInput, "client_id" : API.CLIENT_ID]
+        
+//        AF.request(url, method: .get,parameters: queryParam)
+//            .responseJSON(completionHandler: { response in
+//            debugPrint(response)
+//
+//        })
+        
+        MyAPIManager
+            .shared
+            .session
+            .request(url)
+            .responseJSON { response in
+            debugPrint(response)
+        }
+        
+        
+        
+        
+  //      pushVC()
     }
     @IBAction func searchFilterValueChanged(_ sender: UISegmentedControl) {
         
