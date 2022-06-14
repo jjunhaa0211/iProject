@@ -10,8 +10,7 @@
 		0E0F9AFB285320AC00B9FB4B /* MyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F9AFA285320AC00B9FB4B /* MyLogger.swift */; };
 		0E0F9AFD2853234400B9FB4B /* MyApiStatusLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F9AFC2853234400B9FB4B /* MyApiStatusLogger.swift */; };
 		0E0F9AFF2853256700B9FB4B /* MysearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F9AFE2853256700B9FB4B /* MysearchRouter.swift */; };
-		0EA4EBE5284F914900FAAD93 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4EBE4284F914900FAAD93 /* EntryViewController.swift */; };
-		0EA4EBE7284F917200FAAD93 /* taskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA4EBE6284F917200FAAD93 /* taskViewController.swift */; };
+		0E38A8A928587624002EE021 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E38A8A828587624002EE021 /* ToDoList.swift */; };
 		0EB33A372852B4870071A62D /* MyAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB33A362852B4870071A62D /* MyAPIManager.swift */; };
 		0EB33A392852D4E10071A62D /* BaseIntercaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB33A382852D4E10071A62D /* BaseIntercaptor.swift */; };
 		355A21F5CD1927B80C510F38 /* Pods_HealthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8668C543A4CC4D5065048448 /* Pods_HealthApp.framework */; };
@@ -23,7 +22,6 @@
 		3C39D7252849C3B600B7EF9E /* FoodConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39D7242849C3B600B7EF9E /* FoodConstants.swift */; };
 		3C3A408828482EA6008EB6C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C3A408728482EA6008EB6C9 /* Main.storyboard */; };
 		3C3A408A28486241008EB6C9 /* HouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A408928486241008EB6C9 /* HouseVC.swift */; };
-		3C3A408C2848631F008EB6C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A408B2848631F008EB6C9 /* ViewController.swift */; };
 		3C3A408E2848632C008EB6C9 /* FoodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A408D2848632C008EB6C9 /* FoodVC.swift */; };
 		3C3A409028486341008EB6C9 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A408F28486341008EB6C9 /* TimerVC.swift */; };
 		3C3A409228486351008EB6C9 /* ProFileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A409128486351008EB6C9 /* ProFileVC.swift */; };
@@ -37,8 +35,7 @@
 		0E0F9AFA285320AC00B9FB4B /* MyLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLogger.swift; sourceTree = "<group>"; };
 		0E0F9AFC2853234400B9FB4B /* MyApiStatusLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApiStatusLogger.swift; sourceTree = "<group>"; };
 		0E0F9AFE2853256700B9FB4B /* MysearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysearchRouter.swift; sourceTree = "<group>"; };
-		0EA4EBE4284F914900FAAD93 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
-		0EA4EBE6284F917200FAAD93 /* taskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskViewController.swift; sourceTree = "<group>"; };
+		0E38A8A828587624002EE021 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		0EB33A362852B4870071A62D /* MyAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIManager.swift; sourceTree = "<group>"; };
 		0EB33A382852D4E10071A62D /* BaseIntercaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIntercaptor.swift; sourceTree = "<group>"; };
 		27BD8EEC4DB6AE47B60696A7 /* Pods-HealthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthApp.release.xcconfig"; path = "Target Support Files/Pods-HealthApp/Pods-HealthApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,7 +49,6 @@
 		3C39D7242849C3B600B7EF9E /* FoodConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodConstants.swift; sourceTree = "<group>"; };
 		3C3A408728482EA6008EB6C9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3C3A408928486241008EB6C9 /* HouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseVC.swift; sourceTree = "<group>"; };
-		3C3A408B2848631F008EB6C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C3A408D2848632C008EB6C9 /* FoodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVC.swift; sourceTree = "<group>"; };
 		3C3A408F28486341008EB6C9 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
 		3C3A409128486351008EB6C9 /* ProFileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProFileVC.swift; sourceTree = "<group>"; };
@@ -79,9 +75,7 @@
 		0EA4EBE3284F595700FAAD93 /* TodoList Group */ = {
 			isa = PBXGroup;
 			children = (
-				3C3A408B2848631F008EB6C9 /* ViewController.swift */,
-				0EA4EBE4284F914900FAAD93 /* EntryViewController.swift */,
-				0EA4EBE6284F917200FAAD93 /* taskViewController.swift */,
+				0E38A8A828587624002EE021 /* ToDoList.swift */,
 			);
 			path = "TodoList Group";
 			sourceTree = "<group>";
@@ -290,19 +284,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C3A409028486341008EB6C9 /* TimerVC.swift in Sources */,
+				0E38A8A928587624002EE021 /* ToDoList.swift in Sources */,
 				3CB57F102848B20D000DCD92 /* UserCalorieVC.swift in Sources */,
 				3C3566F328482C6400654989 /* HomeVC.swift in Sources */,
 				3C39D7252849C3B600B7EF9E /* FoodConstants.swift in Sources */,
-				0EA4EBE7284F917200FAAD93 /* taskViewController.swift in Sources */,
 				3C3A408A28486241008EB6C9 /* HouseVC.swift in Sources */,
 				3C3A408E2848632C008EB6C9 /* FoodVC.swift in Sources */,
 				3C3A409228486351008EB6C9 /* ProFileVC.swift in Sources */,
 				0EB33A372852B4870071A62D /* MyAPIManager.swift in Sources */,
 				3CB57F0E284864DD000DCD92 /* CalendarVC.swift in Sources */,
 				3CB57F132848B3AE000DCD92 /* ExerciseInformationVC.swift in Sources */,
-				3C3A408C2848631F008EB6C9 /* ViewController.swift in Sources */,
 				0E0F9AFF2853256700B9FB4B /* MysearchRouter.swift in Sources */,
-				0EA4EBE5284F914900FAAD93 /* EntryViewController.swift in Sources */,
 				3C3566EF28482C6400654989 /* AppDelegate.swift in Sources */,
 				3C3566F128482C6400654989 /* SceneDelegate.swift in Sources */,
 				0E0F9AFB285320AC00B9FB4B /* MyLogger.swift in Sources */,

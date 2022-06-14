@@ -30,5 +30,18 @@ class TaskViewController: UIViewController {
 //        UserDefaults().setValue(nil, forKey: "task_\(currentPosition)")
 //
     }
+    @IBAction func didTapAdd() {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "entry") as! EntryViewController
+        
+        vc.title = "New Task"
+        vc.update = {
+            DispatchQueue.main.async {
+                self.updateT asks()
+                }
+            }
+        
+        navigationController?.pushViewController(vc, animated: true )
+    }
     
 }

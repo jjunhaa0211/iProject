@@ -7,7 +7,7 @@
 
 import UIKit
 import SwiftUI
-//소개과 가고싶다
+
 class ViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
@@ -75,19 +75,5 @@ extension ViewController: UITableViewDataSource {
         
         }
         tableView.reloadData()
-}
-    @IBAction func didTapAdd() {
-        
-        let vc = storyboard?.instantiateViewController(withIdentifier: "entry") as! EntryViewController
-        
-        vc.title = "New Task"
-        vc.update = {
-            DispatchQueue.main.async {
-                self.updateTasks()
-                }
-            }
-        
-        navigationController?.pushViewController(vc, animated: true )
     }
-    
 }

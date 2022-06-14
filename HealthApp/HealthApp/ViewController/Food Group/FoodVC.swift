@@ -149,29 +149,29 @@ class FoodVC: BassVC,UISearchBarDelegate,UIGestureRecognizerDelegate{
 //            debugPrint(response)
 //
 //        })
-        
-        var urlTocall : URLRequestConvertible?
-        
-        switch searchFilterSegment.selectedSegmentIndex {
-            
-        case 0:
-            urlTocall = MysearchRouter.searchPhotos(term: userInput)
-        case 1:
-            urlTocall = MysearchRouter.searchUsers(term: userInput)
-        default:
-            print("default")
-        }
-        
-        if let urlConvertible = urlTocall {
-            MyAPIManager
-                .shared
-                .session
-                .request(urlConvertible)
-                .validate(statusCode: 200..<401)
-                .responseJSON(completionHandler: { response in
-//                debugPrint(response)
-            })
-        }
+//
+//        var urlTocall : URLRequestConvertible?
+//
+//        switch searchFilterSegment.selectedSegmentIndex {
+//
+//        case 0:
+//            urlTocall = MysearchRouter.searchPhotos(term: userInput)
+//        case 1:
+//            urlTocall = MysearchRouter.searchUsers(term: userInput)
+//        default:
+//            print("default")
+//        }
+//
+//        if let urlConvertible = urlTocall {
+//            MyAPIManager
+//                .shared
+//                .session
+//                .request(urlConvertible)
+//                .validate(statusCode: 200..<401)
+//                .responseJSON(completionHandler: { response in
+////                debugPrint(response)
+//            })
+//        }
         
         
         
