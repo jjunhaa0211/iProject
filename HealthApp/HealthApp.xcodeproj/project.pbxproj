@@ -10,7 +10,8 @@
 		0E0F9AFB285320AC00B9FB4B /* MyLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F9AFA285320AC00B9FB4B /* MyLogger.swift */; };
 		0E0F9AFD2853234400B9FB4B /* MyApiStatusLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F9AFC2853234400B9FB4B /* MyApiStatusLogger.swift */; };
 		0E0F9AFF2853256700B9FB4B /* MysearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0F9AFE2853256700B9FB4B /* MysearchRouter.swift */; };
-		0E38A8A928587624002EE021 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E38A8A828587624002EE021 /* ToDoList.swift */; };
+		0E5A8299285AFBD700E6C23B /* GoogleWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8298285AFBD700E6C23B /* GoogleWebViewVC.swift */; };
+		0E5A829C285B014100E6C23B /* GithubWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A829B285B014100E6C23B /* GithubWebView.swift */; };
 		0EB33A372852B4870071A62D /* MyAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB33A362852B4870071A62D /* MyAPIManager.swift */; };
 		0EB33A392852D4E10071A62D /* BaseIntercaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB33A382852D4E10071A62D /* BaseIntercaptor.swift */; };
 		355A21F5CD1927B80C510F38 /* Pods_HealthApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8668C543A4CC4D5065048448 /* Pods_HealthApp.framework */; };
@@ -35,7 +36,8 @@
 		0E0F9AFA285320AC00B9FB4B /* MyLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLogger.swift; sourceTree = "<group>"; };
 		0E0F9AFC2853234400B9FB4B /* MyApiStatusLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApiStatusLogger.swift; sourceTree = "<group>"; };
 		0E0F9AFE2853256700B9FB4B /* MysearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysearchRouter.swift; sourceTree = "<group>"; };
-		0E38A8A828587624002EE021 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
+		0E5A8298285AFBD700E6C23B /* GoogleWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleWebViewVC.swift; sourceTree = "<group>"; };
+		0E5A829B285B014100E6C23B /* GithubWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubWebView.swift; sourceTree = "<group>"; };
 		0EB33A362852B4870071A62D /* MyAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIManager.swift; sourceTree = "<group>"; };
 		0EB33A382852D4E10071A62D /* BaseIntercaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIntercaptor.swift; sourceTree = "<group>"; };
 		27BD8EEC4DB6AE47B60696A7 /* Pods-HealthApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthApp.release.xcconfig"; path = "Target Support Files/Pods-HealthApp/Pods-HealthApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,10 +74,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E5A829A285B00F300E6C23B /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A8298285AFBD700E6C23B /* GoogleWebViewVC.swift */,
+				0E5A829B285B014100E6C23B /* GithubWebView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		0EA4EBE3284F595700FAAD93 /* TodoList Group */ = {
 			isa = PBXGroup;
 			children = (
-				0E38A8A828587624002EE021 /* ToDoList.swift */,
 			);
 			path = "TodoList Group";
 			sourceTree = "<group>";
@@ -130,6 +140,7 @@
 			children = (
 				3C3566F228482C6400654989 /* HomeVC.swift */,
 				3C3A408928486241008EB6C9 /* HouseVC.swift */,
+				0E5A829A285B00F300E6C23B /* WebView */,
 				3CB57F112848B32C000DCD92 /* Food Group */,
 				3CB57F0D284864DD000DCD92 /* CalendarVC.swift */,
 				3C3A409128486351008EB6C9 /* ProFileVC.swift */,
@@ -284,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C3A409028486341008EB6C9 /* TimerVC.swift in Sources */,
-				0E38A8A928587624002EE021 /* ToDoList.swift in Sources */,
 				3CB57F102848B20D000DCD92 /* UserCalorieVC.swift in Sources */,
 				3C3566F328482C6400654989 /* HomeVC.swift in Sources */,
 				3C39D7252849C3B600B7EF9E /* FoodConstants.swift in Sources */,
@@ -296,10 +306,12 @@
 				3CB57F132848B3AE000DCD92 /* ExerciseInformationVC.swift in Sources */,
 				0E0F9AFF2853256700B9FB4B /* MysearchRouter.swift in Sources */,
 				3C3566EF28482C6400654989 /* AppDelegate.swift in Sources */,
+				0E5A8299285AFBD700E6C23B /* GoogleWebViewVC.swift in Sources */,
 				3C3566F128482C6400654989 /* SceneDelegate.swift in Sources */,
 				0E0F9AFB285320AC00B9FB4B /* MyLogger.swift in Sources */,
 				0EB33A392852D4E10071A62D /* BaseIntercaptor.swift in Sources */,
 				0E0F9AFD2853234400B9FB4B /* MyApiStatusLogger.swift in Sources */,
+				0E5A829C285B014100E6C23B /* GithubWebView.swift in Sources */,
 				3CFCA6D5284A1FDF0087F1EF /* BassVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
