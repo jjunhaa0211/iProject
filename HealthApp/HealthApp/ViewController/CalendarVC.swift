@@ -14,23 +14,68 @@ class CalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("CalendarVC - viewDidLoad called")
-        //배경색
-        calendarView.backgroundColor = UIColor(red: 241/255, green: 249/255, blue: 255/255, alpha: 1)
-        //날짜 변경 색
-        calendarView.appearance.selectionColor = UIColor(red: 38/255, green: 153/255, blue: 251/255, alpha: 1)
-        //오늘 날짜색
-        calendarView.appearance.todayColor = UIColor(red: 188/255, green: 224/255, blue: 253/255, alpha: 1)
-        //여러개 선택하기
-        calendarView.allowsMultipleSelection = true
-        //꾹 눌러서 다중 선택
-        calendarView.swipeToChooseGesture.isEnabled = true
-        //세로로 바꾸기
-        calendarView.scrollDirection = .vertical
-        // 선택된 날짜의 모서리 설정 ( 0으로 하면 사각형으로 표시 )
-        //calendarView.appearance.borderRadius = 0
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        calendarView.delegate = self
-        calendarView.dataSource = self
+
+        
+        //날짜 값 한국어로 바꾸기
+        calendarView.calendarWeekdayView.weekdayLabels[0].text = "일"
+        calendarView.calendarWeekdayView.weekdayLabels[1].text = "월"
+        calendarView.calendarWeekdayView.weekdayLabels[2].text = "화"
+        calendarView.calendarWeekdayView.weekdayLabels[3].text = "수"
+        calendarView.calendarWeekdayView.weekdayLabels[4].text = "목"
+        calendarView.calendarWeekdayView.weekdayLabels[5].text = "금"
+        calendarView.calendarWeekdayView.weekdayLabels[6].text = "토"
+        
+        func calendarStyle(){
+
+            //언어 한국어로 변경
+                calendarView.locale = Locale(identifier: "ko_KR")
+                
+            
+            //MARK: -상단 헤더 뷰 관련
+            calendarView.headerHeight = 66 // YYYY년 M월 표시부 영역 높이
+            calendarView.weekdayHeight = 41 // 날짜 표시부 행의 높이
+            calendarView.appearance.headerMinimumDissolvedAlpha = 0.0 //헤더 좌,우측 흐릿한 글씨 삭제
+            calendarView.appearance.headerDateFormat = "YYYY년 M월" //날짜(헤더) 표시 형식
+            calendarView.appearance.headerTitleColor = .black //2021년 1월(헤더) 색
+            calendarView.appearance.headerTitleFont = UIFont.systemFont(ofSize: 24) //타이틀 폰트 크기
+               
+               
+            //MARK: -캘린더(날짜 부분) 관련
+            calendarView.backgroundColor = .white // 배경색
+            calendarView.appearance.weekdayTextColor = .black //요일(월,화,수..) 글씨 색
+            calendarView.appearance.titleWeekendColor = .black //주말 날짜 색
+            calendarView.appearance.titleDefaultColor = .black //기본 날짜 색
+                
+                
+                //MARK: -오늘 날짜(Today) 관련
+            calendarView.appearance.todayColor = .clear //Today에 표시되는 선택 전 동그라미 색
+            calendarView.appearance.todaySelectionColor = .none  //Today에 표시되는 선택 후 동그라미 색
+                
+                
+                // Month 폰트 설정
+            calendarView.appearance.headerTitleFont = UIFont(name: "NotoSansCJKKR-Medium", size: 16)
+                
+                
+                // day 폰트 설정
+            calendarView.appearance.titleFont = UIFont(name: "Roboto-Regular", size: 14)
+        }
+        
+        
+//        // 헤더의 날짜 포맷 설정
+//        calendarView.appearance.headerDateFormat = "YYYY년 MM월"
+//
+//        // 헤더의 폰트 색상 설정
+//        calendarView.appearance.headerTitleColor = UIColor.link
+//
+//        // 헤더의 폰트 정렬 설정
+//        // .center & .left & .justified & .natural & .right
+//        calendarView.appearance.headerTitleAlignment = .left
+//
+//        // 헤더 높이 설정
+//        calendarView.headerHeight = 45
+//
+//        // 헤더 양 옆(전달 & 다음 달) 글씨 투명도
+//        calendarView.appearance.headerMinimumDissolvedAlpha = 0.0
     }
 }
 let dateFormatter = DateFormatter()
