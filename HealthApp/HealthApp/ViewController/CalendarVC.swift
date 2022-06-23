@@ -7,6 +7,7 @@
 
 import UIKit
 import FSCalendar
+import SwiftUI
 
 class CalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
 
@@ -15,6 +16,7 @@ class CalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
         super.viewDidLoad()
         print("CalendarVC - viewDidLoad called")
 
+        calendarView.scope = .week
         
         //날짜 값 한국어로 바꾸기
         calendarView.calendarWeekdayView.weekdayLabels[0].text = "일"
@@ -25,6 +27,27 @@ class CalendarVC: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
         calendarView.calendarWeekdayView.weekdayLabels[5].text = "금"
         calendarView.calendarWeekdayView.weekdayLabels[6].text = "토"
         
+        // 헤더의 날짜 포맷 설정
+        calendarView.appearance.headerDateFormat = "YYYY년 MM월"
+
+        // 헤더의 폰트 색상 설정
+        calendarView.appearance.headerTitleColor = UIColor.link
+
+        // 헤더의 폰트 정렬 설정
+        // .center & .left & .justified & .natural & .right
+        calendarView.appearance.headerTitleAlignment = .center
+
+        // 헤더 높이 설정
+        calendarView.headerHeight = 40
+        
+        //주말은 색깔 바꾸기
+        calendarView.appearance.titleWeekendColor = .red
+        
+        //헤더의 흐릿한 다음 원 또는 년 제거하기
+        calendarView.appearance.headerMinimumDissolvedAlpha = 0
+        
+        // 달력의 평일 날짜 색깔
+        calendarView.appearance.titleDefaultColor = .gray
         func calendarStyle(){
 
             //언어 한국어로 변경

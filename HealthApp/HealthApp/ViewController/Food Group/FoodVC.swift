@@ -172,10 +172,6 @@ class FoodVC: BassVC,UISearchBarDelegate,UIGestureRecognizerDelegate{
 ////                debugPrint(response)
 //            })
 //        }
-        
-        
-        
-        
   //      pushVC()
     }
     @IBAction func searchFilterValueChanged(_ sender: UISegmentedControl) {

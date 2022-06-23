@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.6.1)
+  - FSCalendar (2.8.4)
+  - SPIndicator (1.6.4)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - FSCalendar
+  - SPIndicator
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSCalendar
+    - SPIndicator
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  SPIndicator: 93e0a4fb23de51294ac48e874c0f081a5e293e4f
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 0d0c256f513efea4ecacc723052589187c694dd2
+
+COCOAPODS: 1.11.3

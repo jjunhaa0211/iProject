@@ -61,7 +61,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P4c-ky-RBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rg1-k5-Z9B" firstAttribute="centerX" secondItem="ncH-5x-atP" secondAttribute="centerX" id="DNI-iS-x69"/>
                             <constraint firstItem="rg1-k5-Z9B" firstAttribute="centerY" secondItem="ncH-5x-atP" secondAttribute="centerY" id="LVD-Be-dYr"/>
@@ -86,15 +86,16 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycd-mN-eHM">
                                 <rect key="frame" x="20" y="34" width="374" height="400"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2022-06-02 오후 4.23.52" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-iK-h2U">
-                                        <rect key="frame" x="112" y="8" width="150" height="150"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-iK-h2U">
+                                        <rect key="frame" x="112" y="67" width="150" height="91"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="GhR-8z-4pt"/>
-                                            <constraint firstAttribute="height" constant="150" id="xKX-om-qof"/>
+                                            <constraint firstAttribute="height" constant="91" id="xKX-om-qof"/>
                                         </constraints>
                                     </imageView>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pkc-LX-SsS">
                                         <rect key="frame" x="112" y="174" width="150" height="32"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <segments>
                                             <segment title="칼로리 검색"/>
                                             <segment title="운동 종류"/>
@@ -105,6 +106,8 @@
                                     </segmentedControl>
                                     <searchBar contentMode="redraw" text="" placeholder="음식 칼로리 입력" translatesAutoresizingMaskIntoConstraints="NO" id="arP-wO-eL0">
                                         <rect key="frame" x="0.0" y="223" width="374" height="51"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOz-VG-AUF">
@@ -128,7 +131,7 @@
                                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </activityIndicatorView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="wOz-VG-AUF" firstAttribute="centerX" secondItem="ycd-mN-eHM" secondAttribute="centerX" id="7ae-rl-zss"/>
                                     <constraint firstItem="Pkc-LX-SsS" firstAttribute="top" secondItem="KGz-iK-h2U" secondAttribute="bottom" constant="16" id="ElQ-sS-Yag"/>
@@ -136,7 +139,7 @@
                                     <constraint firstItem="KGz-iK-h2U" firstAttribute="trailing" secondItem="Pkc-LX-SsS" secondAttribute="trailing" id="Pwz-MK-Kvd"/>
                                     <constraint firstItem="STN-oy-ET3" firstAttribute="centerX" secondItem="wOz-VG-AUF" secondAttribute="centerX" id="Qae-On-T0v"/>
                                     <constraint firstItem="Pkc-LX-SsS" firstAttribute="leading" secondItem="KGz-iK-h2U" secondAttribute="leading" id="VXj-Eq-wZa"/>
-                                    <constraint firstItem="KGz-iK-h2U" firstAttribute="top" secondItem="ycd-mN-eHM" secondAttribute="top" constant="8" id="WKb-u2-42U"/>
+                                    <constraint firstItem="KGz-iK-h2U" firstAttribute="top" secondItem="ycd-mN-eHM" secondAttribute="top" constant="67" id="WKb-u2-42U"/>
                                     <constraint firstItem="arP-wO-eL0" firstAttribute="top" secondItem="Pkc-LX-SsS" secondAttribute="bottom" constant="18" id="WqG-1j-FeI"/>
                                     <constraint firstItem="KGz-iK-h2U" firstAttribute="centerX" secondItem="ycd-mN-eHM" secondAttribute="centerX" id="aWu-Z5-gTe"/>
                                     <constraint firstItem="wOz-VG-AUF" firstAttribute="top" secondItem="arP-wO-eL0" secondAttribute="bottom" constant="20" id="h3g-bD-gDb"/>
@@ -148,7 +151,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="URI-39-6GH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ycd-mN-eHM" firstAttribute="top" secondItem="URI-39-6GH" secondAttribute="top" id="29s-pL-Y6E"/>
                             <constraint firstItem="ycd-mN-eHM" firstAttribute="top" secondItem="URI-39-6GH" secondAttribute="top" id="D5G-yN-Slb"/>
@@ -446,17 +449,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-vA-4TQ" customClass="FSCalendar">
-                                <rect key="frame" x="10" y="43" width="384" height="400"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="15" y="36" width="384" height="324"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PJt-vJ-1sn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="PJt-vJ-1sn" firstAttribute="bottom" secondItem="CaW-vA-4TQ" secondAttribute="bottom" constant="370" id="9wk-Rf-CrI"/>
-                            <constraint firstItem="CaW-vA-4TQ" firstAttribute="leading" secondItem="PJt-vJ-1sn" secondAttribute="leading" constant="10" id="GYw-co-yWp"/>
-                            <constraint firstItem="PJt-vJ-1sn" firstAttribute="trailing" secondItem="CaW-vA-4TQ" secondAttribute="trailing" constant="20" id="RaT-SW-Gl8"/>
-                            <constraint firstItem="PJt-vJ-1sn" firstAttribute="top" secondItem="CaW-vA-4TQ" secondAttribute="top" constant="45" id="fKs-U6-VcD"/>
+                            <constraint firstItem="PJt-vJ-1sn" firstAttribute="top" secondItem="CaW-vA-4TQ" secondAttribute="top" constant="52" id="8nO-t5-UsI"/>
+                            <constraint firstItem="PJt-vJ-1sn" firstAttribute="bottom" secondItem="CaW-vA-4TQ" secondAttribute="bottom" constant="453" id="RPH-68-l5P"/>
+                            <constraint firstItem="PJt-vJ-1sn" firstAttribute="trailing" secondItem="CaW-vA-4TQ" secondAttribute="trailing" constant="15" id="ba5-KV-H0e"/>
+                            <constraint firstItem="CaW-vA-4TQ" firstAttribute="leading" secondItem="PJt-vJ-1sn" secondAttribute="leading" constant="15" id="n7w-C8-yiu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ctq-SD-193"/>
@@ -466,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Beo-aI-6id" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="1624"/>
+            <point key="canvasLocation" x="2360.8695652173915" y="1623.8839285714284"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="byS-PJ-kSH">
@@ -475,7 +486,10 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CHs-fe-7lf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.042243878865979356" green="0.042243878865979356" blue="0.042243878865979356" alpha="0.89623193027210879" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="jud-IG-7dG" kind="relationship" relationship="viewControllers" id="XQf-VQ-A6h"/>
@@ -621,7 +635,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="스크린샷 2022-06-02 오후 4.23.52" width="3000" height="2000"/>
+        <image name="github" width="256" height="256"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -633,6 +653,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
