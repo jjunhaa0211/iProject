@@ -34,9 +34,9 @@ class signUp: UIViewController {
         CGFloat(radius)
         signUpButton.layer.cornerRadius =
         CGFloat(15)
-        postTest()
+        postsignUp()
     }
-    func postTest() {
+    func postsignUp() {
             let url = "http://192.168.137.160:8080/api/auth/signup"
             var request = URLRequest(url: URL(string: url)!)
             request.httpMethod = "POST"
@@ -94,7 +94,7 @@ class signUp: UIViewController {
         })
     }
     @IBAction func signInPressButton(_ sender: UIButton) {
-        postTest()
+        postsignUp()
         if(userName.text == "") {
             let checkAgainAction = UIAlertController(title: "아이디를 확인해주세요", message: "다시 입력해주세요.", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
