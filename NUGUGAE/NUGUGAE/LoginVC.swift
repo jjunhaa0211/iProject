@@ -59,21 +59,25 @@ class loginVC: UIViewController {
             let checkAgainAction = UIAlertController(title: "password를 확인해주세요", message: "다시 입력해주세요.", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
             self.present(checkAgainAction, animated: true, completion: nil)
-        };if(userName.text != "" && password.text != ""){
-            let checkAgainAction = UIAlertController(title: "gmail과 password를 확인해주세요", message: "다시 확인해주세요", preferredStyle: .alert)
-            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
-            self.present(checkAgainAction, animated: true, completion: nil)
         };
-        if(userName.text != "") {
-            let checkAgainAction = UIAlertController(title: "gmail를 확인해주세요", message: "gamil가 틀렸습니다.", preferredStyle: .alert)
-            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
-            self.present(checkAgainAction, animated: true, completion: nil)
-        };if(password.text != "") {
-            let checkAgainAction = UIAlertController(title: "비밀번호를 확인해주세요", message: "비밀번호를 다시 입력해주세요.", preferredStyle: .alert)
-            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
-            self.present(checkAgainAction, animated: true, completion: nil)
-        };
+  ////로그인 정보가 맞을때만 작동하는 거 만들기
+//------------------------------------------------------
+        
+//        if(userName.text != "" && password.text != ""){
+//            let checkAgainAction = UIAlertController(title: "gmail과 password를 확인해주세요", message: "다시 확인해주세요", preferredStyle: .alert)
+//            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+//            self.present(checkAgainAction, animated: true, completion: nil)
+//        };
+//        if(userName.text != "") {
+//            let checkAgainAction = UIAlertController(title: "gmail를 확인해주세요", message: "gamil가 틀렸습니다.", preferredStyle: .alert)
+//            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+//            self.present(checkAgainAction, animated: true, completion: nil)
+//        };if(password.text != "") {
+//            let checkAgainAction = UIAlertController(title: "비밀번호를 확인해주세요", message: "비밀번호를 다시 입력해주세요.", preferredStyle: .alert)
+//            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+//            self.present(checkAgainAction, animated: true, completion: nil)
+//        };
+//    }
+// ------------------------------------------------------
     }
-    
 }
-
