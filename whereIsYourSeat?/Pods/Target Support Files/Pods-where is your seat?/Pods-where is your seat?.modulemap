@@ -1,0 +1,6 @@
+framework module Pods_where_is_your_seat_ {
+  umbrella header "Pods-where is your seat?-umbrella.h"
+
+  export *
+  module * { export * }
+}
