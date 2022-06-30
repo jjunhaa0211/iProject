@@ -15,10 +15,6 @@ class ViewController: UIViewController {
     var redius = 19
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loginButton.layer.cornerRadius = CGFloat(redius)
-        signUpButton.layer.cornerRadius = CGFloat(redius)
-        
     }
 
 

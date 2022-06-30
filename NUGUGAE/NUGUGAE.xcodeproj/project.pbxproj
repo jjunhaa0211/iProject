@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E4AC083286977EC00829A09 /* signUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4AC082286977EC00829A09 /* signUpVC.swift */; };
+		0E5F6030286B015200051B37 /* buyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F602F286B015200051B37 /* buyView.swift */; };
 		0E67A2432869A90000C25417 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67A2422869A90000C25417 /* LoginVC.swift */; };
 		0E9E10F42865734A0086D92C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9E10F32865734A0086D92C /* AppDelegate.swift */; };
 		0E9E10F62865734A0086D92C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9E10F52865734A0086D92C /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		0E4AC082286977EC00829A09 /* signUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpVC.swift; sourceTree = "<group>"; };
+		0E5F602F286B015200051B37 /* buyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buyView.swift; sourceTree = "<group>"; };
 		0E67A2422869A90000C25417 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0E9E10F02865734A0086D92C /* NUGUGAE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NUGUGAE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9E10F32865734A0086D92C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				0E9E10FC2865734A0086D92C /* Assets.xcassets */,
 				0E67A2422869A90000C25417 /* LoginVC.swift */,
 				0E9E10F92865734A0086D92C /* Main.storyboard */,
+				0E5F602F286B015200051B37 /* buyView.swift */,
 				0E9E10FE2865734A0086D92C /* LaunchScreen.storyboard */,
 				0E9E11012865734A0086D92C /* Info.plist */,
 			);
@@ -257,6 +260,7 @@
 				0E4AC083286977EC00829A09 /* signUpVC.swift in Sources */,
 				0E9E10F82865734A0086D92C /* ViewController.swift in Sources */,
 				0EEA225C28698D7400853FBC /* APIProvider.swift in Sources */,
+				0E5F6030286B015200051B37 /* buyView.swift in Sources */,
 				0E9E10F42865734A0086D92C /* AppDelegate.swift in Sources */,
 				0EEA22582869810000853FBC /* signUpVO.swift in Sources */,
 				0EEA225A28698D1F00853FBC /* API.swift in Sources */,
