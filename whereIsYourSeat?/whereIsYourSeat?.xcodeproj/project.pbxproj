@@ -13,11 +13,11 @@
 		0E45C8EC286D13F800B6750E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E45C8EA286D13F800B6750E /* Main.storyboard */; };
 		0E45C8EE286D13F900B6750E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E45C8ED286D13F900B6750E /* Assets.xcassets */; };
 		0E45C8F1286D13F900B6750E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E45C8EF286D13F900B6750E /* LaunchScreen.storyboard */; };
-		E863FAF363974F74B3B6DEA2 /* Pods_where_is_your_seat_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80BABCFE76E12D94DD207FA /* Pods_where_is_your_seat_.framework */; };
+		A425950C98B4A6EA9E730FC9 /* Pods_where_is_your_seat_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E893015634463D365C36222D /* Pods_where_is_your_seat_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E45C8E1286D13F800B6750E /* where is your seat?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "where is your seat?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E45C8E1286D13F800B6750E /* where is your seat?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "where is your seat?.app"; path = "/Users/junha/Desktop/IOS/Project/whereIsYourSeat?/build/Debug-iphoneos/where is your seat?.app"; sourceTree = "<absolute>"; };
 		0E45C8E4286D13F800B6750E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E45C8E6286D13F800B6750E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0E45C8E8286D13F800B6750E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,9 +25,9 @@
 		0E45C8ED286D13F900B6750E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E45C8F0286D13F900B6750E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E45C8F2286D13F900B6750E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		781EF99FCD0F2BDAE4D94F9B /* Pods-where is your seat?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where is your seat?.release.xcconfig"; path = "Target Support Files/Pods-where is your seat?/Pods-where is your seat?.release.xcconfig"; sourceTree = "<group>"; };
-		B441B11D8C53A6010EA77141 /* Pods-where is your seat?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where is your seat?.debug.xcconfig"; path = "Target Support Files/Pods-where is your seat?/Pods-where is your seat?.debug.xcconfig"; sourceTree = "<group>"; };
-		F80BABCFE76E12D94DD207FA /* Pods_where_is_your_seat_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_where_is_your_seat_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9F3AF7C74B713FB3856721 /* Pods-where is your seat?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where is your seat?.debug.xcconfig"; path = "Target Support Files/Pods-where is your seat?/Pods-where is your seat?.debug.xcconfig"; sourceTree = "<group>"; };
+		E893015634463D365C36222D /* Pods_where_is_your_seat_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_where_is_your_seat_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10924F1EB278E66FC7550F6 /* Pods-where is your seat?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where is your seat?.release.xcconfig"; path = "Target Support Files/Pods-where is your seat?/Pods-where is your seat?.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,41 +35,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E863FAF363974F74B3B6DEA2 /* Pods_where_is_your_seat_.framework in Frameworks */,
+				A425950C98B4A6EA9E730FC9 /* Pods_where_is_your_seat_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0568B72EEF11C2AF78F5A3EC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B441B11D8C53A6010EA77141 /* Pods-where is your seat?.debug.xcconfig */,
-				781EF99FCD0F2BDAE4D94F9B /* Pods-where is your seat?.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		0E45C8D8286D13F800B6750E = {
 			isa = PBXGroup;
 			children = (
 				0E45C8E3286D13F800B6750E /* where is your seat? */,
-				0E45C8E2286D13F800B6750E /* Products */,
-				0568B72EEF11C2AF78F5A3EC /* Pods */,
-				776DEF64AC7F1F0BA08A92E0 /* Frameworks */,
+				850495F2000CFACDF3F16E9F /* Pods */,
+				243C85B376DA2FEB532B6AE1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
-		};
-		0E45C8E2286D13F800B6750E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0E45C8E1286D13F800B6750E /* where is your seat?.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
 		};
 		0E45C8E3286D13F800B6750E /* where is your seat? */ = {
 			isa = PBXGroup;
@@ -86,12 +67,22 @@
 			path = "whereIsYourSeat?";
 			sourceTree = "<group>";
 		};
-		776DEF64AC7F1F0BA08A92E0 /* Frameworks */ = {
+		243C85B376DA2FEB532B6AE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F80BABCFE76E12D94DD207FA /* Pods_where_is_your_seat_.framework */,
+				E893015634463D365C36222D /* Pods_where_is_your_seat_.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		850495F2000CFACDF3F16E9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E9F3AF7C74B713FB3856721 /* Pods-where is your seat?.debug.xcconfig */,
+				F10924F1EB278E66FC7550F6 /* Pods-where is your seat?.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +131,7 @@
 				Base,
 			);
 			mainGroup = 0E45C8D8286D13F800B6750E;
-			productRefGroup = 0E45C8E2286D13F800B6750E /* Products */;
+			productRefGroup = 0E45C8D8286D13F800B6750E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -353,7 +344,7 @@
 		};
 		0E45C8F6286D13F900B6750E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B441B11D8C53A6010EA77141 /* Pods-where is your seat?.debug.xcconfig */;
+			baseConfigurationReference = 7E9F3AF7C74B713FB3856721 /* Pods-where is your seat?.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,7 +372,7 @@
 		};
 		0E45C8F7286D13F900B6750E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 781EF99FCD0F2BDAE4D94F9B /* Pods-where is your seat?.release.xcconfig */;
+			baseConfigurationReference = F10924F1EB278E66FC7550F6 /* Pods-where is your seat?.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
