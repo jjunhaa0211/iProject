@@ -37,7 +37,7 @@ class signUp: UIViewController {
         postsignUp()
     }
     func postsignUp() {
-            let url = "http://192.168.137.160:8080/api/auth/signup"
+            let url = "http://192.168.232.253:8080/api/auth/signup"
             var request = URLRequest(url: URL(string: url)!)
             request.httpMethod = "POST"
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -87,7 +87,7 @@ class signUp: UIViewController {
         ).responseData(completionHandler: {res in
             switch res.response?.statusCode {
             case 200:
-                sender.titleLabel?.text = "인증번호 확인"
+                sender.titleLabel?.text! = "인증번호 확인"
             default:
                 print(res.response?.statusCode ?? 0)
             }

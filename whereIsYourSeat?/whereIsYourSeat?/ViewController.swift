@@ -151,27 +151,27 @@ class ViewController: UIViewController {
         
         //요일 넣기
         if(str == "월"){
-        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 창체 \n2교시 : 영어\n 3교시: 수학 \n4교시 : 과학 \n5교시 : 프밍 \n6교시 : 체육 \n 7교시 : 사회", preferredStyle: .alert)
+        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 창체 \n2교시 : 영어\n3교시 : 수학 \n4교시 : 과학 \n5교시 : 프밍 \n6교시 : 체육 \n7교시 : 사회", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
             self.present(checkAgainAction, animated: true, completion: nil)
         }
         if(str == "화"){
-        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 프밍 \n2교시 : 음악\n 3교시: 사회 \n4교시 : 국어 \n5교시 : 과학 \n6교시 : 체육\n 7교시 : 컴구", preferredStyle: .alert)
+        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 프밍 \n2교시 : 음악\n3교시 : 사회 \n4교시 : 국어 \n5교시 : 과학 \n6교시 : 체육\n7교시 : 컴구", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
             self.present(checkAgainAction, animated: true, completion: nil)
         }
         if(str == "수"){
-        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 영어 \n2교시 : 수학\n 3교시: 컴구 \n4교시 : 컴구 \n5교시 : 프밍 \n6교시 : 음악\n 7교시 : 사회", preferredStyle: .alert)
+        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 영어 \n2교시 : 수학\n3교시 : 컴구 \n4교시 : 컴구 \n5교시 : 프밍 \n6교시 : 음악\n7교시 : 사회", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
             self.present(checkAgainAction, animated: true, completion: nil)
         }
         if(str == "목"){
-        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 컴구 \n2교시 : 프밍\n 3교시: 프밍 \n4교시 : 영어 \n5교시 : 수학 \n6교시 : 창체\n 7교시 : 창체", preferredStyle: .alert)
+        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 컴구 \n2교시 : 프밍\n3교시 : 프밍 \n4교시 : 영어 \n5교시 : 수학 \n6교시 : 창체\n7교시 : 창체", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
             self.present(checkAgainAction, animated: true, completion: nil)
         }
         if(str == "금"){
-        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 프밍 \n2교시 : 프밍\n 3교시: 과학 \n4교시 : 국어 \n5교시 : 음악 \n 집으로 가세요!!", preferredStyle: .alert)
+        let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 프밍 \n2교시 : 프밍\n3교시 : 과학 \n4교시 : 국어 \n5교시 : 음악\n집으로 가세요!!", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
             self.present(checkAgainAction, animated: true, completion: nil)
         }

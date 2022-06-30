@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E27F707286D937B00873BEB /* loginBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27F706286D918A00873BEB /* loginBarVC.swift */; };
 		0E45C8E5286D13F800B6750E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45C8E4286D13F800B6750E /* AppDelegate.swift */; };
 		0E45C8E7286D13F800B6750E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45C8E6286D13F800B6750E /* SceneDelegate.swift */; };
 		0E45C8E9286D13F800B6750E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45C8E8286D13F800B6750E /* ViewController.swift */; };
 		0E45C8EC286D13F800B6750E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E45C8EA286D13F800B6750E /* Main.storyboard */; };
 		0E45C8EE286D13F900B6750E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E45C8ED286D13F900B6750E /* Assets.xcassets */; };
 		0E45C8F1286D13F900B6750E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E45C8EF286D13F900B6750E /* LaunchScreen.storyboard */; };
+		0E8B2988286D943200F480B5 /* BassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B2987286D943200F480B5 /* BassVC.swift */; };
+		0E8B298A286D950300F480B5 /* teacherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B2989286D950300F480B5 /* teacherVC.swift */; };
+		0E8B298C286D955300F480B5 /* studentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B298B286D955300F480B5 /* studentVC.swift */; };
+		0E8B298E286D959A00F480B5 /* SEGUE_ID VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B298D286D959A00F480B5 /* SEGUE_ID VC.swift */; };
 		A425950C98B4A6EA9E730FC9 /* Pods_where_is_your_seat_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E893015634463D365C36222D /* Pods_where_is_your_seat_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E45C8E1286D13F800B6750E /* where is your seat?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "where is your seat?.app"; path = "/Users/junha/Desktop/IOS/Project/whereIsYourSeat?/build/Debug-iphoneos/where is your seat?.app"; sourceTree = "<absolute>"; };
+		0E27F705286D8ED900873BEB /* where is your seat?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "where is your seat?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E27F706286D918A00873BEB /* loginBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginBarVC.swift; sourceTree = "<group>"; };
 		0E45C8E4286D13F800B6750E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E45C8E6286D13F800B6750E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0E45C8E8286D13F800B6750E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +31,10 @@
 		0E45C8ED286D13F900B6750E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E45C8F0286D13F900B6750E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E45C8F2286D13F900B6750E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E8B2987286D943200F480B5 /* BassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BassVC.swift; sourceTree = "<group>"; };
+		0E8B2989286D950300F480B5 /* teacherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teacherVC.swift; sourceTree = "<group>"; };
+		0E8B298B286D955300F480B5 /* studentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentVC.swift; sourceTree = "<group>"; };
+		0E8B298D286D959A00F480B5 /* SEGUE_ID VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SEGUE_ID VC.swift"; sourceTree = "<group>"; };
 		7E9F3AF7C74B713FB3856721 /* Pods-where is your seat?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where is your seat?.debug.xcconfig"; path = "Target Support Files/Pods-where is your seat?/Pods-where is your seat?.debug.xcconfig"; sourceTree = "<group>"; };
 		E893015634463D365C36222D /* Pods_where_is_your_seat_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_where_is_your_seat_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10924F1EB278E66FC7550F6 /* Pods-where is your seat?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where is your seat?.release.xcconfig"; path = "Target Support Files/Pods-where is your seat?/Pods-where is your seat?.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +58,7 @@
 				0E45C8E3286D13F800B6750E /* where is your seat? */,
 				850495F2000CFACDF3F16E9F /* Pods */,
 				243C85B376DA2FEB532B6AE1 /* Frameworks */,
+				0E27F705286D8ED900873BEB /* where is your seat?.app */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -58,6 +69,11 @@
 				0E45C8E4286D13F800B6750E /* AppDelegate.swift */,
 				0E45C8E6286D13F800B6750E /* SceneDelegate.swift */,
 				0E45C8E8286D13F800B6750E /* ViewController.swift */,
+				0E27F706286D918A00873BEB /* loginBarVC.swift */,
+				0E8B298D286D959A00F480B5 /* SEGUE_ID VC.swift */,
+				0E8B298B286D955300F480B5 /* studentVC.swift */,
+				0E8B2989286D950300F480B5 /* teacherVC.swift */,
+				0E8B2987286D943200F480B5 /* BassVC.swift */,
 				0E45C8EA286D13F800B6750E /* Main.storyboard */,
 				0E45C8ED286D13F900B6750E /* Assets.xcassets */,
 				0E45C8EF286D13F900B6750E /* LaunchScreen.storyboard */,
@@ -81,7 +97,6 @@
 				7E9F3AF7C74B713FB3856721 /* Pods-where is your seat?.debug.xcconfig */,
 				F10924F1EB278E66FC7550F6 /* Pods-where is your seat?.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,7 +119,7 @@
 			);
 			name = "where is your seat?";
 			productName = "where is your seat?";
-			productReference = 0E45C8E1286D13F800B6750E /* where is your seat?.app */;
+			productReference = 0E27F705286D8ED900873BEB /* where is your seat?.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,9 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8B2988286D943200F480B5 /* BassVC.swift in Sources */,
 				0E45C8E9286D13F800B6750E /* ViewController.swift in Sources */,
+				0E8B298E286D959A00F480B5 /* SEGUE_ID VC.swift in Sources */,
 				0E45C8E5286D13F800B6750E /* AppDelegate.swift in Sources */,
+				0E8B298A286D950300F480B5 /* teacherVC.swift in Sources */,
 				0E45C8E7286D13F800B6750E /* SceneDelegate.swift in Sources */,
+				0E27F707286D937B00873BEB /* loginBarVC.swift in Sources */,
+				0E8B298C286D955300F480B5 /* studentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
