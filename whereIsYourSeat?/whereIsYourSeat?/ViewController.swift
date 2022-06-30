@@ -85,6 +85,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        changePlace.layer.cornerRadius = CGFloat(19)
+        schedule.layer.cornerRadius = CGFloat(19)
+        swapAAndB.layer.cornerRadius = CGFloat(19)
+        
     }
     
     @IBAction func changePlaceButton(_ sender: Any) {

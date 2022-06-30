@@ -18,7 +18,7 @@ class loginVC: UIViewController {
         postLogin()
     }
     func postLogin() {
-            let url = "http://192.168.137.160:8080/api/auth/login"
+            let url = "http://192.168.107.253:8080/api/auth/login"
             var request = URLRequest(url: URL(string: url)!)
             request.httpMethod = "POST"
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")

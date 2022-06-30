@@ -7,7 +7,7 @@
 
 import UIKit
 
-class buyView : ViewController {
+class buyView : LoginHomeVC {
     
     @IBOutlet weak var imageViewIM: UIImageView!
     

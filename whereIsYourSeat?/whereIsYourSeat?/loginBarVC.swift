@@ -7,10 +7,10 @@
 
 import UIKit
 import Toast_Swift
- 
+
 
 class loginVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
-
+    
     
     @IBOutlet weak var searchFilterSegment: UISegmentedControl!
     
@@ -112,28 +112,28 @@ class loginVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
     
     @objc func keyboardWillShow(notification: NSNotification){
         //키보드 사이즈 가져오기
-
+        
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-
+            
             if(keyboardSize.height < searchButton.frame.origin.y) {
                 print("키버드가 버튼을 덮었다.")
-
+                
                 let distance = keyboardSize.height - searchButton.frame.origin.y
                 self.view.frame.origin.y = distance + searchButton.frame.height
             }
-
+            
         }
         self.view.frame.origin.y = -100
     }
-
+    
     @objc func keyboardWillHide(){
-
+        
         self.view.frame.origin.y = 0
     }
     
     //Make - IBAction
     @IBAction func onSearchButtonClicked(_ sender: UIButton) {
-
+        
         guard let userInput = self.searchBar.text else { return }
     }
     @IBAction func searchFilterValueChanged(_ sender: UISegmentedControl) {
@@ -197,13 +197,14 @@ class loginVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
         if(inputTextCount >= 12){
             // toast with a specific duration and position
             self.view.makeToast("12자까지만 입력 가능합니다", duration: 1.0, position: .center)
-    }
+        }
         if(inputTextCount <= 12) {
             return true
         } else {
             return false
         }
         
-//        return inputTextCount <= 12
+        //        return inputTextCount <= 12
     }
+    
 }
