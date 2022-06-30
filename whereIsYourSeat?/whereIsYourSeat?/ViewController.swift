@@ -142,7 +142,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func scheduleButton(_ sender: Any) {
-        
+        //요알 넣기
         let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 창체 \n2교시 : 영어\n 3교시: 수학 \n4교시 : 과학 \n5교시 : 체육 \n6교시 : 사회", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
             self.present(checkAgainAction, animated: true, completion: nil)
