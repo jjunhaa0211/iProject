@@ -416,7 +416,7 @@
                                     <constraint firstAttribute="height" constant="2" id="y8L-lL-jdd"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbV-Xv-lLm">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbV-Xv-lLm">
                                 <rect key="frame" x="40" y="528" width="310" height="2"/>
                                 <color key="backgroundColor" red="0.8392156959" green="0.80000001190000003" blue="0.65882354970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -440,7 +440,7 @@
                         <constraints>
                             <constraint firstItem="Buj-qI-aO5" firstAttribute="top" secondItem="ahC-F2-qzx" secondAttribute="bottom" constant="137" id="1EY-j3-sbj"/>
                             <constraint firstItem="nGo-xa-XTq" firstAttribute="top" secondItem="Buj-qI-aO5" secondAttribute="bottom" constant="33" id="2zL-v8-PUF"/>
-                            <constraint firstItem="nbV-Xv-lLm" firstAttribute="top" secondItem="zeb-lh-IVD" secondAttribute="bottom" constant="72" id="3mE-sh-OmC"/>
+                            <constraint firstItem="nbV-Xv-lLm" firstAttribute="top" secondItem="zeb-lh-IVD" secondAttribute="bottom" constant="71" id="3mE-sh-OmC"/>
                             <constraint firstAttribute="trailing" secondItem="ahC-F2-qzx" secondAttribute="trailing" constant="100" id="5Jv-9b-V6R"/>
                             <constraint firstItem="Djl-QW-jfO" firstAttribute="trailing" secondItem="nGo-xa-XTq" secondAttribute="trailing" constant="40" id="5dY-9j-ji1"/>
                             <constraint firstItem="BsO-A3-P78" firstAttribute="leading" secondItem="Djl-QW-jfO" secondAttribute="leading" constant="40" id="CUz-O2-acL"/>

@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="1856.521739130435" y="75.669642857142847"/>
         </scene>
-        <!--Text Sign Up-->
+        <!--Sign Up-->
         <scene sceneID="rui-Q9-jJd">
             <objects>
-                <viewController id="LE2-Vt-tub" customClass="textSignUp" sceneMemberID="viewController">
+                <viewController id="LE2-Vt-tub" customClass="signUp" customModule="where_is_your_seat_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aii-J7-3GX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

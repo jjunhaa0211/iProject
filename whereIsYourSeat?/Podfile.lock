@@ -1,16 +1,16 @@
 PODS:
-  - SPIndicator (1.6.4)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
-  - SPIndicator
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
-    - SPIndicator
+    - Toast-Swift
 
 SPEC CHECKSUMS:
-  SPIndicator: 93e0a4fb23de51294ac48e874c0f081a5e293e4f
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: f10efd8e29b1df5c94e25694d65058780e531805
+PODFILE CHECKSUM: 29b9b547b9d067a4abb0d201f971a9035c82d668
 
 COCOAPODS: 1.11.3
