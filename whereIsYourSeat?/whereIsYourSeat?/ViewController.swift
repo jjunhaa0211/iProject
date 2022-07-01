@@ -118,6 +118,8 @@ class ViewController: UIViewController {
             i = i + 1
             totalCount = totalCount - 1
             
+            //2반은 12번은 없다
+            
 //            Label12?.text = String(ranArray[randomIndex])
 //            Label13?.text = String(ranArray[randomIndex])
 //            Label14?.text = String(ranArray[randomIndex])

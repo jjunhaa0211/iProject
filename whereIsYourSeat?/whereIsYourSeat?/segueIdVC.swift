@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SEGUE_ID {
+enum segueId {
     static let STUDENT_VC = "goToststudentVC"
     static let TEACHER_VC = "goToteacherVC"
 }

@@ -9,43 +9,42 @@ import UIKit
 import Toast_Swift
 
 
-class loginVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
+class textVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
     
     
     @IBOutlet weak var searchFilterSegment: UISegmentedControl!
     
-    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var textLoign: UITextField!
     
     @IBOutlet weak var searchIdicator: UIActivityIndicatorView!
     
     @IBOutlet weak var searchButton: UIButton!
     
-    var KeyboardDismissTabGesture : UITapGestureRecognizer = UITapGestureRecognizer(target: loginVC.self, action: nil)
+    var KeyboardDismissTabGesture : UITapGestureRecognizer = UITapGestureRecognizer(target: textVC.self, action: nil)
     //Make - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         print("FoodVC - viewDidLoad called")
         //UI설정
-        self.config()
+
     }
-    
-    
+        
     //화면이 넘어가기 전 준비 과정(prepare == 준비하다)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch(segue.identifier) {
-        case SEGUE_ID.STUDENT_VC:
+        case segueId.STUDENT_VC:
             
             let nextVC = segue.destination as! studentVC
             
-            guard let calendarInputValue = self.searchBar.text else { return }
+            guard let calendarInputValue = self.textLoign.text else { return }
             
             nextVC.vcTitle = calendarInputValue
             
-        case SEGUE_ID.TEACHER_VC:
+        case segueId.TEACHER_VC:
             
             let nextVC = segue.destination as! teacherVC
             
-            guard let exerciseInputValue = self.searchBar.text else { return }
+            guard let exerciseInputValue = self.textLoign.text else { return }
             
             nextVC.vcTitle = exerciseInputValue
             
@@ -55,30 +54,6 @@ class loginVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
         }
     }
     
-    fileprivate func config(){
-        
-        //UI 설정
-        self.searchButton.layer.cornerRadius = 10
-        
-        self.searchBar.searchBarStyle = .minimal
-        
-        self.searchBar.delegate = self
-        
-        self.KeyboardDismissTabGesture.delegate = self
-        
-        self.view.addGestureRecognizer(KeyboardDismissTabGesture)
-        
-        self.searchBar.becomeFirstResponder() //포커싱 주기
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        //키보드가 올라가는 이벤트
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardDidShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillHideNotification, object: nil)
-    }
     
     override func viewWillDisappear(_ animated: Bool){
         super.viewWillDisappear(animated)
@@ -100,7 +75,7 @@ class loginVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
             
         case 1:
             print("선생님 페이지 이동")
-            segueId = "goToExerciseInformationVC"
+            segueId = "goToteacherVC"
         default:
             print("default")
             segueId = "goToteacherVC"
@@ -116,7 +91,7 @@ class loginVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             
             if(keyboardSize.height < searchButton.frame.origin.y) {
-                print("키버드가 버튼을 덮었다.")
+                print("키보드가 버튼을 덮었다.")
                 
                 let distance = keyboardSize.height - searchButton.frame.origin.y
                 self.view.frame.origin.y = distance + searchButton.frame.height
@@ -134,65 +109,51 @@ class loginVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
     //Make - IBAction
     @IBAction func onSearchButtonClicked(_ sender: UIButton) {
         
-        guard let userInput = self.searchBar.text else { return }
+        guard let userInput = self.textLoign.text else { return }
+
     }
     @IBAction func searchFilterValueChanged(_ sender: UISegmentedControl) {
         
-        var searchBerTitle = ""
+        var textLoign = ""
         
         switch sender.selectedSegmentIndex {
             
         case 0:
-            searchBerTitle = "자리배치를 보고 시간표 확인이 가능합니다"
+            textLoign = "자리배치를 보고 시간표 확인이 가능합니다"
             
         case 1:
-            searchBerTitle = "자리를 수정하고 학생의 자리 배치를 바꿀 수 있습니다"
+            textLoign = "자리를 수정하고 학생의 자리 배치를 바꿀 수 있습니다"
             
         default:
-            searchBerTitle = "자리를 수정하고 학생의 자리 배치를 바꿀 수 있습니다"
+            textLoign = "자리를 수정하고 학생의 자리 배치를 바꿀 수 있습니다"
         }
         
-        self.searchBar.placeholder = searchBerTitle
+        self.textLoign.placeholder = textLoign
         //포커싱 주기
-        self.searchBar.becomeFirstResponder()
+        self.textLoign.becomeFirstResponder()
         //포커싱 빼기
         //self.seachButton.resignFirstResponder()
     }
     //아무 것도 적지 않으면 오류가 뜸
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    private func searchBarSearchButtonClicked(_ textField: UITextField) {
         
-        guard let userInputString = searchBar.text else { return }
+        guard let userInputString = textField.text else { return }
         
         if(userInputString.isEmpty) {
             // toast with a specific duration and position
             self.view.makeToast("검색 키워드를 입력해주세요", duration: 1.0, position: .center)
         } else {
             pushVC()
-            searchBar.resignFirstResponder()
+            textField.resignFirstResponder()
         }
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        
-        //searchBar에 값을 입력했을 때 검색이 표시됨
-        if(searchText.isEmpty){
-            self.searchButton.isHidden = true
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.01, execute: {
-                //포커싱 해제
-                searchBar.resignFirstResponder()
-            })
-        } else {
-            self.searchButton.isHidden = false
-        }
-    }
     //입력 제안 집어 넣기
-    func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+    private func textBar(_ textField: UITextField, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         
-        let inputTextCount = searchBar.text?.appending(text).count ?? 0
+        let inputTextCount = textField.text?.appending(text).count ?? 0
         
-        print("shouldChangeTextIn : \(searchBar.text?.appending(text).count ?? 0)")
+        print("shouldChangeTextIn : \(textField.text?.appending(text).count ?? 0)")
         
         if(inputTextCount >= 12){
             // toast with a specific duration and position
@@ -206,5 +167,4 @@ class loginVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
         
         //        return inputTextCount <= 12
     }
-    
 }
