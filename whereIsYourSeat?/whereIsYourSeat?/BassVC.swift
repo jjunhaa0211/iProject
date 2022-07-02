@@ -8,11 +8,10 @@
 import UIKit
 
 class BassVC : UIViewController {
-var vcTitle : String = "" {
-    didSet{
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        self.title = vcTitle
-        
-        }
     }
 }

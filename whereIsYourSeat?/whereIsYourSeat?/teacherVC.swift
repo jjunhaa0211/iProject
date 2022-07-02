@@ -9,6 +9,13 @@ import UIKit
 class teacherVC: BassVC {
 
     
+    var vcTitle : String = "" {
+        didSet{
+            self.title = vcTitle
+        }
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

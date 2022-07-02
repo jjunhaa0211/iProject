@@ -9,8 +9,7 @@ import UIKit
 import Toast_Swift
 
 
-class textVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
-    
+class textVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate, UITextFieldDelegate{
     
     @IBOutlet weak var searchFilterSegment: UISegmentedControl!
     
@@ -26,7 +25,9 @@ class textVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
         super.viewDidLoad()
         print("FoodVC - viewDidLoad called")
         //UI설정
-
+        searchButton.layer.cornerRadius = CGFloat(10)
+        
+        self.textLoign.delegate = self
     }
         
     //화면이 넘어가기 전 준비 과정(prepare == 준비하다)
@@ -34,15 +35,14 @@ class textVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
         switch(segue.identifier) {
         case segueId.STUDENT_VC:
             
-            let nextVC = segue.destination as! studentVC
-            
+            let nextVC = segue.destination as! studentMainVC
             guard let calendarInputValue = self.textLoign.text else { return }
             
             nextVC.vcTitle = calendarInputValue
             
         case segueId.TEACHER_VC:
             
-            let nextVC = segue.destination as! teacherVC
+            let nextVC = segue.destination as! teacherMainVC
             
             guard let exerciseInputValue = self.textLoign.text else { return }
             
@@ -65,24 +65,24 @@ class textVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
     //Make - fileprivate
     fileprivate func pushVC(){
         
-        var segueId : String = ""
+        var segue : String = ""
         
         switch searchFilterSegment.selectedSegmentIndex {
             
         case 0:
             print("학생 페이지 이동")
-            segueId = "goToststudentVC"
+            segue = "goToststudentVC"
             
         case 1:
             print("선생님 페이지 이동")
-            segueId = "goToteacherVC"
+            segue = "goToteacherVC"
         default:
             print("default")
-            segueId = "goToteacherVC"
+            segue = "goToteacherVC"
         }
         
         //화면 이동
-        self.performSegue(withIdentifier: segueId, sender: self)
+        self.performSegue(withIdentifier: segue, sender: self)
     }
     
     @objc func keyboardWillShow(notification: NSNotification){
@@ -107,11 +107,36 @@ class textVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
     }
     
     //Make - IBAction
+    //버튼을 클릭했을때 세그로 이동
     @IBAction func onSearchButtonClicked(_ sender: UIButton) {
         
-        guard let userInput = self.textLoign.text else { return }
+        if(textLoign.text == "") {
+            let checkAgainAction = UIAlertController(title: "이름을 입력하세요", message: "당신의 이름이 nil입니다", preferredStyle: .alert)
+            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+            self.present(checkAgainAction, animated: true, completion: nil)
+        } else {
+        
+        var segue : String = ""
+//            if(textLoign.text != nil) {
+//                let checkAgainAction = UIAlertController(title: "환영합니다", message: "누구님", preferredStyle: .alert)
+//                checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+//                self.present(checkAgainAction, animated: true, completion: nil)
+        switch searchFilterSegment.selectedSegmentIndex {
 
-    }
+        case 0:
+            print("학생 화면으로 이동")
+            segue = "goToststudentVC"
+        case 1:
+            print("선생님 화면으로 이동")
+            segue = "goToteacherVC"
+        default:
+            print("default")
+            segue = "goToteacherVC"
+            
+        }
+        self.performSegue(withIdentifier: segue, sender: self)
+        }
+}
     @IBAction func searchFilterValueChanged(_ sender: UISegmentedControl) {
         
         var textLoign = ""
@@ -146,25 +171,5 @@ class textVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate{
             pushVC()
             textField.resignFirstResponder()
         }
-    }
-    
-    //입력 제안 집어 넣기
-    private func textBar(_ textField: UITextField, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        
-        let inputTextCount = textField.text?.appending(text).count ?? 0
-        
-        print("shouldChangeTextIn : \(textField.text?.appending(text).count ?? 0)")
-        
-        if(inputTextCount >= 12){
-            // toast with a specific duration and position
-            self.view.makeToast("12자까지만 입력 가능합니다", duration: 1.0, position: .center)
-        }
-        if(inputTextCount <= 12) {
-            return true
-        } else {
-            return false
-        }
-        
-        //        return inputTextCount <= 12
     }
 }

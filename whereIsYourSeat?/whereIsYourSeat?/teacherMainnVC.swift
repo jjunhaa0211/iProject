@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class teacherMainVC: BassVC {
 
 //sell View
 //---------------------------------------------
@@ -82,6 +82,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var swapAAndB: UIButton!
     
 //---------------------------------------------
+    
+    var vcTitle : String = "" {
+        didSet{
+            self.title = vcTitle
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -181,6 +188,10 @@ class ViewController: UIViewController {
         let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 프밍 \n2교시 : 프밍\n3교시 : 과학 \n4교시 : 국어 \n5교시 : 음악\n집으로 가세요!!", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
             self.present(checkAgainAction, animated: true, completion: nil)
+        } else {
+            let checkAgainAction = UIAlertController(title: "시간표", message: "1교시 : 코딩 \n2교시 : 코딩\n3교시 : 코딩 \n4교시 : 코딩 \n5교시 : 코딩\n깃허브 하세요!!", preferredStyle: .alert)
+                checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+                self.present(checkAgainAction, animated: true, completion: nil)
         }
     };
 }
