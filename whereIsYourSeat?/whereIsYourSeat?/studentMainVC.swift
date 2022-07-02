@@ -96,7 +96,6 @@ class studentMainVC: BassVC {
         changePlace.layer.cornerRadius = CGFloat(19)
         schedule.layer.cornerRadius = CGFloat(19)
         swapAAndB.layer.cornerRadius = CGFloat(19)
-        
     }
     
     @IBAction func changePlaceButton(_ sender: Any) {
@@ -197,5 +196,8 @@ class studentMainVC: BassVC {
                 self.present(checkAgainAction, animated: true, completion: nil)
         }
     };
+    @IBAction func wButton(_ sender: Any) {
+        print("버튼이 절상적으로 실행된다")
+    }
 }
 

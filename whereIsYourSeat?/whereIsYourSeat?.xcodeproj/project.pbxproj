@@ -34,7 +34,7 @@
 		0E8B2987286D943200F480B5 /* BassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BassVC.swift; sourceTree = "<group>"; };
 		0E8B298D286D959A00F480B5 /* segueIdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = segueIdVC.swift; sourceTree = "<group>"; };
 		0EBB5DB6286EC1EC00C19EA0 /* signUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
-		0EEB711B287064C80043FD16 /* studentMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentMainVC.swift; sourceTree = "<group>"; };
+		0EEB711B287064C80043FD16 /* studentMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentMainVC.swift; sourceTree = "<group>"; usesTabs = 0; };
 		7E9F3AF7C74B713FB3856721 /* Pods-where is your seat?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where is your seat?.debug.xcconfig"; path = "Target Support Files/Pods-where is your seat?/Pods-where is your seat?.debug.xcconfig"; sourceTree = "<group>"; };
 		E893015634463D365C36222D /* Pods_where_is_your_seat_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_where_is_your_seat_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10924F1EB278E66FC7550F6 /* Pods-where is your seat?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where is your seat?.release.xcconfig"; path = "Target Support Files/Pods-where is your seat?/Pods-where is your seat?.release.xcconfig"; sourceTree = "<group>"; };
