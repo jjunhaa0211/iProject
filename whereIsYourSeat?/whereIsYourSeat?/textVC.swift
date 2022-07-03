@@ -127,8 +127,16 @@ class textVC: BassVC, UISearchBarDelegate,UIGestureRecognizerDelegate, UITextFie
             print("학생 화면으로 이동")
             segue = "goToststudentVC"
         case 1:
-            print("선생님 화면으로 이동")
-            segue = "goToteacherVC"
+            if(textLoign.text == "정은진" || textLoign.text == "오상진") {
+                print("선생님 화면으로 이동")
+                segue = "goToteacherVC"
+            } else if(textLoign.text != "정은진" || textLoign.text == "오상진") {
+                let checkAgainAction = UIAlertController(title: "당신에게는 권한이 없습니다", message: "이름을 다시 확인해주세요", preferredStyle: .alert)
+                checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+                self.present(checkAgainAction, animated: true, completion: nil)
+                segue = "goToteacherVC"
+            }
+            
         default:
             print("default")
             segue = "goToteacherVC"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ETW-Gm-fB2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8wQ-cY-P1x">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -78,6 +78,8 @@
                         <outlet property="searchFilterSegment" destination="l7C-0k-Wke" id="Qll-nP-rdh"/>
                         <outlet property="searchIdicator" destination="WRK-yz-gcL" id="Qt7-RF-MYp"/>
                         <outlet property="textLoign" destination="XNG-zx-3tm" id="lAA-kk-bTP"/>
+                        <segue destination="UpH-4U-oZ8" kind="show" identifier="goToststudentVC" id="9bj-1m-Fa5"/>
+                        <segue destination="ETW-Gm-fB2" kind="show" identifier="goToteacherVC" id="n5j-8T-Rl5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vxh-Gy-WuZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -168,7 +170,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="person.2.fill" catalog="system" title=""/>
                             </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="OLf-ex-TWE">
-                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="40Z-Og-UMq"/>
                                     <constraint firstAttribute="height" constant="51" id="7Cq-BY-NMf"/>
@@ -992,6 +994,7 @@
                             <constraint firstItem="Pug-Bl-IDr" firstAttribute="leading" secondItem="AKW-Lg-iJk" secondAttribute="leading" constant="157" id="yKj-NU-7Bm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="EQA-Ff-ApX"/>
                     <connections>
                         <outlet property="Label11" destination="aK4-W6-58n" id="LFv-2e-eWp"/>
                         <outlet property="Label12" destination="Hp2-8O-k3t" id="4tO-ii-Axb"/>
@@ -1934,6 +1937,7 @@
                             <constraint firstItem="SwC-uc-rH9" firstAttribute="top" secondItem="YR7-kc-CPh" secondAttribute="bottom" constant="30" id="yEq-rZ-G7t"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2Ib-UH-uwB"/>
                     <connections>
                         <outlet property="Label11" destination="5VX-NO-55l" id="gPW-gY-4Jr"/>
                         <outlet property="Label12" destination="oXA-LF-dRm" id="Iov-fk-Mdw"/>
