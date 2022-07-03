@@ -80,6 +80,7 @@ class teacherMainVC: BassVC {
     @IBOutlet weak var changePlace: UIButton!
     @IBOutlet weak var schedule: UIButton!
     @IBOutlet weak var swapAAndB: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
     
 //---------------------------------------------
     
@@ -96,6 +97,7 @@ class teacherMainVC: BassVC {
         changePlace.layer.cornerRadius = CGFloat(19)
         schedule.layer.cornerRadius = CGFloat(19)
         swapAAndB.layer.cornerRadius = CGFloat(19)
+        saveButton.layer.cornerRadius = CGFloat(10)
         
     }
     
@@ -193,5 +195,9 @@ class teacherMainVC: BassVC {
                 self.present(checkAgainAction, animated: true, completion: nil)
         }
     };
+    
+    @IBAction func checkSaveButton(_ sender: Any) {
+        print("값이 정상적으로 저장되었습니다")
+    }
 }
 
