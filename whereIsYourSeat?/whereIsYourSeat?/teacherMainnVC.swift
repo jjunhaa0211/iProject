@@ -102,10 +102,9 @@ class teacherMainVC: BassVC {
     @IBAction func changePlaceButton(_ sender: Any) {
         
         var totalCount = 18
-        var gemCard = 1
         var ranArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
         
-            var Lalels = [Label11,Label12,Label13,Label14,
+        let Lalels = [Label11,Label12,Label13,Label14,
                           Label21,Label22,Label23,Label24,
                           Label31,Label32,Label33,Label34,
                           Label41,Label42,Label43,Label44,
