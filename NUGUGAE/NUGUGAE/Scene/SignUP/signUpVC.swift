@@ -24,20 +24,20 @@ class signUp: UIViewController {
     
     var httpClient = HTTPClient()
     
-    var radius = 22
+    var radius = 19
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewDidLoad - signUpVC")
         SendVerificationCode.titleLabel?.text = "인증번호 받기"
         // Do any additional setup after loading the view.
         userName.layer.cornerRadius = CGFloat(radius)
         userPasssword.layer.cornerRadius =
         CGFloat(radius)
         signUpButton.layer.cornerRadius =
-        CGFloat(15)
-        postsignUp()
+        CGFloat(radius)
     }
     func postsignUp() {
-            let url = "http://192.168.107.253:8080/api/auth"
+            let url = "http://192.168.137.232:9090/api/auth/signup"
             var request = URLRequest(url: URL(string: url)!)
             request.httpMethod = "POST"
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -65,21 +65,21 @@ class signUp: UIViewController {
                 }
             }
         }
-    func signup(email: String, password: String, nickName: String,emailCheckCode: String,userType: String) {
-        httpClient.post(
-            url: AuthAPI.signup.path(),
-            params: ["email": email, "emailCheckCode": emailCheckCode, "pw": password, "name": nickName, "userType": userType],
-            header: Header.tokenIsEmpty.header()
-        ).responseData(completionHandler: { res in
-            switch res.response?.statusCode {
-            case 200:
-                self.navigationController?.popViewController(animated: true)
-            default:
-                print(res.response?.statusCode ?? 0)
-            }
-        })
-    }
-    
+//    func signup(email: String, password: String, nickName: String,emailCheckCode: String,userType: String) {
+//        httpClient.post(
+//            url: AuthAPI.signup.path(),
+//            params: ["email": email, "emailCheckCode": emailCheckCode, "pw": password, "name": nickName, "userType": userType],
+//            header: Header.tokenIsEmpty.header()
+//        ).responseData(completionHandler: { res in
+//            switch res.response?.statusCode {
+//            case 200:
+//                self.navigationController?.popViewController(animated: true)
+//            default:
+//                print(res.response?.statusCode ?? 0)
+//            }
+//        })
+//    }
+//
     @IBAction func SendVerificationCodeButton(_ sender: UIButton) {
         httpClient.post(
             url: AuthAPI.emailcheck.path() + "?email="+userEmail.text!,

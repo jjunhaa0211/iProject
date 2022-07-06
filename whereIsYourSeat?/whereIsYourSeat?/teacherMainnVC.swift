@@ -64,7 +64,7 @@ class teacherMainVC: BassVC {
     @IBOutlet weak var Label44: UILabel?
     
     @IBOutlet weak var Label51: UILabel?
-    @IBOutlet weak var Label52: UILabel?
+    @IBOutlet weak var Label52: UILabel? //
     @IBOutlet weak var Label53: UILabel?
     @IBOutlet weak var Label54: UILabel?
     
@@ -103,6 +103,11 @@ class teacherMainVC: BassVC {
     
     @IBAction func changePlaceButton(_ sender: Any) {
         
+        //키로 String을 사용합니다.
+        let myUserDefaults = UserDefaults.standard
+        
+        let floatKeyForUserDefault = "floatKey"
+        
         var totalCount = 18
         var ranArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
         
@@ -122,39 +127,20 @@ class teacherMainVC: BassVC {
             Lalels[i]?.text = String(ranArray[randomIndex])
             
             ranArray.remove(at: randomIndex)
-        
+            
             i = i + 1
             totalCount = totalCount - 1
             
             //2반은 12번은 없다
+            Label53?.text = "nil"
+            Label54?.text = "nil"
+            Label61?.text = "nil"
+            Label62?.text = "nil"
+            Label63?.text = "nil"
+            Label64?.text = "nil"
             
-//            Label12?.text = String(ranArray[randomIndex])
-//            Label13?.text = String(ranArray[randomIndex])
-//            Label14?.text = String(ranArray[randomIndex])
-//            Label21?.text = String(ranArray[randomIndex])
-//            Label22?.text = String(ranArray[randomIndex])
-//            Label23?.text = String(ranArray[randomIndex])
-//            Label24?.text = String(ranArray[randomIndex])
-//            Label31?.text = String(ranArray[randomIndex])
-//            Label32?.text = String(ranArray[randomIndex])
-//            Label33?.text = String(ranArray[randomIndex])
-//            Label34?.text = String(ranArray[randomIndex])
-//            Label41?.text = String(ranArray[randomIndex])
-//            Label42?.text = String(ranArray[randomIndex])
-//            Label43?.text = String(ranArray[randomIndex])
-//            Label44?.text = String(ranArray[randomIndex])
-//            Label51?.text = String(ranArray[randomIndex])
-//            Label52?.text = String(ranArray[randomIndex])
-//            Label53?.text = String(ranArray[randomIndex])
-//            Label54?.text = String(ranArray[randomIndex])
-//            Label61?.text = String(ranArray[randomIndex])
-//            Label62?.text = String(ranArray[randomIndex])
-//            Label63?.text = String(ranArray[randomIndex])
-//            Label64?.text = String(ranArray[randomIndex])
         }
-        
     }
-    
     @IBAction func scheduleButton(_ sender: Any) {
         
         let nowDate = Date() // 현재의 Date (ex: 2020-08-13 09:14:48 +0000)
@@ -197,7 +183,39 @@ class teacherMainVC: BassVC {
     };
     
     @IBAction func checkSaveButton(_ sender: Any) {
+        
         print("값이 정상적으로 저장되었습니다")
+        var i = 0
+        
+        let floatKeyForUserDefault = "floatKey"
+        
+        while(18 >= 1) {
+            
+            
+            i = i + 1
+            
+            //6자리가 빈다
+            Label53?.text = "nil"
+            Label54?.text = "nil"
+            Label61?.text = "nil"
+            Label62?.text = "nil"
+            Label63?.text = "nil"
+            Label64?.text = "nil"
+            
+        }
+    }
+    @IBAction func iceButton(_ sender: Any) {
+        
+        let checkAgainAction = UIAlertController(title: "학생이 춥습니다", message: "자리 바꿈을 요청했습니다", preferredStyle: .alert)
+            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+            self.present(checkAgainAction, animated: true, completion: nil)
+        }
+    @IBAction func hotButton(_ sender: Any) {
+        
+        let checkAgainAction = UIAlertController(title: "학생이 덥습니다", message: "자리 바꿈을 요청했습니다", preferredStyle: .alert)
+            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+            self.present(checkAgainAction, animated: true, completion: nil)
+        
     }
 }
 

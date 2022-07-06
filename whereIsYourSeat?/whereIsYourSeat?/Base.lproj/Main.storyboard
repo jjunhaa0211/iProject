@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ETW-Gm-fB2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8wQ-cY-P1x">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -121,6 +121,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="X1b-fB-omI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypW-w4-GZS">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -128,6 +131,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="omz-6x-nyJ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqO-qi-TqH">
                                         <rect key="frame" x="14" y="8" width="42" height="21"/>
@@ -209,6 +215,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
                                         <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="ilM-aV-b4c"/>
                                             <action selector="wButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="tn1-1Q-7cp"/>
                                         </connections>
                                     </button>
@@ -218,6 +225,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="Y25-FZ-abt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -243,6 +253,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="M9J-cE-shh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVe-tn-WvU">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -250,6 +263,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="0ct-U6-cm8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -275,6 +291,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="Y38-pr-6Bb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk5-cL-lw4">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -282,6 +301,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="y2h-nk-2b3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -307,6 +329,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="Csz-kh-6DY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnW-Rg-GTI">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -314,6 +339,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="u8i-Xs-9VM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -339,6 +367,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="WNF-Af-Iqy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAK-Ic-069">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -346,6 +377,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="aia-7u-eiO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -371,6 +405,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="2dd-CC-7EJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeg-Sn-Dm9">
                                         <rect key="frame" x="35" y="39" width="35" height="31"/>
@@ -378,6 +415,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="xWz-hg-jpa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -403,6 +443,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="Y35-Bd-NHL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9o-Vr-The">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -410,6 +453,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="Vue-aj-zqr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -435,6 +481,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="HEB-VH-90k"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryc-HZ-Pzf">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -442,6 +491,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="gln-oA-L3d"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -467,6 +519,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="K71-ch-fxF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1d-ca-yYZ">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -474,6 +529,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="o63-rK-11j"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -499,6 +557,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="X0k-cR-ajs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfS-DH-gdY">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -506,6 +567,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="zkJ-e9-URc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -531,6 +595,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="dHU-0v-KqO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8e-Ae-PNb">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -538,6 +605,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="dTX-Rh-1FS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -563,6 +633,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="jSE-XD-3X3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwA-Gq-x8r">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -570,6 +643,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="t9g-mh-LuW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -595,6 +671,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="eKp-zG-V9Y"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIq-YN-Snz">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -602,6 +681,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="DaP-GQ-VLX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -627,6 +709,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="PA9-d3-WsK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkR-pR-1zZ">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -634,6 +719,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="IP0-2v-WLH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -659,6 +747,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="Jhx-Es-CGB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWq-cW-ves">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -666,6 +757,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="IUx-Te-RKq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -691,6 +785,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="adb-xM-FWR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYC-kx-FOT">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -698,6 +795,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="Og4-e9-TlR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -723,6 +823,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="ukC-Ne-yOv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBL-qQ-XAr">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -730,6 +833,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="eTo-ch-Qmh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -755,6 +861,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="3Xd-mH-iEf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwG-xL-awG">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -762,6 +871,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="od7-zL-eMi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -787,6 +899,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="gOb-PV-B0C"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yY-sJ-ze3">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -794,6 +909,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="em3-ef-SeM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -819,6 +937,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="nON-WH-Qup"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hba-Lr-yJ6">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -826,6 +947,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="Rna-bp-fXO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -851,6 +975,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="ENW-ow-IId"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugK-Yz-7Pk">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -858,6 +985,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="doi-BV-R6r"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -883,6 +1013,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="GS2-cN-iVB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjA-IG-A5L">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -890,6 +1023,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="Tb0-qk-ySk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -915,6 +1051,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="fue-ge-A1S"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgc-er-7q7">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -922,6 +1061,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="UpH-4U-oZ8" eventType="touchUpInside" id="hNS-uj-hgK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1070,6 +1212,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="V64-GN-G3I"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddJ-Su-X0x">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1077,6 +1222,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="fxA-Zg-Smh"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCg-V8-v4z">
                                         <rect key="frame" x="14" y="8" width="42" height="21"/>
@@ -1117,6 +1265,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="person.2.fill" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="onebutton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="z7p-Y7-0QC"/>
+                                </connections>
                             </button>
                             <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b48-K2-d50">
                                 <rect key="frame" x="0.0" y="44" width="414" height="51"/>
@@ -1157,6 +1308,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="qfR-2M-TpP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWQ-ro-5lN">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1164,6 +1318,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="Ayn-Sw-yHu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1189,6 +1346,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="E4K-gg-XvX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QII-ev-SVO">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1196,6 +1356,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="tY9-dd-L2Q"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1221,6 +1384,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="3Zb-kJ-BqH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7O-nF-T85">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1228,6 +1394,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="kWB-bl-xfc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1253,6 +1422,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="s7k-Zx-gVa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heF-oS-Q6b">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1260,6 +1432,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="tGi-GX-fgf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1285,6 +1460,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="0Ru-VE-GdZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-JY-POq">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1292,6 +1470,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="oHR-fW-cEp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1317,6 +1498,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="k5q-HZ-bR1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7im-Pi-d39">
                                         <rect key="frame" x="35" y="39" width="35" height="31"/>
@@ -1324,6 +1508,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="v73-D0-rkN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1349,6 +1536,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="JIV-Bf-syQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTK-nV-v6R">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1356,6 +1546,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="7GL-42-dL2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1381,6 +1574,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="JGa-v0-f84"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gv-Qa-PhU">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1388,6 +1584,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="wSp-5g-QG5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1413,6 +1612,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="d4L-LY-oKU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxi-Gs-0cg">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1420,6 +1622,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="nJt-0N-XGk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1445,6 +1650,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="rdY-cj-EDU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDv-xL-SsO">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1452,6 +1660,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="TH8-j1-gbt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1477,6 +1688,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="tR7-yE-hnP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzo-6G-feq">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1484,6 +1698,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="AU6-CD-pul"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1509,6 +1726,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="xit-oV-8dt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2du-WJ-oVH">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1516,6 +1736,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="H1K-ri-3NO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1541,6 +1764,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="ymg-6M-Yje"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0X-US-wnm">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1548,6 +1774,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="PEX-D4-BN2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1573,6 +1802,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="OJl-Op-KlO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O03-HO-mC7">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1580,6 +1812,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="NOH-or-24r"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1605,6 +1840,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="SO7-2C-dD6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8B-Ba-BqL">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1612,6 +1850,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="cDl-8X-dYY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1637,6 +1878,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="qis-ua-HBZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OX-rr-Au5">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1644,6 +1888,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="kMn-XD-NRW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1669,6 +1916,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="9mp-2o-88g"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTM-BN-NCy">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1676,6 +1926,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="Mvb-0e-r8O"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1701,6 +1954,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="9Oc-m3-boS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fz-mn-lQc">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1708,6 +1964,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="fr0-xb-1Rf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1733,6 +1992,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="K4n-Vm-rbi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUx-ZB-wtZ">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1740,6 +2002,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="tMp-Hz-eWc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1765,6 +2030,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="D6d-yZ-MXk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC2-oB-tlp">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1772,6 +2040,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="5Yv-hS-7Ch"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1797,6 +2068,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="haw-kb-HtG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4z-gQ-qXA">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1804,6 +2078,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="0H2-K4-sK4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1829,6 +2106,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="adS-yG-xZH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WL-b6-4oI">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1836,6 +2116,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="46C-sl-too"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
@@ -1861,6 +2144,9 @@
                                         <color key="tintColor" systemColor="systemCyanColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="snowflake.circle" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="iceButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="ywD-a5-ciM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hs-Ua-0Cm">
                                         <rect key="frame" x="35" y="37" width="35" height="31"/>
@@ -1868,6 +2154,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="sun.min" catalog="system" title=""/>
+                                        <connections>
+                                            <action selector="hotButton:" destination="ETW-Gm-fB2" eventType="touchUpInside" id="vEy-Nn-vCT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>

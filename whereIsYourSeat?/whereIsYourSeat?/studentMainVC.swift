@@ -196,8 +196,18 @@ class studentMainVC: BassVC {
                 self.present(checkAgainAction, animated: true, completion: nil)
         }
     };
-    @IBAction func wButton(_ sender: Any) {
-        print("버튼이 절상적으로 실행된다")
+    @IBAction func iceButton(_ sender: Any) {
+        
+        let checkAgainAction = UIAlertController(title: "선생님에게 전송완료", message: "허가가 떨어질때까지 참으세요", preferredStyle: .alert)
+            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+            self.present(checkAgainAction, animated: true, completion: nil)
+        }
+    @IBAction func hotButton(_ sender: Any) {
+        
+        let checkAgainAction = UIAlertController(title: "학생이 덥습니다", message: "자리 바꿈을 요청했습니다", preferredStyle: .alert)
+            checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
+            self.present(checkAgainAction, animated: true, completion: nil)
+        
     }
 }
 

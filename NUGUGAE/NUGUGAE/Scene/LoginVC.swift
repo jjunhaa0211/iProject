@@ -12,13 +12,14 @@ class loginVC: UIViewController {
     
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var signInBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        postLogin()
+        print("viewDidLoad - LoginVC")
+        signInBtn.layer.cornerRadius = CGFloat(19)
     }
     func postLogin() {
-            let url = "http://192.168.107.253:8080/api/auth/login"
+            let url = "http://192.168.137.232:9090/api/auth/login"
             var request = URLRequest(url: URL(string: url)!)
             request.httpMethod = "POST"
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
