@@ -13,13 +13,14 @@ class loginVC: UIViewController {
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var signInBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad - LoginVC")
         signInBtn.layer.cornerRadius = CGFloat(19)
     }
     func postLogin() {
-            let url = "http://192.168.137.232:9090/api/auth/login"
+            let url = "http://192.168.210.253:8080/api/auth/login"
             var request = URLRequest(url: URL(string: url)!)
             request.httpMethod = "POST"
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -40,6 +41,15 @@ class loginVC: UIViewController {
                 switch response.result {
                 case .success:
                     print("POST 성공")
+                    if let userDate = try? JSONDecoder().decode(TokenModel.self, from: response.data!) {
+                        KeyChain.create(key: Token.accessToken, token: userDate.access_token)
+                        KeyChain.create(key: Token.refreshToken, token: userDate.resfresh_token)
+                        print("로그인 성공😁")
+                        if let removable = self.view.viewWithTag(102) {
+                            removable.removeFromSuperview()
+                        }
+                    } else { print("ㅗㅗㅗㅗㅗ") }
+                    print("🤑POST 성공")
                 case .failure(let error):
                     print("🚫 Alamofire Request Error\nCode:\(error._code), Message: \(error.errorDescription!)")
                 }
