@@ -140,40 +140,8 @@ class FoodVC: BassVC,UISearchBarDelegate,UIGestureRecognizerDelegate{
 //        let url = API.BASE_URL + "search/photos"
 //
         guard let userInput = self.searchBar.text else { return }
-//
-//        //키 벨류 형식 딕셔너리
-//        let queryParam = ["query" : userInput, "client_id" : API.CLIENT_ID]
-        
-//        AF.request(url, method: .get,parameters: queryParam)
-//            .responseJSON(completionHandler: { response in
-//            debugPrint(response)
-//
-//        })
-//
-//        var urlTocall : URLRequestConvertible?
-//
-//        switch searchFilterSegment.selectedSegmentIndex {
-//
-//        case 0:
-//            urlTocall = MysearchRouter.searchPhotos(term: userInput)
-//        case 1:
-//            urlTocall = MysearchRouter.searchUsers(term: userInput)
-//        default:
-//            print("default")
-//        }
-//
-//        if let urlConvertible = urlTocall {
-//            MyAPIManager
-//                .shared
-//                .session
-//                .request(urlConvertible)
-//                .validate(statusCode: 200..<401)
-//                .responseJSON(completionHandler: { response in
-////                debugPrint(response)
-//            })
-//        }
-  //      pushVC()
     }
+        
     @IBAction func searchFilterValueChanged(_ sender: UISegmentedControl) {
         
         var searchBerTitle = ""

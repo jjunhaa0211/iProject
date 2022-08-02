@@ -101,7 +101,7 @@
                                             <segment title="운동 종류"/>
                                         </segments>
                                         <connections>
-                                            <action selector="searchFilterValueChanged:" destination="hEF-ma-Mpv" eventType="valueChanged" id="z0N-eN-uDg"/>
+                                            <action selector="searchFilterValueChanged:" destination="hEF-ma-Mpv" eventType="valueChanged" id="4cB-Ti-Nta"/>
                                         </connections>
                                     </segmentedControl>
                                     <searchBar contentMode="redraw" text="" placeholder="음식 칼로리 입력" translatesAutoresizingMaskIntoConstraints="NO" id="arP-wO-eL0">
