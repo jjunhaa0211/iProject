@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		0E597D382899643500F4BB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E597D372899643500F4BB3A /* AppDelegate.swift */; };
 		0E597D3A2899643500F4BB3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E597D392899643500F4BB3A /* SceneDelegate.swift */; };
-		0E597D3C2899643500F4BB3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E597D3B2899643500F4BB3A /* ViewController.swift */; };
 		0E597D3F2899643500F4BB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E597D3D2899643500F4BB3A /* Main.storyboard */; };
 		0E597D412899643600F4BB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E597D402899643600F4BB3A /* Assets.xcassets */; };
 		0E597D442899643600F4BB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E597D422899643600F4BB3A /* LaunchScreen.storyboard */; };
+		0E597D4C289A0A8E00F4BB3A /* SybolRollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E597D4B289A0A8E00F4BB3A /* SybolRollerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E597D342899643500F4BB3A /* sybolRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sybolRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E597D372899643500F4BB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E597D392899643500F4BB3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E597D3B2899643500F4BB3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E597D3E2899643500F4BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E597D402899643600F4BB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E597D432899643600F4BB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E597D452899643600F4BB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E597D4B289A0A8E00F4BB3A /* SybolRollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolRollerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				0E597D372899643500F4BB3A /* AppDelegate.swift */,
 				0E597D392899643500F4BB3A /* SceneDelegate.swift */,
-				0E597D3B2899643500F4BB3A /* ViewController.swift */,
 				0E597D3D2899643500F4BB3A /* Main.storyboard */,
+				0E597D4B289A0A8E00F4BB3A /* SybolRollerViewController.swift */,
 				0E597D402899643600F4BB3A /* Assets.xcassets */,
 				0E597D422899643600F4BB3A /* LaunchScreen.storyboard */,
 				0E597D452899643600F4BB3A /* Info.plist */,
@@ -138,9 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E597D3C2899643500F4BB3A /* ViewController.swift in Sources */,
 				0E597D382899643500F4BB3A /* AppDelegate.swift in Sources */,
 				0E597D3A2899643500F4BB3A /* SceneDelegate.swift in Sources */,
+				0E597D4C289A0A8E00F4BB3A /* SybolRollerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
