@@ -247,6 +247,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonCity" destination="rMU-oM-NJZ" id="4W8-zX-N22"/>
                         <outlet property="cityLabel" destination="iYD-KX-n3Q" id="Bm0-m6-R9Q"/>
                         <outlet property="temperatureLable" destination="v0f-cq-x8g" id="mvU-Ij-FNg"/>
                         <outlet property="weatherImageView" destination="eLa-lM-ugE" id="okV-TA-7Jg"/>

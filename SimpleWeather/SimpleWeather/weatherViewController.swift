@@ -12,9 +12,10 @@ class weatherViewController: UIViewController {
     @IBOutlet var cityLabel: UILabel!
     @IBOutlet var weatherImageView: UIImageView!
     @IBOutlet var temperatureLable: UILabel!
+    @IBOutlet var buttonCity: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        buttonCity.layer.cornerRadius = 20
     }
     
     let cities = ["Seoul","Tokyo","LA","Seattle"]
@@ -31,7 +32,7 @@ class weatherViewController: UIViewController {
         weatherImageView.image = UIImage(systemName: imageName!)?.withRenderingMode(.alwaysOriginal)
         
         let randomTemp = Int.random(in: 10..<30)
-        temperatureLable.text = "\(randomTemp)"
+        temperatureLable.text = "\(randomTemp)°"
         print("도시, 온도, 날씨이미지 변경")
     }
 }
