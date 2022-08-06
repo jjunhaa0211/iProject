@@ -17,10 +17,16 @@ class SybolRollerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = UIImage(systemName: "cloud")
+        reload()
+    }
+    
+    func reload(){
+        let symbol = sybols.randomElement()
+        imageView.image = UIImage(systemName: symbol!)
+        label.text = symbol
     }
 
     @IBAction func buttonTapped(_ sender: Any) {
-        print("와 눌렸다...")
+        reload()
     }
 }
