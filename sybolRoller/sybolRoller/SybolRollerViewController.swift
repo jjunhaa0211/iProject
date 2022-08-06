@@ -18,6 +18,7 @@ class SybolRollerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         reload()
+        button.tintColor = UIColor.systemRed
     }
     
     func reload(){
