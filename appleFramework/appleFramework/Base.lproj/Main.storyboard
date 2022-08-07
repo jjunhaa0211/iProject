@@ -20,7 +20,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iAp-h6-xuh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Axv-Jb-DQg">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Axv-Jb-DQg">
                                     <size key="itemSize" width="128" height="174"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -40,8 +40,8 @@
                                                         <constraint firstAttribute="width" secondItem="js7-O7-Sk1" secondAttribute="height" multiplier="1:1" id="79P-MO-9CB"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoreML  CoreML" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30X-kq-Rth">
-                                                    <rect key="frame" x="10" y="129.5" width="108" height="38.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoreML " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30X-kq-Rth">
+                                                    <rect key="frame" x="10" y="134.5" width="108" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                             <constraints>
                                                 <constraint firstItem="30X-kq-Rth" firstAttribute="centerX" secondItem="fvW-l7-jkf" secondAttribute="centerX" id="11y-YP-Mfg"/>
                                                 <constraint firstAttribute="trailing" secondItem="js7-O7-Sk1" secondAttribute="trailing" id="SlG-dc-khj"/>
-                                                <constraint firstAttribute="bottom" secondItem="30X-kq-Rth" secondAttribute="bottom" constant="6" id="eUY-3I-1af"/>
+                                                <constraint firstAttribute="bottom" secondItem="30X-kq-Rth" secondAttribute="bottom" constant="20" id="eUY-3I-1af"/>
                                                 <constraint firstItem="30X-kq-Rth" firstAttribute="leading" secondItem="fvW-l7-jkf" secondAttribute="leading" constant="10" id="f3K-Zf-924"/>
                                                 <constraint firstItem="js7-O7-Sk1" firstAttribute="leading" secondItem="fvW-l7-jkf" secondAttribute="leading" id="rOb-SN-Cap"/>
                                                 <constraint firstItem="js7-O7-Sk1" firstAttribute="top" secondItem="fvW-l7-jkf" secondAttribute="top" id="rmL-XU-2q8"/>
@@ -74,6 +74,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iAp-h6-xuh" secondAttribute="trailing" id="iNG-DZ-xhq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="iAp-h6-xuh" id="my9-hD-XgJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
