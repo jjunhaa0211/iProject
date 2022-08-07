@@ -11,12 +11,17 @@ class ChatListViewController: UIViewController {
 
     @IBOutlet var collectionVIew: UICollectionView!
     
-    let chatList : [Chat] = Chat.list
+    var chatList : [Chat] = Chat.list
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionVIew.dataSource = self
         collectionVIew.delegate = self
+        
+        //비교를해서 날짜순서로 출력하기
+        chatList = chatList.sorted(by: { chat1, chat2 in
+            return chat1.date > chat2.date
+        })
     }
 }
 
