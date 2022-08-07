@@ -16,6 +16,9 @@ class FrameworkListViewController: UIViewController {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
+        
+        //패딩을 주는 코드
+        collectionView.contentInset = UIEdgeInsets(top: 10, left: 16, bottom: 0, right: 10)
     }
 }
 
@@ -39,8 +42,9 @@ extension FrameworkListViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let interItemSpacing: CGFloat = 10
+        let padding: CGFloat = 16
         
-        let width = (collectionView.bounds.width - interItemSpacing * 2) / 3
+        let width = (collectionView.bounds.width - interItemSpacing * 2 - padding * 2) / 3
         
         let height = width * 1.5
         return CGSize(width: width, height: height)
