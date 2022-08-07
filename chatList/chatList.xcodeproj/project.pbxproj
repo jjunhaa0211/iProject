@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		0E5B2603289F7E4700036A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B2602289F7E4700036A3F /* AppDelegate.swift */; };
 		0E5B2605289F7E4700036A3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B2604289F7E4700036A3F /* SceneDelegate.swift */; };
-		0E5B2607289F7E4700036A3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B2606289F7E4700036A3F /* ViewController.swift */; };
 		0E5B260A289F7E4700036A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5B2608289F7E4700036A3F /* Main.storyboard */; };
 		0E5B260C289F7E4700036A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5B260B289F7E4700036A3F /* Assets.xcassets */; };
 		0E5B260F289F7E4700036A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5B260D289F7E4700036A3F /* LaunchScreen.storyboard */; };
 		0E5B2617289F7E7500036A3F /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B2616289F7E7500036A3F /* Chat.swift */; };
 		0E5B2619289F7EB800036A3F /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B2618289F7EB800036A3F /* ChatListViewController.swift */; };
+		0ECB154D289F8423001FE5AA /* ChatListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB154C289F8423001FE5AA /* ChatListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E5B25FF289F7E4700036A3F /* chatList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5B2602289F7E4700036A3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5B2604289F7E4700036A3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E5B2606289F7E4700036A3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E5B2609289F7E4700036A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E5B260B289F7E4700036A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E5B260E289F7E4700036A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E5B2610289F7E4700036A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5B2616289F7E7500036A3F /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		0E5B2618289F7EB800036A3F /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		0ECB154C289F8423001FE5AA /* ChatListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +62,11 @@
 			children = (
 				0E5B2602289F7E4700036A3F /* AppDelegate.swift */,
 				0E5B2604289F7E4700036A3F /* SceneDelegate.swift */,
-				0E5B2606289F7E4700036A3F /* ViewController.swift */,
 				0E5B2608289F7E4700036A3F /* Main.storyboard */,
 				0E5B260B289F7E4700036A3F /* Assets.xcassets */,
 				0E5B2616289F7E7500036A3F /* Chat.swift */,
 				0E5B2618289F7EB800036A3F /* ChatListViewController.swift */,
+				0ECB154C289F8423001FE5AA /* ChatListCollectionViewCell.swift */,
 				0E5B260D289F7E4700036A3F /* LaunchScreen.storyboard */,
 				0E5B2610289F7E4700036A3F /* Info.plist */,
 			);
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5B2607289F7E4700036A3F /* ViewController.swift in Sources */,
+				0ECB154D289F8423001FE5AA /* ChatListCollectionViewCell.swift in Sources */,
 				0E5B2617289F7E7500036A3F /* Chat.swift in Sources */,
 				0E5B2603289F7E4700036A3F /* AppDelegate.swift in Sources */,
 				0E5B2605289F7E4700036A3F /* SceneDelegate.swift in Sources */,
