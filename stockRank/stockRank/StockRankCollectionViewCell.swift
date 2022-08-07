@@ -19,7 +19,17 @@ class StockRankCollectionViewCell: UICollectionViewCell {
         rankLabel.text = "\(stock.rank)"
         companyIconImageView.image = UIImage(named: stock.imageName)
         companyNameLabel.text = stock.name
-        companyPriceLabel.text = "\(stock.price) 원"
+        companyPriceLabel.text = "\(convertToCurremcyFormat(price: stock.price)) 원"
         diffLabel.text = "\(stock.diff)%"
+    }
+    
+    
+    //소수점 3자리마다 ,를 찍어주는 코드
+    func convertToCurremcyFormat(price: Int) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.maximumFractionDigits = 0
+        let result = numberFormatter.string(from: NSNumber(value: price)) ?? ""
+        return result
     }
 }
