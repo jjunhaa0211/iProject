@@ -17,6 +17,13 @@ class FrameworkListViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
+        navigationController?.navigationBar.topItem?.title = "⭐️Apple Framework"
+        
+        if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            //estimatedItemSize = 자동으로 시스템 설정
+            flowlayout.estimatedItemSize = .zero
+        }
+        
         //패딩을 주는 코드
         collectionView.contentInset = UIEdgeInsets(top: 10, left: 16, bottom: 0, right: 10)
     }
