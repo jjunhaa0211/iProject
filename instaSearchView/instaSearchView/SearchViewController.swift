@@ -8,6 +8,8 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+
+    
     
     @IBOutlet var collectionView: UICollectionView!
     
@@ -20,6 +22,16 @@ class SearchViewController: UIViewController {
         if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout{
             flowlayout.estimatedItemSize = .zero
         }
+        
+        self.navigationItem.title = "Search"
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = false
+        //타이틀이름은 search로 하겠다
+        searchController.searchBar.placeholder = "Search"
+        //업데이트
+        searchController.searchResultsUpdater = self
+        //이걸로 가져오겠다
+        self.navigationItem.searchController = searchController
     }
 }
 
@@ -55,4 +67,12 @@ extension SearchViewController : UICollectionViewDelegateFlowLayout{
         return 1
     }
 }
-
+extension SearchViewController : UISearchResultsUpdating {
+    
+    //내가 친 것들 인식
+    func updateSearchResults(for searchController: UISearchController) {
+        let search = searchController.searchBar.text
+        print("search: \(search!)")
+    }
+    
+}
