@@ -14,7 +14,6 @@
 		0EEA7CEC28A5291E0003578D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA7CEB28A5291E0003578D /* AppDelegate.swift */; };
 		0EEA7CEE28A5291E0003578D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA7CED28A5291E0003578D /* SceneDelegate.swift */; };
 		0EEA7CF528A5291F0003578D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EEA7CF428A5291F0003578D /* Assets.xcassets */; };
-		0EEA7CF828A5291F0003578D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEA7CF628A5291F0003578D /* LaunchScreen.storyboard */; };
 		0EEA7D0028A529930003578D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA7CFF28A529930003578D /* HomeViewController.swift */; };
 		863B35BE6BF74B833DDD4BA8 /* Pods_NetfilxSryleSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443254D5F5B962314855A1E4 /* Pods_NetfilxSryleSample.framework */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		0EEA7CEB28A5291E0003578D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EEA7CED28A5291E0003578D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0EEA7CF428A5291F0003578D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0EEA7CF728A5291F0003578D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EEA7CF928A5291F0003578D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EEA7CFF28A529930003578D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		443254D5F5B962314855A1E4 /* Pods_NetfilxSryleSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetfilxSryleSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +83,6 @@
 				0EEA7CF428A5291F0003578D /* Assets.xcassets */,
 				0ECA2A4528A52F6C0055150D /* Content.plist */,
 				0ECA2A4728A52FA40055150D /* Content.swift */,
-				0EEA7CF628A5291F0003578D /* LaunchScreen.storyboard */,
 				0EEA7CF928A5291F0003578D /* Info.plist */,
 			);
 			path = NetfilxSryleSample;
@@ -160,7 +157,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EEA7CF828A5291F0003578D /* LaunchScreen.storyboard in Resources */,
 				0EEA7CF528A5291F0003578D /* Assets.xcassets in Resources */,
 				0ECA2A4628A52F6C0055150D /* Content.plist in Resources */,
 			);
@@ -225,17 +221,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0EEA7CF628A5291F0003578D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EEA7CF728A5291F0003578D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0EEA7CFA28A5291F0003578D /* Debug */ = {
@@ -360,10 +345,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AW5Y72HUBS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NetfilxSryleSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,10 +372,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AW5Y72HUBS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NetfilxSryleSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SwiftUI
 class HomeViewController : UICollectionViewController {
     
     var contents: [Content] = []
@@ -37,6 +37,7 @@ class HomeViewController : UICollectionViewController {
               let list = try? PropertyListDecoder().decode([Content].self, from: data) else { return [] }
         return list
     }
+    
 }
 
 //UICollectionView DateSource, Delegate
@@ -85,5 +86,25 @@ extension HomeViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let sectionName = contents[indexPath.section].sectionName
         print("TEST: \(sectionName)섹션의 \(indexPath.row + 1)번째 콘텐츠")
+    }
+}
+//swiftUi 활용한 미리보기
+
+struct HomeViewController_PreView: PreviewProvider {
+    static var previews: some View {
+        Container().edgesIgnoringSafeArea(.all)
+    }
+    
+    struct Container: UIViewControllerRepresentable {
+        func makeUIViewController(context: Context) ->
+        UIViewController {
+            let layout = UICollectionViewLayout()
+            let homeViewController = HomeViewController(collectionViewLayout: layout)
+            return UINavigationController(rootViewController: homeViewController)
+        }
+        
+        func updateUIViewController(_ uiViewController: UIViewController, context: Context) { }
+        
+        typealias UIViewControllerType = UIViewController
     }
 }
