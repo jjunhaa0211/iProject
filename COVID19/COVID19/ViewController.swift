@@ -57,6 +57,7 @@ class ViewController: UIViewController {
     }
     
     func configureChatView(covidOverviewList: [CovidoverView]){
+        self.pieChartView.delegate = self
         let entries = covidOverviewList.compactMap{ [weak self] overview -> PieChartDataEntry? in
             guard let self = self else { return nil }
             return PieChartDataEntry(value: self.removeFormatString(string: overview.newCase),
@@ -122,3 +123,12 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController : ChartViewDelegate {
+    //차트가 선택퇴면 호출
+    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+        guard let covidDetailViewController = self.storyboard?.instantiateViewController(identifier: "CovidDetailViewController") as? CovidDetailViewController else { return }
+        guard let covidOverview = entry.data as? CovidoverView else { return }
+        covidDetailViewController.covidOverview = covidOverview
+        self.navigationController?.pushViewController(covidDetailViewController, animated: true)
+    }
+}
