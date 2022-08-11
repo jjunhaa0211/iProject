@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4D028528A5559E00AA6C7A /* ContentColletionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D028428A5559E00AA6C7A /* ContentColletionViewRankCell.swift */; };
 		0ECA2A4628A52F6C0055150D /* Content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ECA2A4528A52F6C0055150D /* Content.plist */; };
 		0ECA2A4828A52FA40055150D /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA2A4728A52FA40055150D /* Content.swift */; };
 		0ECA2A4A28A534290055150D /* ContentColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECA2A4928A534290055150D /* ContentColletionViewCell.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E4D028428A5559E00AA6C7A /* ContentColletionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentColletionViewRankCell.swift; sourceTree = "<group>"; };
 		0EA1DEDE173B5F40657ACD4F /* Pods-NetfilxSryleSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetfilxSryleSample.debug.xcconfig"; path = "Target Support Files/Pods-NetfilxSryleSample/Pods-NetfilxSryleSample.debug.xcconfig"; sourceTree = "<group>"; };
 		0ECA2A4528A52F6C0055150D /* Content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Content.plist; path = "../../../../../Downloads/Part 3/Ch6_NetflixStyle/Content.plist"; sourceTree = "<group>"; };
 		0ECA2A4728A52FA40055150D /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				0EEA7CEB28A5291E0003578D /* AppDelegate.swift */,
 				0EEA7CED28A5291E0003578D /* SceneDelegate.swift */,
 				0EEA7CFF28A529930003578D /* HomeViewController.swift */,
+				0E4D028428A5559E00AA6C7A /* ContentColletionViewRankCell.swift */,
 				0ECA2A4B28A53A340055150D /* ContentCollectionVeiwHeader.swift */,
 				0ECA2A4928A534290055150D /* ContentColletionViewCell.swift */,
 				0EEA7CF428A5291F0003578D /* Assets.xcassets */,
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EEA7CEC28A5291E0003578D /* AppDelegate.swift in Sources */,
+				0E4D028528A5559E00AA6C7A /* ContentColletionViewRankCell.swift in Sources */,
 				0EEA7CEE28A5291E0003578D /* SceneDelegate.swift in Sources */,
 				0ECA2A4A28A534290055150D /* ContentColletionViewCell.swift in Sources */,
 				0EEA7D0028A529930003578D /* HomeViewController.swift in Sources */,
