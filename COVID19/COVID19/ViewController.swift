@@ -11,6 +11,7 @@ import Charts
 class ViewController: UIViewController {
 
     @IBOutlet var totalCaseLable: UILabel!
+    
     @IBOutlet var newCaseLable: UILabel!
     @IBOutlet var pieChartView: PieChartView!
     override func viewDidLoad() {

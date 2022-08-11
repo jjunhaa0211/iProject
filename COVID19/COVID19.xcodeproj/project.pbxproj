@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E648CF928A4910D00D90BC5 /* CovidDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E648CF828A4910D00D90BC5 /* CovidDetailViewController.swift */; };
+		0E648CFB28A4B44C00D90BC5 /* CityCovidOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E648CFA28A4B44C00D90BC5 /* CityCovidOverview.swift */; };
 		0ECABE4728A48E7900FF803F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECABE4628A48E7900FF803F /* AppDelegate.swift */; };
 		0ECABE4928A48E7900FF803F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECABE4828A48E7900FF803F /* SceneDelegate.swift */; };
 		0ECABE4B28A48E7900FF803F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECABE4A28A48E7900FF803F /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		0E648CF828A4910D00D90BC5 /* CovidDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDetailViewController.swift; sourceTree = "<group>"; };
+		0E648CFA28A4B44C00D90BC5 /* CityCovidOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCovidOverview.swift; sourceTree = "<group>"; };
 		0ECABE4328A48E7800FF803F /* COVID19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ECABE4628A48E7900FF803F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ECABE4828A48E7900FF803F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				0ECABE4628A48E7900FF803F /* AppDelegate.swift */,
 				0ECABE4828A48E7900FF803F /* SceneDelegate.swift */,
 				0ECABE4A28A48E7900FF803F /* ViewController.swift */,
+				0E648CFA28A4B44C00D90BC5 /* CityCovidOverview.swift */,
 				0ECABE4C28A48E7900FF803F /* Main.storyboard */,
 				0E648CF828A4910D00D90BC5 /* CovidDetailViewController.swift */,
 				0ECABE4F28A48E7900FF803F /* Assets.xcassets */,
@@ -212,6 +215,7 @@
 				0ECABE4B28A48E7900FF803F /* ViewController.swift in Sources */,
 				0E648CF928A4910D00D90BC5 /* CovidDetailViewController.swift in Sources */,
 				0ECABE4728A48E7900FF803F /* AppDelegate.swift in Sources */,
+				0E648CFB28A4B44C00D90BC5 /* CityCovidOverview.swift in Sources */,
 				0ECABE4928A48E7900FF803F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
