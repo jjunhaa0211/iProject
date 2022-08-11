@@ -12,14 +12,21 @@ import Charts
 class ViewController: UIViewController {
 
     @IBOutlet var totalCaseLable: UILabel!
-    
     @IBOutlet var newCaseLable: UILabel!
     @IBOutlet var pieChartView: PieChartView!
+    @IBOutlet var lableStackView: UIStackView!
+    @IBOutlet var indicatorView: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.indicatorView.startAnimating()
         self.fetchCovidOverview(completionHandler: { [weak self] result in
             guard let self = self else { return }
+            self.indicatorView.stopAnimating()
+            self.indicatorView.isHidden = true
+            self.lableStackView.isHidden = false
+            self.pieChartView.isHidden = false
             switch result {
             case let .success(result):
                 self.configureStackView(koreaCovidOverview: result.korea)

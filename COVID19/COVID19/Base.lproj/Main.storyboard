@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9mP-cf-CPX">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9mP-cf-CPX">
                                 <rect key="frame" x="24" y="112" width="366" height="61"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GHz-qn-pE1">
@@ -55,9 +55,18 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TL-FM-fIb" customClass="PieChartView" customModule="Charts">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TL-FM-fIb" customClass="PieChartView" customModule="Charts">
                                 <rect key="frame" x="24" y="197" width="366" height="641"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="A0i-Gu-eqe">
+                                        <rect key="frame" x="173" y="310.5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="A0i-Gu-eqe" firstAttribute="centerY" secondItem="3TL-FM-fIb" secondAttribute="centerY" id="F8c-qf-vJd"/>
+                                    <constraint firstItem="A0i-Gu-eqe" firstAttribute="centerX" secondItem="3TL-FM-fIb" secondAttribute="centerX" id="emS-PW-Bsi"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -74,6 +83,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="AXE-0m-Xna"/>
                     <connections>
+                        <outlet property="indicatorView" destination="A0i-Gu-eqe" id="qbX-Kc-OCU"/>
+                        <outlet property="lableStackView" destination="9mP-cf-CPX" id="NKG-zl-TNe"/>
                         <outlet property="newCaseLable" destination="N8E-ra-0i9" id="2CU-P9-Mdl"/>
                         <outlet property="pieChartView" destination="3TL-FM-fIb" id="vLb-20-QMt"/>
                         <outlet property="totalCaseLable" destination="ko2-A7-dKz" id="mdZ-8e-xqo"/>
