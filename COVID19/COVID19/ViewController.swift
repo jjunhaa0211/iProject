@@ -22,12 +22,16 @@ class ViewController: UIViewController {
             guard let self = self else { return }
             switch result {
             case let .success(result):
-                debugPrint("success \(result)")
-                
+                self.configureStackView(koreaCovidOverview: result.korea)
             case let .failure(error):
                 debugPrint("error \(error)")
             }
         })
+    }
+    
+    func configureStackView(koreaCovidOverview: CovidoverView){
+        self.totalCaseLable.text = "\(koreaCovidOverview.totalCase)명"
+        self.newCaseLable.text = "\(koreaCovidOverview.newCase)"
     }
     
     func fetchCovidOverview(
