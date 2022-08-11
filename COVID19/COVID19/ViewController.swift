@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 import Charts
 
 class ViewController: UIViewController {
@@ -17,8 +18,40 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.fetchCovidOverview(completionHandler: { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case let .success(result):
+                debugPrint("success \(result)")
+                
+            case let .failure(error):
+                debugPrint("error \(error)")
+            }
+        })
     }
-
-
+    
+    func fetchCovidOverview(
+        completionHandler: @escaping (Result<CityCovidOverview, Error>) -> Void
+    ) {
+        let url = "https://api.corona-19.kr/korea/country/new/"
+        let param = [
+            "serviceKey" : "iWsYGOnjaSZRPDqgUxF17I48EN9b3Arhl"
+        ]
+        AF.request(url, method: .get, parameters: param)
+            .responseData { response in
+                switch response.result {
+                case let .success(date):
+                    do {
+                       let decoder = JSONDecoder()
+                        let result = try decoder.decode(CityCovidOverview.self, from : date)
+                        completionHandler(.success(result))
+                    } catch {
+                        completionHandler(.failure(error))
+                    }
+                case let .failure(error):
+                    completionHandler(.failure(error))
+                }
+        }
+    }
 }
 
