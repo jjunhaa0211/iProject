@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E19472728A7FB2E00C4DA41 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19472628A7FB2E00C4DA41 /* Beer.swift */; };
 		0E19472928A87F8300C4DA41 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19472828A87F8300C4DA41 /* BeerListCell.swift */; };
+		0E19472B28A88A5F00C4DA41 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E19472A28A88A5F00C4DA41 /* BeerDetailViewController.swift */; };
 		0E5CB96028A7F7AA0042E997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5CB95F28A7F7AA0042E997 /* AppDelegate.swift */; };
 		0E5CB96228A7F7AA0042E997 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5CB96128A7F7AA0042E997 /* SceneDelegate.swift */; };
 		0E5CB96928A7F7AB0042E997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5CB96828A7F7AB0042E997 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0E19472628A7FB2E00C4DA41 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		0E19472828A87F8300C4DA41 /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
+		0E19472A28A88A5F00C4DA41 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		0E5CB95C28A7F7AA0042E997 /* Berwery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Berwery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5CB95F28A7F7AA0042E997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5CB96128A7F7AA0042E997 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				0E5CB95F28A7F7AA0042E997 /* AppDelegate.swift */,
 				0E5CB96128A7F7AA0042E997 /* SceneDelegate.swift */,
 				0E5CB97328A7F7DC0042E997 /* BeerListViewController.swift */,
+				0E19472A28A88A5F00C4DA41 /* BeerDetailViewController.swift */,
 				0E19472828A87F8300C4DA41 /* BeerListCell.swift */,
 				0E19472628A7FB2E00C4DA41 /* Beer.swift */,
 				0E5CB96828A7F7AB0042E997 /* Assets.xcassets */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E5CB97428A7F7DC0042E997 /* BeerListViewController.swift in Sources */,
+				0E19472B28A88A5F00C4DA41 /* BeerDetailViewController.swift in Sources */,
 				0E5CB96028A7F7AA0042E997 /* AppDelegate.swift in Sources */,
 				0E5CB96228A7F7AA0042E997 /* SceneDelegate.swift in Sources */,
 				0E19472728A7FB2E00C4DA41 /* Beer.swift in Sources */,
