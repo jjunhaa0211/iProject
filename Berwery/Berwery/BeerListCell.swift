@@ -47,4 +47,14 @@ class BeerListCell : UITableViewCell {
         }
     }
     
+    func configure(whih beer : Beer) {
+        let imageURL = URL(string: beer.imageURL ?? "")
+        beerImageView.kf.setImage(with: imageURL, placeholder: #imageLiteral(resourceName: "swift"))
+        nameLabel.text = beer.name ?? "이름이 없는 맥주"
+        taglineLabel.text = beer.tagLine
+        
+        accessoryType = .disclosureIndicator
+        selectionStyle = .none
+    }
+    
 }
