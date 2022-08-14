@@ -22,8 +22,9 @@ class BeerListViewController : UITableViewController {
         //UITableView 설정
         tableView.register(BeerListCell.self, forCellReuseIdentifier: "BeerListCell") // cell이를 설정과 가질 값
         tableView.rowHeight = 150
+        
+        fetchBeer(of: currentPage)
     }
-    
 }
 
 //UITableView, DataSource, Delegate
@@ -46,7 +47,7 @@ extension BeerListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedBeer = beerList[indexPath.row]
         let detailViewController = BeerDetailViewController()
-        
+        detailViewController.beer = selectedBeer
         self.show(detailViewController, sender: nil)
     }
 }
@@ -59,5 +60,41 @@ private extension BeerListViewController {
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+            guard error == nil,
+                  let self = self,
+                  let response = response as? HTTPURLResponse,
+                  let data = data,
+                  let beers = try? JSONDecoder().decode([Beer].self, from: data) else {
+                print("ERROR: URLSession data task \(error?.localizedDescription ?? "")")
+                return
+            }
+            switch response.statusCode {
+            case(200...299):
+                self.beerList += beers
+                self.currentPage += 1
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            case(400...499):
+                print("""
+                      ERROR: 클라이언트 error \(response.statusCode)
+                      Response: \(response)
+                      """)
+            case(500...599):
+                print("""
+                      ERROR: sever error \(response.statusCode)
+                      Response: \(response)
+                      """)
+            default:
+                print("""
+                      ERROR: error \(response.statusCode)
+                      Response: \(response)
+                      """)
+            }
+        }
+        dataTask.resume()
     }
 }

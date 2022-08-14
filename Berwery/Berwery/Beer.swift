@@ -11,7 +11,7 @@ struct Beer: Decodable {
     
     let id: Int?
     let name, talineString, description, brewersTips, imageURL: String?
-    let foodParing: [String]?
+    let foodPairing: [String]?
     
     var tagLine: String {
         let tags = talineString?.components(separatedBy: ", ")
@@ -27,7 +27,7 @@ struct Beer: Decodable {
         case talineString = "tagline"
         case imageURL = "image_url"
         case brewersTips = "brewers_tips"
-        case foodParing = "food_paring"
+        case foodPairing = "food_pairing"
     }
 }
 
