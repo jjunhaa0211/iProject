@@ -10,7 +10,7 @@ import UIKit
 class TabBarController: UITabBarController {
     
     private lazy var todayViewController: UIViewController = {
-        let viewController = UIViewController()
+        let viewController = TodayViewContoller()
         let tabBarItem = UITabBarItem(
             title: "투데이",
             image: UIImage(systemName: "mail"),
@@ -37,6 +37,7 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         viewControllers = [todayViewController, appViewController]
     }
 
