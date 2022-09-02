@@ -10,6 +10,7 @@ import SnapKit
 import Kingfisher
 
 class BeerListCell : UITableViewCell {
+    
     let beerImageView = UIImageView()
     let nameLabel = UILabel()
     let taglineLabel = UILabel()
@@ -50,8 +51,8 @@ class BeerListCell : UITableViewCell {
     func configure(whih beer : Beer) {
         let imageURL = URL(string: beer.imageURL ?? "")
         beerImageView.kf.setImage(with: imageURL, placeholder: #imageLiteral(resourceName: "swift"))
-        nameLabel.text = beer.name ?? "이름이 없는 맥주"
-        taglineLabel.text = beer.tagLine
+        nameLabel.text = beer.title ?? "이름이 없는 맥주"
+        taglineLabel.text = beer.todoDate
         
         accessoryType = .disclosureIndicator
         selectionStyle = .none

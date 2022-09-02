@@ -13,7 +13,7 @@ class BeerDetailViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = beer?.name ?? "이름 없는 맥주"
+        title = beer?.title ?? "이름 없는 맥주"
         
         tableView = UITableView(frame: tableView.frame, style: .insetGrouped)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "BeerDetailListCell")
@@ -39,8 +39,6 @@ extension BeerDetailViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
-        case 3:
-            return beer?.foodPairing?.count ?? 0
         default:
             return 1
         }
@@ -50,12 +48,11 @@ extension BeerDetailViewController {
         case 0:
             return "Id"
         case 1:
-            return "Description"
+            return "todoDate"
         case 2:
-            return "Brewers Tips"
+            return "title"
         case 3:
-            let isFoodParingEmpty = beer?.foodPairing?.isEmpty ?? true
-            return isFoodParingEmpty ? nil : "Food Paring"
+            return "실험"
         default:
             return nil
         }
@@ -68,16 +65,15 @@ extension BeerDetailViewController {
         
         switch indexPath.section {
         case 0:
-            cell.textLabel?.text = String(describing: beer?.id ?? 0)
+            cell.textLabel?.text = beer?.id
             return cell
         case 1:
-            cell.textLabel?.text = beer?.description ?? "설명이 없는 맥주"
+            cell.textLabel?.text = beer?.todoDate ?? "설명이 없는 맥주"
             return cell
         case 2:
-            cell.textLabel?.text = beer?.brewersTips ?? "팁 없는 맥주"
+            cell.textLabel?.text = beer?.title ?? "팁 없는 맥주"
             return cell
         case 3:
-            cell.textLabel?.text = beer?.foodPairing?[indexPath.row] ?? ""
             return cell
         default:
             return cell

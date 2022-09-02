@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class BeerListViewController : UITableViewController {
     
     var beerList = [Beer]()
@@ -56,7 +57,7 @@ extension BeerListViewController {
 //data Fatching
 private extension BeerListViewController {
     func fetchBeer(of page: Int) {
-        guard let url = URL(string: "https://api.punkapi.com/v2/beers?page=\(page)") else { return }
+        guard let url = URL(string: "http://44.209.75.36:8080/todos/list?todoYearMonth=2022-08") else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -74,6 +75,8 @@ private extension BeerListViewController {
             case(200...299):
                 self.beerList += beers
                 self.currentPage += 1
+                
+                debugPrint(response)
                 
                 DispatchQueue.main.async {
                     self.tableView.reloadData()

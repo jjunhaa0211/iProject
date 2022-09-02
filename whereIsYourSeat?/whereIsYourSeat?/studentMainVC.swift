@@ -103,57 +103,6 @@ class studentMainVC: BassVC {
         let checkAgainAction = UIAlertController(title: "개발자에게 GRANT를 받으세요", message: "당신은 권한이 없습니다", preferredStyle: .alert)
             checkAgainAction.addAction(UIAlertAction(title: "Okay", style: .default))
             self.present(checkAgainAction, animated: true, completion: nil)
-//        var totalCount = 18
-//        var gemCard = 1
-//        var ranArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
-//
-//            var Lalels = [Label11,Label12,Label13,Label14,
-//                          Label21,Label22,Label23,Label24,
-//                          Label31,Label32,Label33,Label34,
-//                          Label41,Label42,Label43,Label44,
-//                          Label51,Label52,Label53,Label54,
-//                          Label61,Label62,Label63,Label64]
-//
-//        var i = 0
-//        while(totalCount >= 1) {
-//
-//            let randomIndex = Int(arc4random_uniform(UInt32(ranArray.count)))
-//            print(ranArray[randomIndex])
-//
-//            Lalels[i]?.text = String(ranArray[randomIndex])
-//
-//            ranArray.remove(at: randomIndex)
-//
-//            i = i + 1
-//            totalCount = totalCount - 1
-//
-//            //2반은 12번은 없다
-//
-////            Label12?.text = String(ranArray[randomIndex])
-////            Label13?.text = String(ranArray[randomIndex])
-////            Label14?.text = String(ranArray[randomIndex])
-////            Label21?.text = String(ranArray[randomIndex])
-////            Label22?.text = String(ranArray[randomIndex])
-////            Label23?.text = String(ranArray[randomIndex])
-////            Label24?.text = String(ranArray[randomIndex])
-////            Label31?.text = String(ranArray[randomIndex])
-////            Label32?.text = String(ranArray[randomIndex])
-////            Label33?.text = String(ranArray[randomIndex])
-////            Label34?.text = String(ranArray[randomIndex])
-////            Label41?.text = String(ranArray[randomIndex])
-////            Label42?.text = String(ranArray[randomIndex])
-////            Label43?.text = String(ranArray[randomIndex])
-////            Label44?.text = String(ranArray[randomIndex])
-////            Label51?.text = String(ranArray[randomIndex])
-////            Label52?.text = String(ranArray[randomIndex])
-////            Label53?.text = String(ranArray[randomIndex])
-////            Label54?.text = String(ranArray[randomIndex])
-////            Label61?.text = String(ranArray[randomIndex])
-////            Label62?.text = String(ranArray[randomIndex])
-////            Label63?.text = String(ranArray[randomIndex])
-////            Label64?.text = String(ranArray[randomIndex])
-//        }
-        
     }
     
     @IBAction func scheduleButton(_ sender: Any) {

@@ -182,3 +182,23 @@ extension HomeViewController {
         print("TEST: \(sectionName)섹션의 \(indexPath.row + 1)번째 콘텐츠")
     }
 }
+
+import SwiftUI
+
+struct LoginViewControllerRepresentable: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> HomeViewController {
+        return HomeViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: HomeViewController, context: Context) { }
+    
+    
+    typealias UIViewControllerType = HomeViewController
+}
+
+@available(iOS 13.0.0, *)
+struct LoginViewPreview: PreviewProvider {
+    static var previews: some View {
+        LoginViewControllerRepresentable()
+    }
+}

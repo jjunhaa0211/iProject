@@ -132,12 +132,12 @@ class teacherMainVC: BassVC {
             totalCount = totalCount - 1
             
             //2반은 12번은 없다
-            Label53?.text = "nil"
-            Label54?.text = "nil"
-            Label61?.text = "nil"
-            Label62?.text = "nil"
-            Label63?.text = "nil"
-            Label64?.text = "nil"
+            Label53?.text = "없음"
+            Label54?.text = "없음"
+            Label61?.text = "없음"
+            Label62?.text = "없음"
+            Label63?.text = "없음"
+            Label64?.text = "없음"
             
         }
     }
