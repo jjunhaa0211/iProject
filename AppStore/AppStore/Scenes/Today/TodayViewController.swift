@@ -10,15 +10,15 @@ import UIKit
 
 final class TodayViewContoller : UIViewController {
     
-    final lazy collectionView: UICollectionView = {
-        let layout = UICollectionViewLayout()
+    private lazy var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.delegate = self
         collectionView.dataSource = self
-        
+
         collectionView.backgroundColor = .systemBackground
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "todayCell")
-        
+        collectionView.register(TodayCollectionViewCell.self, forCellWithReuseIdentifier: "todayCell")
+
         return collectionView
     }()
     
@@ -29,23 +29,30 @@ final class TodayViewContoller : UIViewController {
         collectionView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
-        view.backgroundColor = .blue
+
+    }
+}
+
+extension TodayViewContoller : UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width: CGFloat = collectionView.frame.width - 32.0
+
+        return CGSize(width: width, height: width)
     }
 }
 
 extension TodayViewContoller : UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "todayCell", for: indexPath)
-        cell.backgroundColor = .black
-        return cell
-    }
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        return 5
     }
     
-}
-
-extension TodayViewContoller : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "todayCell", for: indexPath) as? TodayCollectionViewCell
+        cell?.setup()
+        return cell ?? TodayCollectionViewCell()
+    }
     
 }
