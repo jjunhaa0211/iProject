@@ -49,8 +49,13 @@ final class TodayCollectionViewCell : UICollectionViewCell {
 
         setupSubViews()
         
+        //그림자 구현
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.3
+        layer.shadowRadius = 10
+        
         subTitleLabel.text = "서브타이틀"
-        descriptionlable.text = "설명설명"
+        descriptionlable.text = "설명"
         titleLabel.text = "앱의 이름"
     }
 }

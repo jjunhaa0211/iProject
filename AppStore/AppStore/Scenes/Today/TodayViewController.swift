@@ -7,6 +7,7 @@
 
 import SnapKit
 import UIKit
+import SwiftUI
 
 final class TodayViewContoller : UIViewController {
     
@@ -19,6 +20,8 @@ final class TodayViewContoller : UIViewController {
         collectionView.backgroundColor = .systemBackground
         collectionView.register(TodayCollectionViewCell.self, forCellWithReuseIdentifier: "todayCell")
 
+        collectionView.register(TodoCollectionHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "TodoCollectionHeaderView")
+        
         return collectionView
     }()
     
@@ -40,6 +43,15 @@ extension TodayViewContoller : UICollectionViewDelegateFlowLayout {
 
         return CGSize(width: width, height: width)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        CGSize(width: collectionView.frame.width - 32 ,height: 100.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        let value : CGFloat = 20.0
+        return UIEdgeInsets(top: value, left: value, bottom: value, right: value)
+    }
 }
 
 extension TodayViewContoller : UICollectionViewDataSource {
@@ -54,5 +66,12 @@ extension TodayViewContoller : UICollectionViewDataSource {
         cell?.setup()
         return cell ?? TodayCollectionViewCell()
     }
-    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard kind == UICollectionView.elementKindSectionHeader,
+              let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "TodoCollectionHeaderView", for: indexPath) as? TodoCollectionHeaderView else { return UICollectionReusableView() }
+        
+        header.setupViews()
+        
+        return header
+    }
 }

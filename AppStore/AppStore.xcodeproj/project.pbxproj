@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E22213728C216C40020754C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E22213628C216C40020754C /* TodayViewController.swift */; };
+		0E55A15E28C4E78900C62027 /* TodoCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55A15D28C4E78900C62027 /* TodoCollectionHeaderView.swift */; };
 		0ED8240E28C2103300706B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8240D28C2103300706B4E /* AppDelegate.swift */; };
 		0ED8241028C2103300706B4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8240F28C2103300706B4E /* SceneDelegate.swift */; };
 		0ED8241228C2103300706B4E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8241128C2103300706B4E /* TabBarController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		0E22213628C216C40020754C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		0E55A15D28C4E78900C62027 /* TodoCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCollectionHeaderView.swift; sourceTree = "<group>"; };
 		0ED8240A28C2103300706B4E /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED8240D28C2103300706B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ED8240F28C2103300706B4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				0E22213528C216B20020754C /* Today */,
+				0E55A15D28C4E78900C62027 /* TodoCollectionHeaderView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E22213728C216C40020754C /* TodayViewController.swift in Sources */,
+				0E55A15E28C4E78900C62027 /* TodoCollectionHeaderView.swift in Sources */,
 				0ED8241228C2103300706B4E /* TabBarController.swift in Sources */,
 				0ED8240E28C2103300706B4E /* AppDelegate.swift in Sources */,
 				0ED8241028C2103300706B4E /* SceneDelegate.swift in Sources */,
