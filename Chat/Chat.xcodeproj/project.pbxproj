@@ -12,6 +12,7 @@
 		0E7E231F28C731FD002E1E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7E231E28C731FD002E1E1A /* Assets.xcassets */; };
 		0E7E232228C731FD002E1E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E7E232028C731FD002E1E1A /* LaunchScreen.storyboard */; };
 		0E7E232A28C73362002E1E1A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E232928C73362002E1E1A /* ChatViewController.swift */; };
+		0E7E232C28C74CD1002E1E1A /* Viewcontoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E232B28C74CD1002E1E1A /* Viewcontoller.swift */; };
 		6380C0579CA68EC144EEBE4F /* Pods_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A27A764F99EE4B924F803A1 /* Pods_Chat.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		0E7E232128C731FD002E1E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E7E232328C731FD002E1E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E7E232928C73362002E1E1A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0E7E232B28C74CD1002E1E1A /* Viewcontoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewcontoller.swift; sourceTree = "<group>"; };
 		5A27A764F99EE4B924F803A1 /* Pods_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		644C1562114A2DEDF264C9FB /* Pods-Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat.debug.xcconfig"; path = "Target Support Files/Pods-Chat/Pods-Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		FF749577B01C7A614974F453 /* Pods-Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat.release.xcconfig"; path = "Target Support Files/Pods-Chat/Pods-Chat.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				0E7E231528C731FC002E1E1A /* AppDelegate.swift */,
 				0E7E231728C731FC002E1E1A /* SceneDelegate.swift */,
 				0E7E232928C73362002E1E1A /* ChatViewController.swift */,
+				0E7E232B28C74CD1002E1E1A /* Viewcontoller.swift */,
 				0E7E231E28C731FD002E1E1A /* Assets.xcassets */,
 				0E7E232028C731FD002E1E1A /* LaunchScreen.storyboard */,
 				0E7E232328C731FD002E1E1A /* Info.plist */,
@@ -205,6 +208,7 @@
 				0E7E231628C731FC002E1E1A /* AppDelegate.swift in Sources */,
 				0E7E232A28C73362002E1E1A /* ChatViewController.swift in Sources */,
 				0E7E231828C731FC002E1E1A /* SceneDelegate.swift in Sources */,
+				0E7E232C28C74CD1002E1E1A /* Viewcontoller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

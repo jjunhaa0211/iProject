@@ -55,7 +55,6 @@
 			children = (
 				0E55A16128C577B900C62027 /* App */,
 				0E22213528C216B20020754C /* Today */,
-				0E55A15D28C4E78900C62027 /* TodoCollectionHeaderView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -65,6 +64,7 @@
 			children = (
 				0E22213628C216C40020754C /* TodayViewController.swift */,
 				0EEF917328C2EE9500F626FC /* TodayCollectionViewCell.swift */,
+				0E55A15D28C4E78900C62027 /* TodoCollectionHeaderView.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";

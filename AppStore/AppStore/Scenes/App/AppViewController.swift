@@ -11,6 +11,7 @@ import SnapKit
 final class AppViewController : UIViewController {
     private let scrollView = UIScrollView()
     private let contentView = UIView()
+
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
@@ -28,10 +29,12 @@ final class AppViewController : UIViewController {
         exchangeCodeButtonView.backgroundColor = .yellow
         
         [
-                featureSectionView,
-                rankingFeatureSectionView,
-                exchangeCodeButtonView
+            featureSectionView,
+            rankingFeatureSectionView,
+            exchangeCodeButtonView
+                
         ].forEach {
+            $0.snp.makeConstraints { $0.height.equalTo(500)}
             stackView.addArrangedSubview($0)
         }
         
