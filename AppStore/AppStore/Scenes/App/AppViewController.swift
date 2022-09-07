@@ -22,9 +22,12 @@ final class AppViewController : UIViewController {
         
         let featureSectionView = FeatureSectionView(frame: .zero)
         let rankingFeatureSectionView = RankingFeatureSectionView(frame: .zero)
-        let exchangeCodeButtonView = UIView()
-        
-        exchangeCodeButtonView.backgroundColor = .blue
+        let exchangeCodeButtonView = ExchangeCodeButtonView(frame: .zero)
+                
+        let spacingView = UIView()
+        spacingView.snp.makeConstraints {
+            $0.height.equalTo(100.0)
+        }
         
         [
             featureSectionView,
