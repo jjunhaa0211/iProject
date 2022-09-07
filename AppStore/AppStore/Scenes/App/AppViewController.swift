@@ -20,13 +20,12 @@ final class AppViewController : UIViewController {
         stackView.distribution = .equalSpacing
         stackView.spacing = 0.0
         
-        let featureSectionView = FeatureSectionView()
+        let featureSectionView = FeatureSectionView(frame: .zero)
         let rankingFeatureSectionView = UIView()
         let exchangeCodeButtonView = UIView()
         
-        featureSectionView.backgroundColor = .red
-        rankingFeatureSectionView.backgroundColor = .blue
-        exchangeCodeButtonView.backgroundColor = .yellow
+        rankingFeatureSectionView.backgroundColor = .yellow
+        exchangeCodeButtonView.backgroundColor = .blue
         
         [
             featureSectionView,

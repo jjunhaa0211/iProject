@@ -21,10 +21,21 @@ final class FeatureSectionView : UIView {
         collectionView.backgroundColor = .systemBackground
         collectionView.showsHorizontalScrollIndicator = false
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "FeatureSectionCollectionViewCell")
+        collectionView.register(FeatureSectionCollectionViewCell.self, forCellWithReuseIdentifier: "FeatureSectionCollectionViewCell")
         
         return collectionView
     }()
+    
+    private let separatorView = SeperatorView(frame: .zero)
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupViews()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented { init이 안됨 }")
+    }
 }
 
 extension FeatureSectionView : UICollectionViewDataSource {
@@ -33,10 +44,10 @@ extension FeatureSectionView : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureSectionCollectionViewCell", for: indexPath)
-        cell.backgroundColor = .blue
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureSectionCollectionViewCell", for: indexPath) as? FeatureSectionCollectionViewCell
+        cell?.setup()
         
-        return cell
+        return cell ?? UICollectionViewCell()
     }
 }
 
@@ -58,7 +69,8 @@ extension FeatureSectionView: UICollectionViewDelegateFlowLayout {
 private extension FeatureSectionView {
     func setupViews() {
         [
-            collectionView
+            collectionView,
+            separatorView
         ].forEach { addSubview($0) }
         
         collectionView.snp.makeConstraints {
@@ -67,6 +79,13 @@ private extension FeatureSectionView {
             $0.top.equalToSuperview().inset(16.0)
             $0.height.equalTo(snp.width)
             $0.bottom.equalToSuperview()
+        }
+        
+        separatorView.snp.makeConstraints {
+            $0.trailing.equalToSuperview()
+            $0.leading.equalToSuperview()
+            $0.bottom.equalToSuperview()
+            $0.top.equalTo(collectionView.snp.bottom).inset(-10.0)
         }
     }
 }
