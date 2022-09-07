@@ -11,6 +11,8 @@
 		0E55A15E28C4E78900C62027 /* TodoCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55A15D28C4E78900C62027 /* TodoCollectionHeaderView.swift */; };
 		0E55A16028C5768900C62027 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55A15F28C5768900C62027 /* AppViewController.swift */; };
 		0E55A16328C601FF00C62027 /* FeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55A16228C601FF00C62027 /* FeatureSectionView.swift */; };
+		0E70ED0728C8D8BF000C8391 /* RankingFeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70ED0628C8D8BF000C8391 /* RankingFeatureSectionView.swift */; };
+		0E70ED0928C8E0D1000C8391 /* RankingFeatureSectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E70ED0828C8E0D1000C8391 /* RankingFeatureSectionViewCell.swift */; };
 		0E7E232E28C75167002E1E1A /* FeatureSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E232D28C75167002E1E1A /* FeatureSectionCollectionViewCell.swift */; };
 		0E7E233028C761F7002E1E1A /* SeperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7E232F28C761F7002E1E1A /* SeperatorView.swift */; };
 		0ED8240E28C2103300706B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8240D28C2103300706B4E /* AppDelegate.swift */; };
@@ -27,6 +29,8 @@
 		0E55A15D28C4E78900C62027 /* TodoCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCollectionHeaderView.swift; sourceTree = "<group>"; };
 		0E55A15F28C5768900C62027 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		0E55A16228C601FF00C62027 /* FeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionView.swift; sourceTree = "<group>"; };
+		0E70ED0628C8D8BF000C8391 /* RankingFeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeatureSectionView.swift; sourceTree = "<group>"; };
+		0E70ED0828C8E0D1000C8391 /* RankingFeatureSectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFeatureSectionViewCell.swift; sourceTree = "<group>"; };
 		0E7E232D28C75167002E1E1A /* FeatureSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		0E7E232F28C761F7002E1E1A /* SeperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeperatorView.swift; sourceTree = "<group>"; };
 		0ED8240A28C2103300706B4E /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +84,8 @@
 				0E55A16228C601FF00C62027 /* FeatureSectionView.swift */,
 				0E7E232D28C75167002E1E1A /* FeatureSectionCollectionViewCell.swift */,
 				0E7E232F28C761F7002E1E1A /* SeperatorView.swift */,
+				0E70ED0628C8D8BF000C8391 /* RankingFeatureSectionView.swift */,
+				0E70ED0828C8E0D1000C8391 /* RankingFeatureSectionViewCell.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -251,12 +257,14 @@
 				0E22213728C216C40020754C /* TodayViewController.swift in Sources */,
 				0E55A15E28C4E78900C62027 /* TodoCollectionHeaderView.swift in Sources */,
 				0ED8241228C2103300706B4E /* TabBarController.swift in Sources */,
+				0E70ED0928C8E0D1000C8391 /* RankingFeatureSectionViewCell.swift in Sources */,
 				0ED8240E28C2103300706B4E /* AppDelegate.swift in Sources */,
 				0E55A16028C5768900C62027 /* AppViewController.swift in Sources */,
 				0E7E232E28C75167002E1E1A /* FeatureSectionCollectionViewCell.swift in Sources */,
 				0ED8241028C2103300706B4E /* SceneDelegate.swift in Sources */,
 				0EEF917428C2EE9500F626FC /* TodayCollectionViewCell.swift in Sources */,
 				0E55A16328C601FF00C62027 /* FeatureSectionView.swift in Sources */,
+				0E70ED0728C8D8BF000C8391 /* RankingFeatureSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
