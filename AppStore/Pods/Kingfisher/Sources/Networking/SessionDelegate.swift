@@ -28,7 +28,7 @@ import Foundation
 
 // Represents the delegate object of downloader session. It also behave like a task manager for downloading.
 @objc(KFSessionDelegate) // Fix for ObjC header name conflicting. https://github.com/onevcat/Kingfisher/issues/1530
-open class SessionDelegate: NSObject {
+class SessionDelegate: NSObject {
 
     typealias SessionChallengeFunc = (
         URLSession,
@@ -91,6 +91,7 @@ open class SessionDelegate: NSObject {
 
     func append(
         _ task: SessionDataTask,
+        url: URL,
         callback: SessionDataTask.TaskCallback) -> DownloadTask
     {
         let token = task.addCallback(callback)
@@ -104,7 +105,6 @@ open class SessionDelegate: NSObject {
         guard let url = task.originalURL else {
             return
         }
-        task.removeAllCallbacks()
         tasks[url] = nil
     }
 
@@ -149,7 +149,7 @@ open class SessionDelegate: NSObject {
 
 extension SessionDelegate: URLSessionDataDelegate {
 
-    open func urlSession(
+    func urlSession(
         _ session: URLSession,
         dataTask: URLSessionDataTask,
         didReceive response: URLResponse,
@@ -172,7 +172,7 @@ extension SessionDelegate: URLSessionDataDelegate {
         completionHandler(.allow)
     }
 
-    open func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
+    func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
         guard let task = self.task(for: dataTask) else {
             return
         }
@@ -186,7 +186,7 @@ extension SessionDelegate: URLSessionDataDelegate {
         }
     }
 
-    open func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+    func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         guard let sessionTask = self.task(for: task) else { return }
 
         if let url = sessionTask.originalURL {
@@ -205,8 +205,8 @@ extension SessionDelegate: URLSessionDataDelegate {
         if let error = error {
             result = .failure(KingfisherError.responseError(reason: .URLSessionError(error: error)))
         } else {
-            if let data = onDidDownloadData.call(sessionTask) {
-                result = .success((data, task.response))
+            if let data = onDidDownloadData.call(sessionTask), let finalData = data {
+                result = .success((finalData, task.response))
             } else {
                 result = .failure(KingfisherError.responseError(reason: .dataModifyingFailed(task: sessionTask)))
             }
@@ -214,7 +214,7 @@ extension SessionDelegate: URLSessionDataDelegate {
         onCompleted(task: task, result: result)
     }
 
-    open func urlSession(
+    func urlSession(
         _ session: URLSession,
         didReceive challenge: URLAuthenticationChallenge,
         completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)
@@ -222,7 +222,7 @@ extension SessionDelegate: URLSessionDataDelegate {
         onReceiveSessionChallenge.call((session, challenge, completionHandler))
     }
 
-    open func urlSession(
+    func urlSession(
         _ session: URLSession,
         task: URLSessionTask,
         didReceive challenge: URLAuthenticationChallenge,
@@ -231,7 +231,7 @@ extension SessionDelegate: URLSessionDataDelegate {
         onReceiveSessionTaskChallenge.call((session, task, challenge, completionHandler))
     }
     
-    open func urlSession(
+    func urlSession(
         _ session: URLSession,
         task: URLSessionTask,
         willPerformHTTPRedirection response: HTTPURLResponse,
@@ -256,7 +256,7 @@ extension SessionDelegate: URLSessionDataDelegate {
         guard let sessionTask = self.task(for: task) else {
             return
         }
-        sessionTask.onTaskDone.call((result, sessionTask.callbacks))
         remove(sessionTask)
+        sessionTask.onTaskDone.call((result, sessionTask.callbacks))
     }
 }

@@ -43,19 +43,18 @@ final class AppViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationCotroller()
+        setupNavigationController()
         setupLayout()
     }
 }
 
 private extension AppViewController {
-    func setupNavigationCotroller() {
+    func setupNavigationController() {
         navigationItem.title = "앱"
         navigationItem.largeTitleDisplayMode = .always
-        //라지 타이틀만 보이게하기
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-    
+
     func setupLayout() {
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints {
@@ -64,13 +63,13 @@ private extension AppViewController {
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
         }
-        
+
         scrollView.addSubview(contentView)
         contentView.snp.makeConstraints {
             $0.edges.equalToSuperview()
             $0.width.equalToSuperview()
         }
-        
+
         contentView.addSubview(stackView)
         stackView.snp.makeConstraints {
             $0.edges.equalToSuperview()
