@@ -9,12 +9,16 @@ import UIKit
 import SnapKit
 
 final class AppDetilViewController : UIViewController {
+    
+    private let today: Today
+    
     private let appIconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         //이미지 넘치게 하지 않기
         imageView.layer.cornerRadius = 8.0
         imageView.clipsToBounds = true
+        
         return imageView
     }()
     
@@ -49,9 +53,20 @@ final class AppDetilViewController : UIViewController {
         let button = UIButton()
         button.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
         button.tintColor = .systemBlue
+        button.addTarget(self, action: #selector(didTapShareButton), for: .touchUpInside)
         
         return button
     }()
+    
+    init(today: Today) {
+        self.today = today
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,8 +74,8 @@ final class AppDetilViewController : UIViewController {
         setupViews()
         
         appIconImageView.backgroundColor = .lightGray
-        titleLabel.text = "title"
-        subTitle.text = "sub title"
+        titleLabel.text = today.title
+        subTitle.text = today.subTitle
         
         view.backgroundColor = .systemBackground
         
@@ -112,4 +127,10 @@ private extension AppDetilViewController {
         }
     }
     
+    @objc func didTapShareButton() {
+        let activityItems: [Any] = [today.title]
+        let actibityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        
+        present(actibityViewController, animated: true)
+    }
 }

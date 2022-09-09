@@ -58,7 +58,8 @@ extension TodayViewController: UICollectionViewDelegateFlowLayout {
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = AppDetilViewController()
+        let today = todayList[indexPath.item]
+        let vc = AppDetilViewController(today: today)
         present(vc, animated: true)
     }
 }
