@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 import SnapKit
 
 final class StationDetailViewController : UIViewController {
@@ -16,12 +17,6 @@ final class StationDetailViewController : UIViewController {
         return refreshControl
     }()
     
-    
-    
-    @objc func fetchData() {
-        print("Refresh!!😀")
-        refreshControl.endRefreshing()
-    }
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         
@@ -50,6 +45,25 @@ final class StationDetailViewController : UIViewController {
         
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { $0.edges.equalToSuperview() }
+        
+        fetchData()
+    }
+    
+    @objc private func fetchData() {
+//        refreshControl.endRefreshing()
+        let stationName = "서울역"
+        
+        //replacingOccurrences = 원하는 값을 떄어내는
+        let urlString = "http://swopenapi.seoul.go.kr/api/subway/sample/json/realtimeStationArrival/0/5/\(stationName.replacingOccurrences(of: "역", with: ""))"
+        
+        AF.request(urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "").responseDecodable(of: StationArrivalDatResponseModel.self) { [weak self] response in
+            self?.refreshControl.endRefreshing()
+            guard case .success(let data) = response.result else { return }
+            
+            print(data.realtimeArrivalList)
+        }
+        .resume()
+        
     }
 }
 
