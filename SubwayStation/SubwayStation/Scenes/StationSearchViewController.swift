@@ -10,9 +10,7 @@ import SnapKit
 import UIKit
 
 class StationSearchViewController: UIViewController {
-    
-    private var numberOfCell: Int = 0
-    
+    private var stations: [Station] = []
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.dataSource = self
@@ -54,9 +52,13 @@ class StationSearchViewController: UIViewController {
         let urlString = "http://openAPI.seoul.go.kr:8088/sample/json/SearchInfoBySubwayNameService/1/5/\(stationName)"
         
         //addingPercentEncoding url에 한국어를 사용할려면 깨지지 않도록 설정하는 것
-        AF.request(urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "").responseDecodable(of: StationResponseModel.self) { response in
-            guard case .success(let data) = response.result else { return }
-            print(data.stations)
+        AF.request(urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "").responseDecodable(of: StationResponseModel.self) { [weak self] response in
+            guard let self = self,
+                  case .success(let data) = response.result
+            else { return }
+            
+            self.stations = data.stations
+            self.tableView.reloadData()
         }
         .resume()
     }
@@ -64,13 +66,12 @@ class StationSearchViewController: UIViewController {
 
 extension StationSearchViewController: UISearchBarDelegate {
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        numberOfCell = 10
         tableView.reloadData()
         tableView.isHidden = false
     }
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        numberOfCell = 0
         tableView.isHidden = true
+        stations = []
     }
     
     //searchbar 글자 감지
@@ -89,12 +90,15 @@ extension StationSearchViewController: UITableViewDelegate {
 
 extension StationSearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfCell
+        return stations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "\(indexPath.item)"
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
+        let station = stations[indexPath.row]
+        
+        cell.textLabel?.text = station.stationName
+        cell.detailTextLabel?.text = station.lineNumber
         
         return cell
     }
