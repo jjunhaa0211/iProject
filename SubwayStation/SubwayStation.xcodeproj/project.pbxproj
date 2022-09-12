@@ -14,6 +14,7 @@
 		0E0E8C5D28CB561A00C5CDBB /* StationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E8C5C28CB561A00C5CDBB /* StationSearchViewController.swift */; };
 		0E96B15528CC0F7E0059A88E /* StationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96B15428CC0F7E0059A88E /* StationDetailViewController.swift */; };
 		0E96B15728CE0F4F0059A88E /* StationDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96B15628CE0F4F0059A88E /* StationDetailCollectionViewCell.swift */; };
+		0E96B17B28CEC79E0059A88E /* StaionResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96B17A28CEC79E0059A88E /* StaionResponseModel.swift */; };
 		AA888CAD118875A2319FAE58 /* Pods_SubwayStation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F2DB8FA7BE21AC2AB54B84 /* Pods_SubwayStation.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		0E0E8C5C28CB561A00C5CDBB /* StationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchViewController.swift; sourceTree = "<group>"; };
 		0E96B15428CC0F7E0059A88E /* StationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewController.swift; sourceTree = "<group>"; };
 		0E96B15628CE0F4F0059A88E /* StationDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		0E96B17A28CEC79E0059A88E /* StaionResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaionResponseModel.swift; sourceTree = "<group>"; };
 		B24A5EF027E4744524E3AC30 /* Pods-SubwayStation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubwayStation.debug.xcconfig"; path = "Target Support Files/Pods-SubwayStation/Pods-SubwayStation.debug.xcconfig"; sourceTree = "<group>"; };
 		BD8ED63AF7E7C9FAD440B008 /* Pods-SubwayStation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubwayStation.release.xcconfig"; path = "Target Support Files/Pods-SubwayStation/Pods-SubwayStation.release.xcconfig"; sourceTree = "<group>"; };
 		C0F2DB8FA7BE21AC2AB54B84 /* Pods_SubwayStation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubwayStation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 			children = (
 				0E0E8C5C28CB561A00C5CDBB /* StationSearchViewController.swift */,
 				0E96B15428CC0F7E0059A88E /* StationDetailViewController.swift */,
+				0E96B17A28CEC79E0059A88E /* StaionResponseModel.swift */,
 				0E96B15628CE0F4F0059A88E /* StationDetailCollectionViewCell.swift */,
 			);
 			path = Scenes;
@@ -220,6 +223,7 @@
 				0E0E8C5D28CB561A00C5CDBB /* StationSearchViewController.swift in Sources */,
 				0E0E8C4928CB516300C5CDBB /* AppDelegate.swift in Sources */,
 				0E96B15728CE0F4F0059A88E /* StationDetailCollectionViewCell.swift in Sources */,
+				0E96B17B28CEC79E0059A88E /* StaionResponseModel.swift in Sources */,
 				0E0E8C4B28CB516300C5CDBB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,19 @@ import UIKit
 import SnapKit
 
 final class StationDetailViewController : UIViewController {
+    private lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(fetchData), for: .valueChanged)
+        
+        return refreshControl
+    }()
+    
+    
+    
+    @objc func fetchData() {
+        print("Refresh!!😀")
+        refreshControl.endRefreshing()
+    }
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         
@@ -25,6 +38,8 @@ final class StationDetailViewController : UIViewController {
         collectionView.register(StationDetailCollectionViewCell.self, forCellWithReuseIdentifier: "StationDetailCollectionViewCell")
         
         collectionView.dataSource = self
+        
+        collectionView.refreshControl = refreshControl
         
         return collectionView
     }()
