@@ -27,8 +27,6 @@ class StationSearchViewController: UIViewController {
         
         setNavigationItems()
         setTableViewLayout()
-        
-        requestStationName()
     }
     
     private func setNavigationItems() {
@@ -52,8 +50,8 @@ class StationSearchViewController: UIViewController {
         tableView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
     
-    private func requestStationName() {
-        let urlString = "http://openAPI.seoul.go.kr:8088/sample/json/SearchInfoBySubwayNameService/1/5/서울역"
+    private func requestStationName(from stationName: String) {
+        let urlString = "http://openAPI.seoul.go.kr:8088/sample/json/SearchInfoBySubwayNameService/1/5/\(stationName)"
         
         //addingPercentEncoding url에 한국어를 사용할려면 깨지지 않도록 설정하는 것
         AF.request(urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "").responseDecodable(of: StationResponseModel.self) { response in
@@ -73,6 +71,12 @@ extension StationSearchViewController: UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         numberOfCell = 0
         tableView.isHidden = true
+    }
+    
+    //searchbar 글자 감지
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        requestStationName(from: searchText)
+        print(searchText)
     }
 }
 
