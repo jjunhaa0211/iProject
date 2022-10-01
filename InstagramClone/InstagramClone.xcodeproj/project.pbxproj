@@ -10,7 +10,7 @@
 		0E3E32F728E86FE80047ABC1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E32F628E86FE80047ABC1 /* TabBarController.swift */; };
 		0E5001E128E86E11008C4FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5001E028E86E11008C4FEF /* AppDelegate.swift */; };
 		0E5001E328E86E11008C4FEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5001E228E86E11008C4FEF /* SceneDelegate.swift */; };
-		0E5001E528E86E11008C4FEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5001E428E86E11008C4FEF /* ViewController.swift */; };
+		0E5001E528E86E11008C4FEF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5001E428E86E11008C4FEF /* FeedViewController.swift */; };
 		0E5001EA28E86E12008C4FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5001E928E86E12008C4FEF /* Assets.xcassets */; };
 		0E5001ED28E86E12008C4FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5001EB28E86E12008C4FEF /* LaunchScreen.storyboard */; };
 		CE9A4BF95B121A7AD15269B9 /* Pods_InstagramClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32806A4BF336EBF3F6A7E4E5 /* Pods_InstagramClone.framework */; };
@@ -22,7 +22,7 @@
 		0E5001DD28E86E11008C4FEF /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5001E028E86E11008C4FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5001E228E86E11008C4FEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E5001E428E86E11008C4FEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E5001E428E86E11008C4FEF /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0E5001E928E86E12008C4FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E5001EC28E86E12008C4FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E5001EE28E86E12008C4FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3E32F828E872170047ABC1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0E5001E428E86E11008C4FEF /* FeedViewController.swift */,
+				0E3E32F628E86FE80047ABC1 /* TabBarController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		0E5001D428E86E11008C4FEF = {
 			isa = PBXGroup;
 			children = (
@@ -65,8 +74,7 @@
 			children = (
 				0E5001E028E86E11008C4FEF /* AppDelegate.swift */,
 				0E5001E228E86E11008C4FEF /* SceneDelegate.swift */,
-				0E3E32F628E86FE80047ABC1 /* TabBarController.swift */,
-				0E5001E428E86E11008C4FEF /* ViewController.swift */,
+				0E3E32F828E872170047ABC1 /* Scenes */,
 				0E5001E928E86E12008C4FEF /* Assets.xcassets */,
 				0E5001EB28E86E12008C4FEF /* LaunchScreen.storyboard */,
 				0E5001EE28E86E12008C4FEF /* Info.plist */,
@@ -205,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5001E528E86E11008C4FEF /* ViewController.swift in Sources */,
+				0E5001E528E86E11008C4FEF /* FeedViewController.swift in Sources */,
 				0E3E32F728E86FE80047ABC1 /* TabBarController.swift in Sources */,
 				0E5001E128E86E11008C4FEF /* AppDelegate.swift in Sources */,
 				0E5001E328E86E11008C4FEF /* SceneDelegate.swift in Sources */,
