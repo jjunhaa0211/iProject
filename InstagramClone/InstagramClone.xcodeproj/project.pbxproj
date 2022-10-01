@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E3E32F728E86FE80047ABC1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E32F628E86FE80047ABC1 /* TabBarController.swift */; };
+		0E3E32FA28E87FB20047ABC1 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E32F928E87FB20047ABC1 /* FeedTableViewCell.swift */; };
 		0E5001E128E86E11008C4FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5001E028E86E11008C4FEF /* AppDelegate.swift */; };
 		0E5001E328E86E11008C4FEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5001E228E86E11008C4FEF /* SceneDelegate.swift */; };
 		0E5001E528E86E11008C4FEF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5001E428E86E11008C4FEF /* FeedViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		0B291BEE41759845BEA2502B /* Pods-InstagramClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramClone.debug.xcconfig"; path = "Target Support Files/Pods-InstagramClone/Pods-InstagramClone.debug.xcconfig"; sourceTree = "<group>"; };
 		0E3E32F628E86FE80047ABC1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0E3E32F928E87FB20047ABC1 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		0E5001DD28E86E11008C4FEF /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5001E028E86E11008C4FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5001E228E86E11008C4FEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				0E5001E428E86E11008C4FEF /* FeedViewController.swift */,
+				0E3E32F928E87FB20047ABC1 /* FeedTableViewCell.swift */,
 				0E3E32F628E86FE80047ABC1 /* TabBarController.swift */,
 			);
 			path = Scenes;
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E3E32FA28E87FB20047ABC1 /* FeedTableViewCell.swift in Sources */,
 				0E5001E528E86E11008C4FEF /* FeedViewController.swift in Sources */,
 				0E3E32F728E86FE80047ABC1 /* TabBarController.swift in Sources */,
 				0E5001E128E86E11008C4FEF /* AppDelegate.swift in Sources */,
