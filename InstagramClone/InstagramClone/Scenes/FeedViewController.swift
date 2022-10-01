@@ -38,6 +38,7 @@ extension FeedViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell
         //selectionStyle 셀이 클릭되지 않도록
         cell?.selectionStyle = .none
+        cell?.setup()
         
         return cell ?? UITableViewCell()
     }
