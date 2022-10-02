@@ -9,13 +9,28 @@ import SnapKit
 import UIKit
 
 final class UploadViewController: UIViewController {
+    private let uploadImage: UIImage
+    
     private let imageView = UIImageView()
     private lazy var textView: UITextView = {
         let textView = UITextView()
-        textView.font = .systemFont(ofSize: 14.0)
+        textView.font = .systemFont(ofSize: 15.0)
+        textView.text = "문구 입력..."
+        textView.textColor = .secondaryLabel
+        textView.delegate = self
         
         return textView
     }()
+    
+    init(uploadImage: UIImage) {
+        self.uploadImage = uploadImage
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +38,20 @@ final class UploadViewController: UIViewController {
         view.backgroundColor = .systemBackground
         setupNavigationItem()
         setupLayout()
+        
+        imageView.image = uploadImage
+        
     }
     
+}
+
+extension UploadViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        guard textView.textColor == .secondaryLabel else { return }
+        
+        textView.text = nil
+        textView.textColor = .label
+    }
 }
 
 private extension UploadViewController {
