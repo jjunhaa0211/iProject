@@ -11,16 +11,17 @@ import UIKit
 final class ProfileViewController: UIViewController {
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.backgroundColor = .systemBackground
         imageView.layer.cornerRadius = 40.0
         imageView.layer.borderWidth = 1
-        imageView.layer.borderColor = UIColor.quaternaryLabel.cgColor
+        imageView.layer.borderColor = UIColor.systemBackground.cgColor
         
         return imageView
     }()
     
     private lazy var nameLabel: UILabel = {
        let label = UILabel()
-        label.text = "User Name"
+        label.text = "박준하"
         label.font = .systemFont(ofSize: 14.0, weight: .semibold)
         
         return label
@@ -53,7 +54,7 @@ final class ProfileViewController: UIViewController {
         button.setTitle("메세지", for: .normal)
         button.setTitleColor(.label, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 14.0, weight: .semibold)
-        button.backgroundColor = .white
+        button.backgroundColor = .systemBackground
         
         button.layer.cornerRadius = 3.0
         button.layer.borderWidth = 0.5
@@ -63,9 +64,9 @@ final class ProfileViewController: UIViewController {
         
     }()
     
-    private let photoDataView = ProfileDataView(title: "게시물", count: 123)
-    private let followerDataView = ProfileDataView(title: "팔로워", count: 2000)
-    private let followingDataView = ProfileDataView(title: "팔로잉", count: 1)
+    private let photoDataView = ProfileDataView(title: "게시물", count: 1)
+    private let followerDataView = ProfileDataView(title: "팔로워", count: 238)
+    private let followingDataView = ProfileDataView(title: "팔로잉", count: 98)
     
     private lazy var collectionView: UICollectionView = {
        let layout = UICollectionViewFlowLayout()
@@ -99,7 +100,7 @@ extension ProfileViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 1
     }
 }
 
@@ -112,7 +113,7 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
 
 private extension ProfileViewController {
     func setupNavigationItems() {
-        navigationItem.title = "UserName"
+        navigationItem.title = "jn_xhx"
         
         let rightBarButton = UIBarButtonItem(
             image: UIImage(systemName: "ellipsis"),

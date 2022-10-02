@@ -9,7 +9,7 @@ import SnapKit
 import UIKit
 
 final class ProfileCollectionViewCell: UICollectionViewCell {
-    private let imageView = UIImageView()
+    private let imageView = UIImageView(image: UIImage(named: "IMG_4878"))
     
     func setup(with image: UIImage){
         addSubview(imageView)
