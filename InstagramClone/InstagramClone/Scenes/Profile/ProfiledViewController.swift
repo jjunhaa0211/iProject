@@ -62,6 +62,11 @@ final class ProfileViewController: UIViewController {
         return button
         
     }()
+    
+    private let photoDataView = ProfileDataView(title: "게시물", count: 123)
+    private let followerDataView = ProfileDataView(title: "팔로워", count: 2000)
+    private let followingDataView = ProfileDataView(title: "팔로잉", count: 1)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
