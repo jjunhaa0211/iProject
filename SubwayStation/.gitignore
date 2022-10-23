@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/swift,cocoapods,xcode,snap
-# Edit at https://www.toptal.com/developers/gitignore?templates=swift,cocoapods,xcode,snap
+# Created by https://www.toptal.com/developers/gitignore/api/xcode,cocoapods,swift
+# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,cocoapods,swift
 
 ### CocoaPods ###
 ## CocoaPods GitIgnore Template
@@ -8,22 +8,6 @@
 #           - Also handy if you have a large number of dependant pods
 #           - AS PER https://guides.cocoapods.org/using/using-cocoapods.html NEVER IGNORE THE LOCK FILE
 Pods/
-
-### Snap ###
-# gitginore template for creating Snap packages
-# website: https://snapcraft.io/
-
-parts/
-prime/
-stage/
-*.snap
-
-# Snapcraft global state tracking data(automatically generated)
-# https://forum.snapcraft.io/t/location-to-save-global-state/768
-/snap/.snapcraft/
-
-# Source archive packed by `snapcraft cleanbuild` before pushing to the LXD container
-/*_source.tar.bz2
 
 ### Swift ###
 # Xcode
@@ -117,8 +101,9 @@ iOSInjectionProject/
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/swift,cocoapods,xcode,snap
+# End of https://www.toptal.com/developers/gitignore/api/xcode,cocoapods,swift
