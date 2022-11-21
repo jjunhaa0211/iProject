@@ -53,3 +53,35 @@ class MainViewController: UIViewController {
     }
 }
 
+extension MainViewController {
+    typealias Alert = (title: String?, message: String?, actions: [AlertAction], style: UIAlertController.Style)
+    
+    enum AlertAction: AlertActionConverible {
+        case title, datetime, cancel
+        case confirm
+        
+        var title: String {
+            switch self {
+            case .title:
+                return "Title"
+            case .datetime:
+                return "Datetime"
+            case .cancel:
+                return "취소"
+            case .confirm:
+                return "확인"
+            }
+        }
+        
+        var style: UIAlertAction.Style {
+            switch self {
+            case .title, .datetime:
+                return .default
+            case .confirm, .cancel:
+                return .cancel
+            }
+        }
+        
+    }
+}
+
