@@ -94,11 +94,8 @@
 		0EF69C6D292B139200C36DAC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				0E0B24772905849E009C71C9 /* MainViewController.swift */,
-				0EF69C61292B0A9700C36DAC /* SearchBar.swift */,
-				0EF69C65292B107100C36DAC /* FilterView.swift */,
-				0EF69C67292B133E00C36DAC /* BlogList.swift */,
-				0EF69C69292B135100C36DAC /* BlogListCell.swift */,
+				0EF69C70292B6BA000C36DAC /* MainViewController */,
+				0EF69C6F292B6B3000C36DAC /* subComponents */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -109,6 +106,25 @@
 				0EF69C6B292B137100C36DAC /* BlogListCellData.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		0EF69C6F292B6B3000C36DAC /* subComponents */ = {
+			isa = PBXGroup;
+			children = (
+				0EF69C61292B0A9700C36DAC /* SearchBar.swift */,
+				0EF69C65292B107100C36DAC /* FilterView.swift */,
+				0EF69C67292B133E00C36DAC /* BlogList.swift */,
+				0EF69C69292B135100C36DAC /* BlogListCell.swift */,
+			);
+			path = subComponents;
+			sourceTree = "<group>";
+		};
+		0EF69C70292B6BA000C36DAC /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0E0B24772905849E009C71C9 /* MainViewController.swift */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		56806D4318C10B041F8D7B4B /* Frameworks */ = {

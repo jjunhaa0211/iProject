@@ -13,6 +13,10 @@ class MainViewController: UIViewController {
 
     let disposeBag = DisposeBag()
     
+    let searchBar = SearchBar()
+    
+    let listView = BlogListView()
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
@@ -35,7 +39,17 @@ class MainViewController: UIViewController {
     }
     
     private func layout() {
+        [searchBar, listView].forEach { view.addSubview($0) }
         
+        searchBar.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide)
+            $0.leading.trailing.equalToSuperview()
+        }
+        
+        listView.snp.makeConstraints {
+            $0.top.equalTo(searchBar.snp.bottom)
+            $0.leading.trailing.bottom.equalToSuperview()
+        }
     }
 }
 

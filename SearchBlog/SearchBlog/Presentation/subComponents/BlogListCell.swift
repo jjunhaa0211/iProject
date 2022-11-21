@@ -65,5 +65,6 @@ class BlogListCell: UITableViewCell {
             
             return dateFormatter.string(from: contentDate)
         }
+        dateTimeLabel.text = datetime
     }
 }

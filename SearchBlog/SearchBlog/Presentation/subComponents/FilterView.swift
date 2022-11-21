@@ -18,12 +18,13 @@ class FilterView : UITableViewHeaderFooterView {
     let sortButtonTapped = PublishRelay<Void>()
     
     override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: restorationIdentifier)
+        super.init(reuseIdentifier: reuseIdentifier)
         
         bind()
         attribute()
         layout()
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

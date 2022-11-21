@@ -21,9 +21,12 @@ class SearchBar: UISearchBar {
     
     var shouldLoadResult = Observable<String>.of("")
     
-    override init(frame: CGFloat) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         
+        bind()
+        attribute()
+        layout()
     }
     
     required init?(coder: NSCoder) {
