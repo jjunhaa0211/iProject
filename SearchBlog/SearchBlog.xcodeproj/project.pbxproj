@@ -12,6 +12,9 @@
 		0E0B24782905849E009C71C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0B24772905849E009C71C9 /* MainViewController.swift */; };
 		0E0B247D2905849F009C71C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0B247C2905849F009C71C9 /* Assets.xcassets */; };
 		0E0B24802905849F009C71C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0B247E2905849F009C71C9 /* LaunchScreen.storyboard */; };
+		0E2CBDCD292E205C001667BE /* DKBlog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBDCC292E205C001667BE /* DKBlog.swift */; };
+		0E2CBDD0292E2AB2001667BE /* SearchBlogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBDCF292E2AB2001667BE /* SearchBlogAPI.swift */; };
+		0E2CBDD3292E2C90001667BE /* SearchNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBDD2292E2C90001667BE /* SearchNetworkError.swift */; };
 		0EF69C62292B0A9700C36DAC /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF69C61292B0A9700C36DAC /* SearchBar.swift */; };
 		0EF69C66292B107100C36DAC /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF69C65292B107100C36DAC /* FilterView.swift */; };
 		0EF69C68292B133E00C36DAC /* BlogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF69C67292B133E00C36DAC /* BlogList.swift */; };
@@ -29,6 +32,9 @@
 		0E0B247C2905849F009C71C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E0B247F2905849F009C71C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E0B24812905849F009C71C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E2CBDCC292E205C001667BE /* DKBlog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DKBlog.swift; sourceTree = "<group>"; };
+		0E2CBDCF292E2AB2001667BE /* SearchBlogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogAPI.swift; sourceTree = "<group>"; };
+		0E2CBDD2292E2C90001667BE /* SearchNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkError.swift; sourceTree = "<group>"; };
 		0EF69C61292B0A9700C36DAC /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		0EF69C65292B107100C36DAC /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		0EF69C67292B133E00C36DAC /* BlogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogList.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 			children = (
 				0E0B24732905849E009C71C9 /* AppDelegate.swift */,
 				0E0B24752905849E009C71C9 /* SceneDelegate.swift */,
+				0E2CBDD1292E2AB6001667BE /* Network */,
 				0EF69C6E292B13AF00C36DAC /* Entities */,
 				0EF69C6D292B139200C36DAC /* Presentation */,
 				0E0B247C2905849F009C71C9 /* Assets.xcassets */,
@@ -91,6 +98,15 @@
 				0E0B24812905849F009C71C9 /* Info.plist */,
 			);
 			path = SearchBlog;
+			sourceTree = "<group>";
+		};
+		0E2CBDD1292E2AB6001667BE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0E2CBDCF292E2AB2001667BE /* SearchBlogAPI.swift */,
+				0E2CBDD2292E2C90001667BE /* SearchNetworkError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		0EF69C6D292B139200C36DAC /* Presentation */ = {
@@ -117,6 +133,7 @@
 				0EF69C65292B107100C36DAC /* FilterView.swift */,
 				0EF69C67292B133E00C36DAC /* BlogList.swift */,
 				0EF69C69292B135100C36DAC /* BlogListCell.swift */,
+				0E2CBDCC292E205C001667BE /* DKBlog.swift */,
 			);
 			path = subComponents;
 			sourceTree = "<group>";
@@ -253,8 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E0B24782905849E009C71C9 /* MainViewController.swift in Sources */,
+				0E2CBDD3292E2C90001667BE /* SearchNetworkError.swift in Sources */,
 				0EF69C6A292B135100C36DAC /* BlogListCell.swift in Sources */,
+				0E2CBDCD292E205C001667BE /* DKBlog.swift in Sources */,
 				0EF69C62292B0A9700C36DAC /* SearchBar.swift in Sources */,
+				0E2CBDD0292E2AB2001667BE /* SearchBlogAPI.swift in Sources */,
 				0EF69C6C292B137100C36DAC /* BlogListCellData.swift in Sources */,
 				0E0B24742905849E009C71C9 /* AppDelegate.swift in Sources */,
 				0EF69C68292B133E00C36DAC /* BlogList.swift in Sources */,

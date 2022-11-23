@@ -14,8 +14,9 @@ class MainViewController: UIViewController {
     let disposeBag = DisposeBag()
     
     let searchBar = SearchBar()
-    
     let listView = BlogListView()
+    
+    let alertActionTapped = PublishRelay<AlertAction>()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -30,7 +31,19 @@ class MainViewController: UIViewController {
     }
     
     private func bind() {
+        let alertshhetForSorting = listView.headerView.sortButtonTapped
+            .map { _ -> Alert in
+                return (title: nil, message: nil, actions: [.title, .datetime, .cancel], style: .actionSheet)
+            }
         
+        alertshhetForSorting
+            .asSignal(onErrorSignalWith: .empty())
+            .flatMapLatest { alert -> Signal<AlertAction> in
+                let alertController = UIAlertController(title: alert.title, message: alert.message, preferredStyle: alert.style)
+                return self.presentAlertController(alertController, actions: alert.actions)
+            }
+            .emit(to: alertActionTapped)
+            .disposed(by: disposeBag)
     }
     
     private func attribute() {
