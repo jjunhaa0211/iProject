@@ -81,7 +81,28 @@ extension MainViewController {
                 return .cancel
             }
         }
-        
+    }
+    
+    func presentAlertController<Action: AlertActionConverible>(_ alertController: UIAlertController, actions: [Action]) -> Signal<Action> {
+        if actions.isEmpty { return .empty() }
+        return Observable
+            .create { [weak self] observer in
+                guard let self = self else { return Disposables.create() }
+                for action in actions {
+                    alertController.addAction(
+                        UIAlertAction(title: action.title, style: action.style, handler: { _ in
+                            observer.onNext(action)
+                            observer.onCompleted()
+                        })
+                    )
+                }
+                self.present(alertController, animated: true, completion: nil)
+                
+                return Disposables.create {
+                    alertController.dismiss(animated: true, completion: nil)
+                }
+            }
+            .asSignal(onErrorSignalWith: .empty())
     }
 }
 
