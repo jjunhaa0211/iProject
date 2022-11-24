@@ -16,6 +16,8 @@
 		0E2CBDFF292F82B3001667BE /* TitleTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBDFE292F82B3001667BE /* TitleTextFieldCell.swift */; };
 		0E2CBE01292F82E9001667BE /* TitleTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBE00292F82E9001667BE /* TitleTextFieldCellViewModel.swift */; };
 		0E2CBE05292F860C001667BE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBE04292F860C001667BE /* Category.swift */; };
+		0E2CBE08292F87D4001667BE /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBE07292F87D4001667BE /* CategoryViewModel.swift */; };
+		0E2CBE0A292F8C8F001667BE /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBE09292F8C8F001667BE /* CategoryListViewController.swift */; };
 		78F651F2AA818A7F16A3364F /* Pods_UsedGoodsUpload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D5DE9693F3ABA95509F8A9 /* Pods_UsedGoodsUpload.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		0E2CBDFE292F82B3001667BE /* TitleTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextFieldCell.swift; sourceTree = "<group>"; };
 		0E2CBE00292F82E9001667BE /* TitleTextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextFieldCellViewModel.swift; sourceTree = "<group>"; };
 		0E2CBE04292F860C001667BE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0E2CBE07292F87D4001667BE /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		0E2CBE09292F8C8F001667BE /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		62A5AFABFCD03B3A6EF56FF2 /* Pods-UsedGoodsUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsedGoodsUpload.debug.xcconfig"; path = "Target Support Files/Pods-UsedGoodsUpload/Pods-UsedGoodsUpload.debug.xcconfig"; sourceTree = "<group>"; };
 		89D5DE9693F3ABA95509F8A9 /* Pods_UsedGoodsUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsedGoodsUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,6 +90,8 @@
 				0E2CBDF9292F79E2001667BE /* MainViewController.swift */,
 				0E2CBDFB292F7B23001667BE /* MainViewModel.swift */,
 				0E2CBE02292F8306001667BE /* TitleTextFieldCell */,
+				0E2CBE07292F87D4001667BE /* CategoryViewModel.swift */,
+				0E2CBE09292F8C8F001667BE /* CategoryListViewController.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -248,8 +254,10 @@
 			files = (
 				0E2CBDFA292F79E2001667BE /* MainViewController.swift in Sources */,
 				0E2CBDE6292F79D0001667BE /* AppDelegate.swift in Sources */,
+				0E2CBE0A292F8C8F001667BE /* CategoryListViewController.swift in Sources */,
 				0E2CBDE8292F79D0001667BE /* SceneDelegate.swift in Sources */,
 				0E2CBE01292F82E9001667BE /* TitleTextFieldCellViewModel.swift in Sources */,
+				0E2CBE08292F87D4001667BE /* CategoryViewModel.swift in Sources */,
 				0E2CBDFF292F82B3001667BE /* TitleTextFieldCell.swift in Sources */,
 				0E2CBDFC292F7B23001667BE /* MainViewModel.swift in Sources */,
 				0E2CBE05292F860C001667BE /* Category.swift in Sources */,
