@@ -54,3 +54,15 @@ class MainViewContoller: UIViewController {
         }
     }
 }
+
+typealias Alert = (title: String?, message: String?)
+extension Reactive where Base: MainViewContoller {
+    var setAlert: Binder<Alert> {
+        return Binder(base) { base, data in
+            let alertController = UIAlertController(title: data.title, message: data.message, preferredStyle: .alert)
+            let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+            alertController.addAction(action)
+            base.present(alertController, animated: true, completion: nil)
+        }
+    }
+}
