@@ -19,6 +19,7 @@
 		0E2CBE08292F87D4001667BE /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBE07292F87D4001667BE /* CategoryViewModel.swift */; };
 		0E2CBE0A292F8C8F001667BE /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBE09292F8C8F001667BE /* CategoryListViewController.swift */; };
 		0E2CBE0D292F90CD001667BE /* PriceTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBE0C292F90CD001667BE /* PriceTextFieldCellViewModel.swift */; };
+		0E2CBE0F292F92D8001667BE /* PriceTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CBE0E292F92D8001667BE /* PriceTextFieldCell.swift */; };
 		78F651F2AA818A7F16A3364F /* Pods_UsedGoodsUpload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D5DE9693F3ABA95509F8A9 /* Pods_UsedGoodsUpload.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		0E2CBE07292F87D4001667BE /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		0E2CBE09292F8C8F001667BE /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		0E2CBE0C292F90CD001667BE /* PriceTextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		0E2CBE0E292F92D8001667BE /* PriceTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCell.swift; sourceTree = "<group>"; };
 		62A5AFABFCD03B3A6EF56FF2 /* Pods-UsedGoodsUpload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsedGoodsUpload.debug.xcconfig"; path = "Target Support Files/Pods-UsedGoodsUpload/Pods-UsedGoodsUpload.debug.xcconfig"; sourceTree = "<group>"; };
 		89D5DE9693F3ABA95509F8A9 /* Pods_UsedGoodsUpload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsedGoodsUpload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 			children = (
 				0E2CBDF9292F79E2001667BE /* MainViewController.swift */,
 				0E2CBE0C292F90CD001667BE /* PriceTextFieldCellViewModel.swift */,
+				0E2CBE0E292F92D8001667BE /* PriceTextFieldCell.swift */,
 				0E2CBDFB292F7B23001667BE /* MainViewModel.swift */,
 				0E2CBE02292F8306001667BE /* TitleTextFieldCell */,
 				0E2CBE0B292F8F7A001667BE /* CategoryViewController */,
@@ -269,6 +272,7 @@
 				0E2CBE0A292F8C8F001667BE /* CategoryListViewController.swift in Sources */,
 				0E2CBDE8292F79D0001667BE /* SceneDelegate.swift in Sources */,
 				0E2CBE01292F82E9001667BE /* TitleTextFieldCellViewModel.swift in Sources */,
+				0E2CBE0F292F92D8001667BE /* PriceTextFieldCell.swift in Sources */,
 				0E2CBE08292F87D4001667BE /* CategoryViewModel.swift in Sources */,
 				0E2CBDFF292F82B3001667BE /* TitleTextFieldCell.swift in Sources */,
 				0E2CBDFC292F7B23001667BE /* MainViewModel.swift in Sources */,
