@@ -48,6 +48,10 @@
 		0E42C97D297555AA00D1C16F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42C97C297555AA00D1C16F /* libc++.tbd */; };
 		0E42C97F297555BC00D1C16F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42C97E297555BC00D1C16F /* libxml2.tbd */; };
 		0E42C981297555D000D1C16F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42C980297555D000D1C16F /* libsqlite3.tbd */; };
+		0E42C9842975584000D1C16F /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9832975584000D1C16F /* LocationData.swift */; };
+		0E42C9862975586500D1C16F /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9852975586500D1C16F /* KLDocument.swift */; };
+		0E42C9882975587900D1C16F /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9872975587900D1C16F /* MTMapViewError.swift */; };
+		0E42C98A2975588A00D1C16F /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9892975588A00D1C16F /* DetailListCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +107,10 @@
 		0E42C97C297555AA00D1C16F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0E42C97E297555BC00D1C16F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		0E42C980297555D000D1C16F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0E42C9832975584000D1C16F /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		0E42C9852975586500D1C16F /* KLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
+		0E42C9872975587900D1C16F /* MTMapViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMapViewError.swift; sourceTree = "<group>"; };
+		0E42C9892975588A00D1C16F /* DetailListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +156,7 @@
 				0E42C8C1297524C200D1C16F /* AppDelegate.swift */,
 				0E42C8C3297524C200D1C16F /* SceneDelegate.swift */,
 				0E42C8C5297524C200D1C16F /* ViewController.swift */,
+				0E42C9822975582900D1C16F /* Entities */,
 				0E42C8CD297524C300D1C16F /* Assets.xcassets */,
 				0E42C8CF297524C300D1C16F /* LaunchScreen.storyboard */,
 				0E42C8D2297524C300D1C16F /* Info.plist */,
@@ -228,6 +237,17 @@
 				0E42C9492975546C00D1C16F /* MTMapCircle.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		0E42C9822975582900D1C16F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0E42C9832975584000D1C16F /* LocationData.swift */,
+				0E42C9852975586500D1C16F /* KLDocument.swift */,
+				0E42C9872975587900D1C16F /* MTMapViewError.swift */,
+				0E42C9892975588A00D1C16F /* DetailListCellData.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,9 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E42C8C6297524C200D1C16F /* ViewController.swift in Sources */,
+				0E42C9882975587900D1C16F /* MTMapViewError.swift in Sources */,
 				0E42C8CC297524C200D1C16F /* ConvenienceStoreProject.xcdatamodeld in Sources */,
 				0E42C8C2297524C200D1C16F /* AppDelegate.swift in Sources */,
+				0E42C98A2975588A00D1C16F /* DetailListCellData.swift in Sources */,
 				0E42C8C4297524C200D1C16F /* SceneDelegate.swift in Sources */,
+				0E42C9842975584000D1C16F /* LocationData.swift in Sources */,
+				0E42C9862975586500D1C16F /* KLDocument.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
