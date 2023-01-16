@@ -24,6 +24,7 @@ class ViewController: UIViewController {
       animationView = .init(name: "running")
       
       animationView!.frame = view.bounds
+      animationView!.frame = view.bounds
       
       // 3. Set animation content mode
       
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
       
       // 5. Adjust animation speed
       
-        animationView!.animationSpeed = 0.5
+      animationView!.animationSpeed = 0.5
       
       view.addSubview(animationView!)
       
