@@ -60,6 +60,8 @@
 		0E42C99B29755A4300D1C16F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99A29755A4300D1C16F /* SnapKit */; };
 		0E42C99D29755B1C00D1C16F /* LocationInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C99C29755B1C00D1C16F /* LocationInformationViewModel.swift */; };
 		0E42C99F29757A6900D1C16F /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C99E29757A6900D1C16F /* DetailListCell.swift */; };
+		0E42C9A1297581D400D1C16F /* DetailListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9A0297581D400D1C16F /* DetailListBackgroundView.swift */; };
+		0E42C9A32975820E00D1C16F /* DetailListBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9A22975820E00D1C16F /* DetailListBackgroundViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +123,8 @@
 		0E42C98C2975594200D1C16F /* LocationInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewController.swift; sourceTree = "<group>"; };
 		0E42C99C29755B1C00D1C16F /* LocationInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModel.swift; sourceTree = "<group>"; };
 		0E42C99E29757A6900D1C16F /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
+		0E42C9A0297581D400D1C16F /* DetailListBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundView.swift; sourceTree = "<group>"; };
+		0E42C9A22975820E00D1C16F /* DetailListBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +276,8 @@
 				0E42C98C2975594200D1C16F /* LocationInformationViewController.swift */,
 				0E42C99C29755B1C00D1C16F /* LocationInformationViewModel.swift */,
 				0E42C99E29757A6900D1C16F /* DetailListCell.swift */,
+				0E42C9A0297581D400D1C16F /* DetailListBackgroundView.swift */,
+				0E42C9A22975820E00D1C16F /* DetailListBackgroundViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -388,11 +394,13 @@
 				0E42C98D2975594200D1C16F /* LocationInformationViewController.swift in Sources */,
 				0E42C9882975587900D1C16F /* MTMapViewError.swift in Sources */,
 				0E42C99F29757A6900D1C16F /* DetailListCell.swift in Sources */,
+				0E42C9A1297581D400D1C16F /* DetailListBackgroundView.swift in Sources */,
 				0E42C8CC297524C200D1C16F /* ConvenienceStoreProject.xcdatamodeld in Sources */,
 				0E42C99D29755B1C00D1C16F /* LocationInformationViewModel.swift in Sources */,
 				0E42C8C2297524C200D1C16F /* AppDelegate.swift in Sources */,
 				0E42C98A2975588A00D1C16F /* DetailListCellData.swift in Sources */,
 				0E42C8C4297524C200D1C16F /* SceneDelegate.swift in Sources */,
+				0E42C9A32975820E00D1C16F /* DetailListBackgroundViewModel.swift in Sources */,
 				0E42C9842975584000D1C16F /* LocationData.swift in Sources */,
 				0E42C9862975586500D1C16F /* KLDocument.swift in Sources */,
 			);

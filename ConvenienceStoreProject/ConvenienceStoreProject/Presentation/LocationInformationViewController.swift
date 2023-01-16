@@ -102,6 +102,8 @@ extension LocationInformationViewController: MTMapViewDelegate {
         #else
         viewModel.currentLocation.accept(location)
         #elseif
+        //이게 왜 에러가나지?
+        print("에러가 나는 이유가 뭐니?")
     }
     
     //맵 센터 포인트

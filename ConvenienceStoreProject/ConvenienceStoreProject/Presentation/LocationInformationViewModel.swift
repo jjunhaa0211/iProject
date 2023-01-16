@@ -12,9 +12,15 @@ import RxRelay
 struct LocationInformationViewModel {
     let disposeBag = DisposeBag()
     
+    //subViewModels
+    let detailListBackgroundViewModel = DetailListBackgroundViewModel()
+    
     //viewModel -> view
     let setMapCenter: Signal<MTMapPoint>
     let errorMassge: Signal<String>
+    
+    let detailListCellData: Driver<[DetailListCellData]>
+    let scrollToSelectedLocation: Signal<Int>
     
     //view -> viewModel
     let currentLocation = PublishRelay<MTMapPoint>()
@@ -22,8 +28,25 @@ struct LocationInformationViewModel {
     let selectPOIItem = PublishRelay<MTMapPOIItem>()
     let mapViewError = PublishRelay<String>()
     let currentLocationButtonTapped = PublishRelay<Void>()
+    let detailListItemSelected = PublishRelay<Int>()
     
+    let documentData = PublishSubject<[KLDocument?]>()
     init() {
+        
+        //지도 중심점 설정
+        let selectDtailListItem = detailListItemSelected
+            .withLatestFrom(documentData) { $1[$0] }
+            .map { data -> MTMapPoint in
+                guard let data = data,
+                      let longtitue = Double(data.x),
+                      let latitude = Double(data.y) else {
+                    return MTMapPoint()
+                }
+                let geoCoord = MTMapPointGeo(latitude: latitude, longitude: longtitue)
+                return MTMapPoint(geoCoord: geoCoord)
+            }
+        
+        
         let moveToCurrentLocation = currentLocationButtonTapped
             .withLatestFrom(currentLocation)
         
