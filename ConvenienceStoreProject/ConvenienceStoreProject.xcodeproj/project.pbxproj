@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E42C8C2297524C200D1C16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C8C1297524C200D1C16F /* AppDelegate.swift */; };
 		0E42C8C4297524C200D1C16F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C8C3297524C200D1C16F /* SceneDelegate.swift */; };
-		0E42C8C6297524C200D1C16F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C8C5297524C200D1C16F /* ViewController.swift */; };
 		0E42C8CC297524C200D1C16F /* ConvenienceStoreProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C8CA297524C200D1C16F /* ConvenienceStoreProject.xcdatamodeld */; };
 		0E42C8CE297524C300D1C16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E42C8CD297524C300D1C16F /* Assets.xcassets */; };
 		0E42C8D1297524C300D1C16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E42C8CF297524C300D1C16F /* LaunchScreen.storyboard */; };
@@ -52,13 +51,20 @@
 		0E42C9862975586500D1C16F /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9852975586500D1C16F /* KLDocument.swift */; };
 		0E42C9882975587900D1C16F /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9872975587900D1C16F /* MTMapViewError.swift */; };
 		0E42C98A2975588A00D1C16F /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9892975588A00D1C16F /* DetailListCellData.swift */; };
+		0E42C98D2975594200D1C16F /* LocationInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C98C2975594200D1C16F /* LocationInformationViewController.swift */; };
+		0E42C99029755A1E00D1C16F /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C98F29755A1E00D1C16F /* RxBlocking */; };
+		0E42C99229755A1E00D1C16F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99129755A1E00D1C16F /* RxCocoa */; };
+		0E42C99429755A1E00D1C16F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99329755A1E00D1C16F /* RxRelay */; };
+		0E42C99629755A1E00D1C16F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99529755A1E00D1C16F /* RxSwift */; };
+		0E42C99829755A1E00D1C16F /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99729755A1E00D1C16F /* RxTest */; };
+		0E42C99B29755A4300D1C16F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99A29755A4300D1C16F /* SnapKit */; };
+		0E42C99D29755B1C00D1C16F /* LocationInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C99C29755B1C00D1C16F /* LocationInformationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E42C8BE297524C200D1C16F /* ConvenienceStoreProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvenienceStoreProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E42C8C1297524C200D1C16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E42C8C3297524C200D1C16F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E42C8C5297524C200D1C16F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E42C8CB297524C200D1C16F /* ConvenienceStoreProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConvenienceStoreProject.xcdatamodel; sourceTree = "<group>"; };
 		0E42C8CD297524C300D1C16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E42C8D0297524C300D1C16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,6 +117,8 @@
 		0E42C9852975586500D1C16F /* KLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
 		0E42C9872975587900D1C16F /* MTMapViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMapViewError.swift; sourceTree = "<group>"; };
 		0E42C9892975588A00D1C16F /* DetailListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
+		0E42C98C2975594200D1C16F /* LocationInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewController.swift; sourceTree = "<group>"; };
+		0E42C99C29755B1C00D1C16F /* LocationInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,14 +126,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E42C99829755A1E00D1C16F /* RxTest in Frameworks */,
 				0E42C981297555D000D1C16F /* libsqlite3.tbd in Frameworks */,
+				0E42C99029755A1E00D1C16F /* RxBlocking in Frameworks */,
+				0E42C99B29755A4300D1C16F /* SnapKit in Frameworks */,
+				0E42C99229755A1E00D1C16F /* RxCocoa in Frameworks */,
 				0E42C97F297555BC00D1C16F /* libxml2.tbd in Frameworks */,
 				0E42C97D297555AA00D1C16F /* libc++.tbd in Frameworks */,
 				0E42C97B2975559E00D1C16F /* QuartzCore.framework in Frameworks */,
+				0E42C99629755A1E00D1C16F /* RxSwift in Frameworks */,
 				0E42C9792975558B00D1C16F /* CoreLocation.framework in Frameworks */,
 				0E42C9772975557A00D1C16F /* SystemConfiguration.framework in Frameworks */,
 				0E42C9752975557300D1C16F /* OpenGLES.framework in Frameworks */,
 				0E42C9722975546C00D1C16F /* DaumMap.framework in Frameworks */,
+				0E42C99429755A1E00D1C16F /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +169,7 @@
 				0E42C973297554AB00D1C16F /* BridgingHeader.h */,
 				0E42C8C1297524C200D1C16F /* AppDelegate.swift */,
 				0E42C8C3297524C200D1C16F /* SceneDelegate.swift */,
-				0E42C8C5297524C200D1C16F /* ViewController.swift */,
+				0E42C98B297558F700D1C16F /* Presentation */,
 				0E42C9822975582900D1C16F /* Entities */,
 				0E42C8CD297524C300D1C16F /* Assets.xcassets */,
 				0E42C8CF297524C300D1C16F /* LaunchScreen.storyboard */,
@@ -250,6 +264,15 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		0E42C98B297558F700D1C16F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0E42C98C2975594200D1C16F /* LocationInformationViewController.swift */,
+				0E42C99C29755B1C00D1C16F /* LocationInformationViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,6 +289,14 @@
 			dependencies = (
 			);
 			name = ConvenienceStoreProject;
+			packageProductDependencies = (
+				0E42C98F29755A1E00D1C16F /* RxBlocking */,
+				0E42C99129755A1E00D1C16F /* RxCocoa */,
+				0E42C99329755A1E00D1C16F /* RxRelay */,
+				0E42C99529755A1E00D1C16F /* RxSwift */,
+				0E42C99729755A1E00D1C16F /* RxTest */,
+				0E42C99A29755A4300D1C16F /* SnapKit */,
+			);
 			productName = ConvenienceStoreProject;
 			productReference = 0E42C8BE297524C200D1C16F /* ConvenienceStoreProject.app */;
 			productType = "com.apple.product-type.application";
@@ -294,6 +325,10 @@
 				Base,
 			);
 			mainGroup = 0E42C8B5297524C100D1C16F;
+			packageReferences = (
+				0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */,
+				0E42C99929755A4300D1C16F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 0E42C8BF297524C200D1C16F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -347,9 +382,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E42C8C6297524C200D1C16F /* ViewController.swift in Sources */,
+				0E42C98D2975594200D1C16F /* LocationInformationViewController.swift in Sources */,
 				0E42C9882975587900D1C16F /* MTMapViewError.swift in Sources */,
 				0E42C8CC297524C200D1C16F /* ConvenienceStoreProject.xcdatamodeld in Sources */,
+				0E42C99D29755B1C00D1C16F /* LocationInformationViewModel.swift in Sources */,
 				0E42C8C2297524C200D1C16F /* AppDelegate.swift in Sources */,
 				0E42C98A2975588A00D1C16F /* DetailListCellData.swift in Sources */,
 				0E42C8C4297524C200D1C16F /* SceneDelegate.swift in Sources */,
@@ -576,6 +612,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		0E42C99929755A4300D1C16F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E42C98F29755A1E00D1C16F /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		0E42C99129755A1E00D1C16F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		0E42C99329755A1E00D1C16F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		0E42C99529755A1E00D1C16F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		0E42C99729755A1E00D1C16F /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		0E42C99A29755A4300D1C16F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E42C99929755A4300D1C16F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0E42C8CA297524C200D1C16F /* ConvenienceStoreProject.xcdatamodeld */ = {
