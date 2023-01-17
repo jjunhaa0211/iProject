@@ -61,5 +61,11 @@ struct LocationInformationViewModel {
         
         errorMassge = mapViewError.asObservable()
             .asSignal(onErrorJustReturn: "잠시 후 다시 시도해주세요")
+        
+        detailListCellData = Driver.just([])
+        
+        scrollToSelectedLocation = selectPOIItem
+            .map { $0.tag }
+            .asSignal(onErrorJustReturn: 0)
     }
 }

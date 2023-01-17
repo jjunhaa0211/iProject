@@ -18,7 +18,7 @@ class LocationInformationViewController: UIViewController {
     let mapView = MTMapView()
     let currentLocationButton = UIButton()
     let detailList = UITableView()
-    
+    let detailListBackgroundView = DetailListBackgroundView()
     let viewModel = LocationInformationViewModel()
     
     override func viewDidLoad() {
@@ -33,6 +33,9 @@ class LocationInformationViewController: UIViewController {
     }
     
     private func bind(_ viewModel: LocationInformationViewModel) {
+        viewModel.setMapCenter
+            .emit(to: mapView.rx.setMapCenterPoint)
+            .disposed(by: disposeBag)
         
         viewModel.setMapCenter
             .emit(to: mapView.rx.setMapCenterPoint)
@@ -40,6 +43,30 @@ class LocationInformationViewController: UIViewController {
         
         viewModel.errorMassge
             .emit(to: self.rx.presentAlert)
+            .disposed(by: disposeBag)
+        
+        viewModel.detailListCellData
+            .drive(detailList.rx.items) { tv, row, data in
+                let cell = tv.dequeueReusableCell(withIdentifier: "DetailListCell", for: IndexPath(row: row, section: 0)) as!
+                DetailListCell
+                
+                cell.setData(data)
+                return cell
+            }
+            .disposed(by: disposeBag)
+        
+        viewModel.scrollToSelectedLocation
+            .emit(to: self.rx.showSelectedLocation)
+            .disposed(by: disposeBag)
+        
+        viewModel.detailListCellData
+            .map { $0.compactMap { $0.point} }
+            .drive(self.rx.addPOIItems)
+            .disposed(by: disposeBag)
+        
+        detailList.rx.itemSelected
+            .map { $0.row }
+            .bind(to: viewModel.detailListItemSelected)
             .disposed(by: disposeBag)
         
         currentLocationButton.rx.tap
@@ -55,6 +82,10 @@ class LocationInformationViewController: UIViewController {
         currentLocationButton.setImage(UIImage(systemName: "Location.fill"), for: .normal)
         currentLocationButton.backgroundColor = .white
         currentLocationButton.layer.cornerRadius = 20.0
+        
+        detailList.register(DetailListCell.self, forCellReuseIdentifier: "DetailListCell")
+        detailList.separatorStyle = .none
+        detailList.backgroundView = detailListBackgroundView
     }
     
     private func layout() {
@@ -94,19 +125,16 @@ extension LocationInformationViewController: CLLocationManagerDelegate {
     }
 }
 
+
 extension LocationInformationViewController: MTMapViewDelegate {
-    // 현재의 위치를 매번 업데이트
     func mapView(_ mapView: MTMapView!, updateCurrentLocation location: MTMapPoint!, withAccuracy accuracy: MTMapLocationAccuracy) {
         #if DEBUG
         viewModel.currentLocation.accept(MTMapPoint(geoCoord: MTMapPointGeo(latitude: 37.394225, longitude: 127.110341)))
         #else
-        viewModel.currentLocation.accept(location)
-        #elseif
-        //이게 왜 에러가나지?
-        print("에러가 나는 이유가 뭐니?")
+         viewModel.currentLocation.accept(location)
+        #endif
     }
     
-    //맵 센터 포인트
     func mapView(_ mapView: MTMapView!, finishedMapMoveAnimation mapCenterPoint: MTMapPoint!) {
         viewModel.mapCenterPoint.accept(mapCenterPoint)
     }
@@ -133,11 +161,39 @@ extension Reactive where Base: LocationInformationViewController {
     var presentAlert: Binder<String> {
         return Binder(base) { base, message in
             let alertController = UIAlertController(title: "문제가 발생했어요", message: message, preferredStyle: .alert)
+            
             let action = UIAlertAction(title: "확인", style: .default, handler: nil)
             
             alertController.addAction(action)
             
             base.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    var showSelectedLocation: Binder<Int> {
+        return Binder(base) { base, row in
+            let indexPath  = IndexPath(row: row, section: 0)
+            base.detailList.selectRow(at: indexPath, animated: true, scrollPosition: .top)
+        }
+    }
+    
+    var addPOIItems: Binder<[MTMapPoint]> {
+        return Binder(base) { base, points in
+            let items = points
+                .enumerated()
+                .map { offset, point -> MTMapPOIItem in
+                    let mapPOIItem = MTMapPOIItem()
+                    
+                    mapPOIItem.mapPoint = point
+                    mapPOIItem.markerType = .redPin
+                    mapPOIItem.showAnimationType = .springFromGround
+                    mapPOIItem.tag = offset
+                    
+                    return mapPOIItem
+                }
+            
+            base.mapView.removeAllPOIItems()
+            base.mapView.addPOIItems(items)
         }
     }
 }

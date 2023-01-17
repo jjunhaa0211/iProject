@@ -15,14 +15,15 @@ class DetailListCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        
+        attributes()
+        layout()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setData(_ data: DetailListCellData) {
+    func setData(_ data: DetailListCellData) {
         
     }
     

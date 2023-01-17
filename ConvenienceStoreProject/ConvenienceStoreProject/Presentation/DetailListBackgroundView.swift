@@ -9,7 +9,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class DetailListBackgroundViewCotroller: UIView {
+class DetailListBackgroundView: UIView {
     let disposeBag = DisposeBag()
     let statusLabel = UILabel()
     

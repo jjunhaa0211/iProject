@@ -52,16 +52,11 @@
 		0E42C9882975587900D1C16F /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9872975587900D1C16F /* MTMapViewError.swift */; };
 		0E42C98A2975588A00D1C16F /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9892975588A00D1C16F /* DetailListCellData.swift */; };
 		0E42C98D2975594200D1C16F /* LocationInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C98C2975594200D1C16F /* LocationInformationViewController.swift */; };
-		0E42C99029755A1E00D1C16F /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C98F29755A1E00D1C16F /* RxBlocking */; };
-		0E42C99229755A1E00D1C16F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99129755A1E00D1C16F /* RxCocoa */; };
-		0E42C99429755A1E00D1C16F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99329755A1E00D1C16F /* RxRelay */; };
-		0E42C99629755A1E00D1C16F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99529755A1E00D1C16F /* RxSwift */; };
-		0E42C99829755A1E00D1C16F /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99729755A1E00D1C16F /* RxTest */; };
-		0E42C99B29755A4300D1C16F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E42C99A29755A4300D1C16F /* SnapKit */; };
 		0E42C99D29755B1C00D1C16F /* LocationInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C99C29755B1C00D1C16F /* LocationInformationViewModel.swift */; };
 		0E42C99F29757A6900D1C16F /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C99E29757A6900D1C16F /* DetailListCell.swift */; };
 		0E42C9A1297581D400D1C16F /* DetailListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9A0297581D400D1C16F /* DetailListBackgroundView.swift */; };
 		0E42C9A32975820E00D1C16F /* DetailListBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42C9A22975820E00D1C16F /* DetailListBackgroundViewModel.swift */; };
+		0EFE129229767B8E004939DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0EFE129129767B8E004939DC /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +120,8 @@
 		0E42C99E29757A6900D1C16F /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
 		0E42C9A0297581D400D1C16F /* DetailListBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundView.swift; sourceTree = "<group>"; };
 		0E42C9A22975820E00D1C16F /* DetailListBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundViewModel.swift; sourceTree = "<group>"; };
+		B088E2E19007DE2A341A3C9E /* Pods-ConvenienceStoreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenienceStoreProject.debug.xcconfig"; path = "Target Support Files/Pods-ConvenienceStoreProject/Pods-ConvenienceStoreProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B59D8BE387D48718D9B1EAEA /* Pods-ConvenienceStoreProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConvenienceStoreProject.release.xcconfig"; path = "Target Support Files/Pods-ConvenienceStoreProject/Pods-ConvenienceStoreProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,32 +129,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E42C99829755A1E00D1C16F /* RxTest in Frameworks */,
 				0E42C981297555D000D1C16F /* libsqlite3.tbd in Frameworks */,
-				0E42C99029755A1E00D1C16F /* RxBlocking in Frameworks */,
-				0E42C99B29755A4300D1C16F /* SnapKit in Frameworks */,
-				0E42C99229755A1E00D1C16F /* RxCocoa in Frameworks */,
 				0E42C97F297555BC00D1C16F /* libxml2.tbd in Frameworks */,
 				0E42C97D297555AA00D1C16F /* libc++.tbd in Frameworks */,
 				0E42C97B2975559E00D1C16F /* QuartzCore.framework in Frameworks */,
-				0E42C99629755A1E00D1C16F /* RxSwift in Frameworks */,
 				0E42C9792975558B00D1C16F /* CoreLocation.framework in Frameworks */,
 				0E42C9772975557A00D1C16F /* SystemConfiguration.framework in Frameworks */,
+				0EFE129229767B8E004939DC /* SnapKit in Frameworks */,
 				0E42C9752975557300D1C16F /* OpenGLES.framework in Frameworks */,
 				0E42C9722975546C00D1C16F /* DaumMap.framework in Frameworks */,
-				0E42C99429755A1E00D1C16F /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062D0BFA0316CD3C317BA388 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B088E2E19007DE2A341A3C9E /* Pods-ConvenienceStoreProject.debug.xcconfig */,
+				B59D8BE387D48718D9B1EAEA /* Pods-ConvenienceStoreProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		0E42C8B5297524C100D1C16F = {
 			isa = PBXGroup;
 			children = (
 				0E42C8C0297524C200D1C16F /* ConvenienceStoreProject */,
 				0E42C91B297553A200D1C16F /* Frameworks */,
 				0E42C8BF297524C200D1C16F /* Products */,
+				062D0BFA0316CD3C317BA388 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E42C8D5297524C300D1C16F /* Build configuration list for PBXNativeTarget "ConvenienceStoreProject" */;
 			buildPhases = (
+				82ADC6119651ADE93983CF3A /* [CP] Check Pods Manifest.lock */,
 				0E42C8BA297524C200D1C16F /* Sources */,
 				0E42C8BB297524C200D1C16F /* Frameworks */,
 				0E42C8BC297524C200D1C16F /* Resources */,
+				DDD99CDB435DF9A156F0C881 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -299,12 +303,7 @@
 			);
 			name = ConvenienceStoreProject;
 			packageProductDependencies = (
-				0E42C98F29755A1E00D1C16F /* RxBlocking */,
-				0E42C99129755A1E00D1C16F /* RxCocoa */,
-				0E42C99329755A1E00D1C16F /* RxRelay */,
-				0E42C99529755A1E00D1C16F /* RxSwift */,
-				0E42C99729755A1E00D1C16F /* RxTest */,
-				0E42C99A29755A4300D1C16F /* SnapKit */,
+				0EFE129129767B8E004939DC /* SnapKit */,
 			);
 			productName = ConvenienceStoreProject;
 			productReference = 0E42C8BE297524C200D1C16F /* ConvenienceStoreProject.app */;
@@ -335,8 +334,7 @@
 			);
 			mainGroup = 0E42C8B5297524C100D1C16F;
 			packageReferences = (
-				0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */,
-				0E42C99929755A4300D1C16F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				0EFE129029767B8E004939DC /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 0E42C8BF297524C200D1C16F /* Products */;
 			projectDirPath = "";
@@ -385,6 +383,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82ADC6119651ADE93983CF3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConvenienceStoreProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDD99CDB435DF9A156F0C881 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConvenienceStoreProject/Pods-ConvenienceStoreProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConvenienceStoreProject/Pods-ConvenienceStoreProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConvenienceStoreProject/Pods-ConvenienceStoreProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E42C8BA297524C200D1C16F /* Sources */ = {
@@ -456,6 +496,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -538,6 +579,7 @@
 		};
 		0E42C8D6297524C300D1C16F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B088E2E19007DE2A341A3C9E /* Pods-ConvenienceStoreProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -571,12 +613,14 @@
 		};
 		0E42C8D7297524C300D1C16F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59D8BE387D48718D9B1EAEA /* Pods-ConvenienceStoreProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 92YDTRVDUA;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
@@ -626,53 +670,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-		0E42C99929755A4300D1C16F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		0EFE129029767B8E004939DC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				branch = develop;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E42C98F29755A1E00D1C16F /* RxBlocking */ = {
+		0EFE129129767B8E004939DC /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		0E42C99129755A1E00D1C16F /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		0E42C99329755A1E00D1C16F /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		0E42C99529755A1E00D1C16F /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		0E42C99729755A1E00D1C16F /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E42C98E29755A1E00D1C16F /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
-		};
-		0E42C99A29755A4300D1C16F /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E42C99929755A4300D1C16F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 0EFE129029767B8E004939DC /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
