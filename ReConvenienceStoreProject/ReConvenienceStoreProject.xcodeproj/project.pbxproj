@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0EFE12A029767DEC004939DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE129F29767DEC004939DC /* AppDelegate.swift */; };
 		0EFE12A229767DEC004939DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE12A129767DEC004939DC /* SceneDelegate.swift */; };
-		0EFE12A429767DEC004939DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE12A329767DEC004939DC /* ViewController.swift */; };
 		0EFE12A929767DED004939DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12A829767DED004939DC /* Assets.xcassets */; };
 		0EFE12AC29767DED004939DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12AA29767DED004939DC /* LaunchScreen.storyboard */; };
 		0EFE12DA29767F7D004939DC /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12B529767F7D004939DC /* map_pinup_custom@3x.png */; };
@@ -51,13 +50,20 @@
 		0EFE130B29768117004939DC /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE130729768117004939DC /* DetailListCellData.swift */; };
 		0EFE130C29768117004939DC /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE130829768117004939DC /* KLDocument.swift */; };
 		0EFE130D29768117004939DC /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE130929768117004939DC /* LocationData.swift */; };
+		0EFE13142976816D004939DC /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE130F2976816D004939DC /* DetailListCell.swift */; };
+		0EFE13152976816D004939DC /* LocationInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE13102976816D004939DC /* LocationInformationViewController.swift */; };
+		0EFE13162976816D004939DC /* LocationInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE13112976816D004939DC /* LocationInformationViewModel.swift */; };
+		0EFE13172976816D004939DC /* DetailListBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE13122976816D004939DC /* DetailListBackgroundViewModel.swift */; };
+		0EFE13182976816D004939DC /* DetailListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE13132976816D004939DC /* DetailListBackgroundView.swift */; };
+		0EFE131B2976834E004939DC /* LocalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE131A2976834E004939DC /* LocalAPI.swift */; };
+		0EFE131D297685DF004939DC /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE131C297685DF004939DC /* LocalNetwork.swift */; };
+		0EFE131F297688EF004939DC /* LocationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE131E297688EF004939DC /* LocationInformationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EFE129C29767DEC004939DC /* ReConvenienceStoreProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReConvenienceStoreProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFE129F29767DEC004939DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EFE12A129767DEC004939DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EFE12A329767DEC004939DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0EFE12A829767DED004939DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EFE12AB29767DED004939DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EFE12AD29767DED004939DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +115,14 @@
 		0EFE130729768117004939DC /* DetailListCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
 		0EFE130829768117004939DC /* KLDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
 		0EFE130929768117004939DC /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		0EFE130F2976816D004939DC /* DetailListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
+		0EFE13102976816D004939DC /* LocationInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationInformationViewController.swift; sourceTree = "<group>"; };
+		0EFE13112976816D004939DC /* LocationInformationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModel.swift; sourceTree = "<group>"; };
+		0EFE13122976816D004939DC /* DetailListBackgroundViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundViewModel.swift; sourceTree = "<group>"; };
+		0EFE13132976816D004939DC /* DetailListBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundView.swift; sourceTree = "<group>"; };
+		0EFE131A2976834E004939DC /* LocalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPI.swift; sourceTree = "<group>"; };
+		0EFE131C297685DF004939DC /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
+		0EFE131E297688EF004939DC /* LocationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModel.swift; sourceTree = "<group>"; };
 		E60EFD45FB7CE641C275CA80 /* Pods-ReConvenienceStoreProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReConvenienceStoreProject.release.xcconfig"; path = "Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject.release.xcconfig"; sourceTree = "<group>"; };
 		FB4554028C8016EB99E9A42B /* Pods-ReConvenienceStoreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReConvenienceStoreProject.debug.xcconfig"; path = "Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,8 +170,9 @@
 				0EFE12F629767FB2004939DC /* BridgingHeader.h */,
 				0EFE129F29767DEC004939DC /* AppDelegate.swift */,
 				0EFE12A129767DEC004939DC /* SceneDelegate.swift */,
+				0EFE131929768333004939DC /* Network */,
+				0EFE130E2976816D004939DC /* Presentation */,
 				0EFE130529768117004939DC /* Entities */,
-				0EFE12A329767DEC004939DC /* ViewController.swift */,
 				0EFE12A829767DED004939DC /* Assets.xcassets */,
 				0EFE12AA29767DED004939DC /* LaunchScreen.storyboard */,
 				0EFE12AD29767DED004939DC /* Info.plist */,
@@ -234,6 +249,37 @@
 			);
 			name = Entities;
 			path = ../../ConvenienceStoreProject/ConvenienceStoreProject/Entities;
+			sourceTree = "<group>";
+		};
+		0EFE130E2976816D004939DC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE1320297688F7004939DC /* LocationInformation */,
+				0EFE13122976816D004939DC /* DetailListBackgroundViewModel.swift */,
+				0EFE13132976816D004939DC /* DetailListBackgroundView.swift */,
+				0EFE130F2976816D004939DC /* DetailListCell.swift */,
+			);
+			name = Presentation;
+			path = ../../ConvenienceStoreProject/ConvenienceStoreProject/Presentation;
+			sourceTree = "<group>";
+		};
+		0EFE131929768333004939DC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE131A2976834E004939DC /* LocalAPI.swift */,
+				0EFE131C297685DF004939DC /* LocalNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0EFE1320297688F7004939DC /* LocationInformation */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE13102976816D004939DC /* LocationInformationViewController.swift */,
+				0EFE131E297688EF004939DC /* LocationInformationModel.swift */,
+				0EFE13112976816D004939DC /* LocationInformationViewModel.swift */,
+			);
+			name = LocationInformation;
 			sourceTree = "<group>";
 		};
 		1C3E140675291B1D839BA521 /* Frameworks */ = {
@@ -401,13 +447,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EFE12A429767DEC004939DC /* ViewController.swift in Sources */,
+				0EFE13152976816D004939DC /* LocationInformationViewController.swift in Sources */,
 				0EFE12A029767DEC004939DC /* AppDelegate.swift in Sources */,
 				0EFE12A229767DEC004939DC /* SceneDelegate.swift in Sources */,
+				0EFE13172976816D004939DC /* DetailListBackgroundViewModel.swift in Sources */,
+				0EFE131D297685DF004939DC /* LocalNetwork.swift in Sources */,
+				0EFE13182976816D004939DC /* DetailListBackgroundView.swift in Sources */,
+				0EFE13162976816D004939DC /* LocationInformationViewModel.swift in Sources */,
+				0EFE131B2976834E004939DC /* LocalAPI.swift in Sources */,
 				0EFE130B29768117004939DC /* DetailListCellData.swift in Sources */,
 				0EFE130D29768117004939DC /* LocationData.swift in Sources */,
 				0EFE130A29768117004939DC /* MTMapViewError.swift in Sources */,
+				0EFE131F297688EF004939DC /* LocationInformationModel.swift in Sources */,
 				0EFE130C29768117004939DC /* KLDocument.swift in Sources */,
+				0EFE13142976816D004939DC /* DetailListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
