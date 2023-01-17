@@ -41,7 +41,7 @@ class LocationInformationViewController: UIViewController {
             .emit(to: mapView.rx.setMapCenterPoint)
             .disposed(by: disposeBag)
         
-        viewModel.errorMassge
+        viewModel.errorMessage
             .emit(to: self.rx.presentAlert)
             .disposed(by: disposeBag)
         
@@ -70,7 +70,7 @@ class LocationInformationViewController: UIViewController {
             .disposed(by: disposeBag)
         
         currentLocationButton.rx.tap
-            .bind(to: viewModel.currentLocationButtonTapped)
+            .bind(to: viewModel.curentLocationButtonTapped)
             .disposed(by: disposeBag)
     }
     

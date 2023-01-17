@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>Localization native development region</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>내 주변 편의점 정보를 불러오려면 현재 위치가 필요합니다</string>
 	<key>KAKAO_APP_KEY</key>
 	<string>97bea1e5a3e66b690d3e23303c1dca1d</string>
 	<key>UIApplicationSceneManifest</key>

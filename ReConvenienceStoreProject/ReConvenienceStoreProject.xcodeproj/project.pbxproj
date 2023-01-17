@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E78171B297691CF00C297EF /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 0E78171A297691CF00C297EF /* RxBlocking */; };
+		0E78171D297691CF00C297EF /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0E78171C297691CF00C297EF /* RxCocoa */; };
+		0E78171F297691CF00C297EF /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0E78171E297691CF00C297EF /* RxRelay */; };
+		0E781721297691CF00C297EF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E781720297691CF00C297EF /* RxSwift */; };
+		0E781723297691CF00C297EF /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 0E781722297691CF00C297EF /* RxTest */; };
+		0E781726297691DF00C297EF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E781725297691DF00C297EF /* SnapKit */; };
 		0EFE12A029767DEC004939DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE129F29767DEC004939DC /* AppDelegate.swift */; };
 		0EFE12A229767DEC004939DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE12A129767DEC004939DC /* SceneDelegate.swift */; };
 		0EFE12A929767DED004939DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12A829767DED004939DC /* Assets.xcassets */; };
@@ -61,6 +67,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0010CA51A28733AAFF1B7D89 /* Pods-ReConvenienceStoreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReConvenienceStoreProject.debug.xcconfig"; path = "Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject.debug.xcconfig"; sourceTree = "<group>"; };
 		0EFE129C29767DEC004939DC /* ReConvenienceStoreProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReConvenienceStoreProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFE129F29767DEC004939DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EFE12A129767DEC004939DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,8 +130,7 @@
 		0EFE131A2976834E004939DC /* LocalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPI.swift; sourceTree = "<group>"; };
 		0EFE131C297685DF004939DC /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
 		0EFE131E297688EF004939DC /* LocationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModel.swift; sourceTree = "<group>"; };
-		E60EFD45FB7CE641C275CA80 /* Pods-ReConvenienceStoreProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReConvenienceStoreProject.release.xcconfig"; path = "Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject.release.xcconfig"; sourceTree = "<group>"; };
-		FB4554028C8016EB99E9A42B /* Pods-ReConvenienceStoreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReConvenienceStoreProject.debug.xcconfig"; path = "Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4F886AC3DB919A3DE5AC56D7 /* Pods-ReConvenienceStoreProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReConvenienceStoreProject.release.xcconfig"; path = "Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,14 +138,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E781723297691CF00C297EF /* RxTest in Frameworks */,
 				0EFE130429768054004939DC /* libsqlite3.tbd in Frameworks */,
+				0E78171B297691CF00C297EF /* RxBlocking in Frameworks */,
+				0E781726297691DF00C297EF /* SnapKit in Frameworks */,
+				0E78171D297691CF00C297EF /* RxCocoa in Frameworks */,
 				0EFE130229768048004939DC /* libxml2.tbd in Frameworks */,
 				0EFE130029768037004939DC /* libc++.tbd in Frameworks */,
 				0EFE12FE29768029004939DC /* QuartzCore.framework in Frameworks */,
+				0E781721297691CF00C297EF /* RxSwift in Frameworks */,
 				0EFE12FC29768020004939DC /* CoreLocation.framework in Frameworks */,
 				0EFE12FA29768012004939DC /* SystemConfiguration.framework in Frameworks */,
 				0EFE12F829768007004939DC /* OpenGLES.framework in Frameworks */,
 				0EFE12F529767F7D004939DC /* DaumMap.framework in Frameworks */,
+				0E78171F297691CF00C297EF /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,8 +312,8 @@
 		73626F8DC27FAB86822ADEF2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FB4554028C8016EB99E9A42B /* Pods-ReConvenienceStoreProject.debug.xcconfig */,
-				E60EFD45FB7CE641C275CA80 /* Pods-ReConvenienceStoreProject.release.xcconfig */,
+				0010CA51A28733AAFF1B7D89 /* Pods-ReConvenienceStoreProject.debug.xcconfig */,
+				4F886AC3DB919A3DE5AC56D7 /* Pods-ReConvenienceStoreProject.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -313,17 +325,25 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EFE12B029767DED004939DC /* Build configuration list for PBXNativeTarget "ReConvenienceStoreProject" */;
 			buildPhases = (
-				E108BE9A67D37AD73B4207F8 /* [CP] Check Pods Manifest.lock */,
+				099AAB8960407CBCE20BA2DC /* [CP] Check Pods Manifest.lock */,
 				0EFE129829767DEC004939DC /* Sources */,
 				0EFE129929767DEC004939DC /* Frameworks */,
 				0EFE129A29767DEC004939DC /* Resources */,
-				D997DAD11311EB6781BE1DB7 /* [CP] Embed Pods Frameworks */,
+				D61C4653DF4BEFAFC05D8331 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ReConvenienceStoreProject;
+			packageProductDependencies = (
+				0E78171A297691CF00C297EF /* RxBlocking */,
+				0E78171C297691CF00C297EF /* RxCocoa */,
+				0E78171E297691CF00C297EF /* RxRelay */,
+				0E781720297691CF00C297EF /* RxSwift */,
+				0E781722297691CF00C297EF /* RxTest */,
+				0E781725297691DF00C297EF /* SnapKit */,
+			);
 			productName = ReConvenienceStoreProject;
 			productReference = 0EFE129C29767DEC004939DC /* ReConvenienceStoreProject.app */;
 			productType = "com.apple.product-type.application";
@@ -352,6 +372,10 @@
 				Base,
 			);
 			mainGroup = 0EFE129329767DEC004939DC;
+			packageReferences = (
+				0E781719297691CF00C297EF /* XCRemoteSwiftPackageReference "RxSwift" */,
+				0E781724297691DF00C297EF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 0EFE129D29767DEC004939DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -401,24 +425,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D997DAD11311EB6781BE1DB7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E108BE9A67D37AD73B4207F8 /* [CP] Check Pods Manifest.lock */ = {
+		099AAB8960407CBCE20BA2DC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -438,6 +445,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D61C4653DF4BEFAFC05D8331 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -514,6 +538,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -574,6 +599,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -585,6 +611,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -594,7 +621,7 @@
 		};
 		0EFE12B129767DED004939DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB4554028C8016EB99E9A42B /* Pods-ReConvenienceStoreProject.debug.xcconfig */;
+			baseConfigurationReference = 0010CA51A28733AAFF1B7D89 /* Pods-ReConvenienceStoreProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -628,7 +655,7 @@
 		};
 		0EFE12B229767DED004939DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E60EFD45FB7CE641C275CA80 /* Pods-ReConvenienceStoreProject.release.xcconfig */;
+			baseConfigurationReference = 4F886AC3DB919A3DE5AC56D7 /* Pods-ReConvenienceStoreProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -682,6 +709,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E781719297691CF00C297EF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		0E781724297691DF00C297EF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E78171A297691CF00C297EF /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E781719297691CF00C297EF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		0E78171C297691CF00C297EF /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E781719297691CF00C297EF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		0E78171E297691CF00C297EF /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E781719297691CF00C297EF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		0E781720297691CF00C297EF /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E781719297691CF00C297EF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		0E781722297691CF00C297EF /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E781719297691CF00C297EF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		0E781725297691DF00C297EF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E781724297691DF00C297EF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0EFE129429767DEC004939DC /* Project object */;
 }
