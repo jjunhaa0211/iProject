@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EFE12A029767DEC004939DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE129F29767DEC004939DC /* AppDelegate.swift */; };
+		0EFE12A229767DEC004939DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE12A129767DEC004939DC /* SceneDelegate.swift */; };
+		0EFE12A429767DEC004939DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE12A329767DEC004939DC /* ViewController.swift */; };
+		0EFE12A929767DED004939DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12A829767DED004939DC /* Assets.xcassets */; };
+		0EFE12AC29767DED004939DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12AA29767DED004939DC /* LaunchScreen.storyboard */; };
+		0EFE12DA29767F7D004939DC /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12B529767F7D004939DC /* map_pinup_custom@3x.png */; };
+		0EFE12DB29767F7D004939DC /* map_pin_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12B629767F7D004939DC /* map_pin_custom.png */; };
+		0EFE12DC29767F7D004939DC /* shadow_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12B729767F7D004939DC /* shadow_balloon.png */; };
+		0EFE12DD29767F7D004939DC /* map_pinup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12B829767F7D004939DC /* map_pinup.png */; };
+		0EFE12DE29767F7D004939DC /* detail_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12B929767F7D004939DC /* detail_button.png */; };
+		0EFE12DF29767F7D004939DC /* map_pin_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12BA29767F7D004939DC /* map_pin_custom@3x.png */; };
+		0EFE12E029767F7D004939DC /* map_pinup@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12BB29767F7D004939DC /* map_pinup@3x.png */; };
+		0EFE12E129767F7D004939DC /* map_pin_shadow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12BC29767F7D004939DC /* map_pin_shadow@3x.png */; };
+		0EFE12E229767F7D004939DC /* copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12BD29767F7D004939DC /* copyright.png */; };
+		0EFE12E329767F7D004939DC /* th_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12BE29767F7D004939DC /* th_line.png */; };
+		0EFE12E429767F7D004939DC /* map_pin_red@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12BF29767F7D004939DC /* map_pin_red@3x.png */; };
+		0EFE12E529767F7D004939DC /* daum_copyright.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12C029767F7D004939DC /* daum_copyright.png */; };
+		0EFE12E629767F7D004939DC /* map_pin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12C129767F7D004939DC /* map_pin@3x.png */; };
+		0EFE12E729767F7D004939DC /* map_present_tracking.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12C229767F7D004939DC /* map_present_tracking.png */; };
+		0EFE12E829767F7D004939DC /* map_pin_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12C329767F7D004939DC /* map_pin_red.png */; };
+		0EFE12E929767F7D004939DC /* info_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12CD29767F7D004939DC /* info_box.png */; };
+		0EFE12EA29767F7D004939DC /* point_sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12CE29767F7D004939DC /* point_sprite.png */; };
+		0EFE12EB29767F7D004939DC /* map_pinup_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12CF29767F7D004939DC /* map_pinup_custom.png */; };
+		0EFE12EC29767F7D004939DC /* info_box_tail.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12D029767F7D004939DC /* info_box_tail.png */; };
+		0EFE12ED29767F7D004939DC /* noimage256.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12D129767F7D004939DC /* noimage256.png */; };
+		0EFE12EE29767F7D004939DC /* map_present_direction.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12D229767F7D004939DC /* map_present_direction.png */; };
+		0EFE12EF29767F7D004939DC /* map_pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12D329767F7D004939DC /* map_pin.png */; };
+		0EFE12F029767F7D004939DC /* map_present.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12D429767F7D004939DC /* map_present.png */; };
+		0EFE12F129767F7D004939DC /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12D529767F7D004939DC /* noimage.png */; };
+		0EFE12F229767F7D004939DC /* map_present_background_update.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12D629767F7D004939DC /* map_present_background_update.png */; };
+		0EFE12F329767F7D004939DC /* daum_th_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12D729767F7D004939DC /* daum_th_line.png */; };
+		0EFE12F429767F7D004939DC /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EFE12D829767F7D004939DC /* map_pin_shadow.png */; };
+		0EFE12F529767F7D004939DC /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFE12D929767F7D004939DC /* DaumMap.framework */; };
+		0EFE12F829768007004939DC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFE12F729768007004939DC /* OpenGLES.framework */; };
+		0EFE12FA29768012004939DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFE12F929768012004939DC /* SystemConfiguration.framework */; };
+		0EFE12FC29768020004939DC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFE12FB29768020004939DC /* CoreLocation.framework */; };
+		0EFE12FE29768029004939DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFE12FD29768029004939DC /* QuartzCore.framework */; };
+		0EFE130029768037004939DC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFE12FF29768037004939DC /* libc++.tbd */; };
+		0EFE130229768048004939DC /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFE130129768048004939DC /* libxml2.tbd */; };
+		0EFE130429768054004939DC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFE130329768054004939DC /* libsqlite3.tbd */; };
+		0EFE130A29768117004939DC /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE130629768117004939DC /* MTMapViewError.swift */; };
+		0EFE130B29768117004939DC /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE130729768117004939DC /* DetailListCellData.swift */; };
+		0EFE130C29768117004939DC /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE130829768117004939DC /* KLDocument.swift */; };
+		0EFE130D29768117004939DC /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFE130929768117004939DC /* LocationData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EFE129C29767DEC004939DC /* ReConvenienceStoreProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReConvenienceStoreProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EFE129F29767DEC004939DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0EFE12A129767DEC004939DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0EFE12A329767DEC004939DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0EFE12A829767DED004939DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0EFE12AB29767DED004939DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EFE12AD29767DED004939DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EFE12B529767F7D004939DC /* map_pinup_custom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pinup_custom@3x.png"; sourceTree = "<group>"; };
+		0EFE12B629767F7D004939DC /* map_pin_custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_custom.png; sourceTree = "<group>"; };
+		0EFE12B729767F7D004939DC /* shadow_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow_balloon.png; sourceTree = "<group>"; };
+		0EFE12B829767F7D004939DC /* map_pinup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pinup.png; sourceTree = "<group>"; };
+		0EFE12B929767F7D004939DC /* detail_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail_button.png; sourceTree = "<group>"; };
+		0EFE12BA29767F7D004939DC /* map_pin_custom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pin_custom@3x.png"; sourceTree = "<group>"; };
+		0EFE12BB29767F7D004939DC /* map_pinup@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pinup@3x.png"; sourceTree = "<group>"; };
+		0EFE12BC29767F7D004939DC /* map_pin_shadow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pin_shadow@3x.png"; sourceTree = "<group>"; };
+		0EFE12BD29767F7D004939DC /* copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copyright.png; sourceTree = "<group>"; };
+		0EFE12BE29767F7D004939DC /* th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = th_line.png; sourceTree = "<group>"; };
+		0EFE12BF29767F7D004939DC /* map_pin_red@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pin_red@3x.png"; sourceTree = "<group>"; };
+		0EFE12C029767F7D004939DC /* daum_copyright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_copyright.png; sourceTree = "<group>"; };
+		0EFE12C129767F7D004939DC /* map_pin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_pin@3x.png"; sourceTree = "<group>"; };
+		0EFE12C229767F7D004939DC /* map_present_tracking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_tracking.png; sourceTree = "<group>"; };
+		0EFE12C329767F7D004939DC /* map_pin_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_red.png; sourceTree = "<group>"; };
+		0EFE12C529767F7D004939DC /* MTMapPOIItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapPOIItem.h; sourceTree = "<group>"; };
+		0EFE12C629767F7D004939DC /* MTMapCameraUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapCameraUpdate.h; sourceTree = "<group>"; };
+		0EFE12C729767F7D004939DC /* MTMapReverseGeoCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapReverseGeoCoder.h; sourceTree = "<group>"; };
+		0EFE12C829767F7D004939DC /* MTMapPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapPolyline.h; sourceTree = "<group>"; };
+		0EFE12C929767F7D004939DC /* MTMapLocationMarkerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapLocationMarkerItem.h; sourceTree = "<group>"; };
+		0EFE12CA29767F7D004939DC /* MTMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapView.h; sourceTree = "<group>"; };
+		0EFE12CB29767F7D004939DC /* MTMapGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapGeometry.h; sourceTree = "<group>"; };
+		0EFE12CC29767F7D004939DC /* MTMapCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapCircle.h; sourceTree = "<group>"; };
+		0EFE12CD29767F7D004939DC /* info_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_box.png; sourceTree = "<group>"; };
+		0EFE12CE29767F7D004939DC /* point_sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point_sprite.png; sourceTree = "<group>"; };
+		0EFE12CF29767F7D004939DC /* map_pinup_custom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pinup_custom.png; sourceTree = "<group>"; };
+		0EFE12D029767F7D004939DC /* info_box_tail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_box_tail.png; sourceTree = "<group>"; };
+		0EFE12D129767F7D004939DC /* noimage256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage256.png; sourceTree = "<group>"; };
+		0EFE12D229767F7D004939DC /* map_present_direction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_direction.png; sourceTree = "<group>"; };
+		0EFE12D329767F7D004939DC /* map_pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin.png; sourceTree = "<group>"; };
+		0EFE12D429767F7D004939DC /* map_present.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present.png; sourceTree = "<group>"; };
+		0EFE12D529767F7D004939DC /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage.png; sourceTree = "<group>"; };
+		0EFE12D629767F7D004939DC /* map_present_background_update.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_present_background_update.png; sourceTree = "<group>"; };
+		0EFE12D729767F7D004939DC /* daum_th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_th_line.png; sourceTree = "<group>"; };
+		0EFE12D829767F7D004939DC /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
+		0EFE12D929767F7D004939DC /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
+		0EFE12F629767FB2004939DC /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = ../../ConvenienceStoreProject/ConvenienceStoreProject/BridgingHeader.h; sourceTree = "<group>"; };
+		0EFE12F729768007004939DC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0EFE12F929768012004939DC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0EFE12FB29768020004939DC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0EFE12FD29768029004939DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0EFE12FF29768037004939DC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0EFE130129768048004939DC /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		0EFE130329768054004939DC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0EFE130629768117004939DC /* MTMapViewError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTMapViewError.swift; sourceTree = "<group>"; };
+		0EFE130729768117004939DC /* DetailListCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
+		0EFE130829768117004939DC /* KLDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
+		0EFE130929768117004939DC /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		E60EFD45FB7CE641C275CA80 /* Pods-ReConvenienceStoreProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReConvenienceStoreProject.release.xcconfig"; path = "Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject.release.xcconfig"; sourceTree = "<group>"; };
+		FB4554028C8016EB99E9A42B /* Pods-ReConvenienceStoreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReConvenienceStoreProject.debug.xcconfig"; path = "Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EFE129929767DEC004939DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFE130429768054004939DC /* libsqlite3.tbd in Frameworks */,
+				0EFE130229768048004939DC /* libxml2.tbd in Frameworks */,
+				0EFE130029768037004939DC /* libc++.tbd in Frameworks */,
+				0EFE12FE29768029004939DC /* QuartzCore.framework in Frameworks */,
+				0EFE12FC29768020004939DC /* CoreLocation.framework in Frameworks */,
+				0EFE12FA29768012004939DC /* SystemConfiguration.framework in Frameworks */,
+				0EFE12F829768007004939DC /* OpenGLES.framework in Frameworks */,
+				0EFE12F529767F7D004939DC /* DaumMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EFE129329767DEC004939DC = {
+			isa = PBXGroup;
+			children = (
+				0EFE129E29767DEC004939DC /* ReConvenienceStoreProject */,
+				0EFE129D29767DEC004939DC /* Products */,
+				73626F8DC27FAB86822ADEF2 /* Pods */,
+				1C3E140675291B1D839BA521 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0EFE129D29767DEC004939DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE129C29767DEC004939DC /* ReConvenienceStoreProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EFE129E29767DEC004939DC /* ReConvenienceStoreProject */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE12F629767FB2004939DC /* BridgingHeader.h */,
+				0EFE129F29767DEC004939DC /* AppDelegate.swift */,
+				0EFE12A129767DEC004939DC /* SceneDelegate.swift */,
+				0EFE130529768117004939DC /* Entities */,
+				0EFE12A329767DEC004939DC /* ViewController.swift */,
+				0EFE12A829767DED004939DC /* Assets.xcassets */,
+				0EFE12AA29767DED004939DC /* LaunchScreen.storyboard */,
+				0EFE12AD29767DED004939DC /* Info.plist */,
+			);
+			path = ReConvenienceStoreProject;
+			sourceTree = "<group>";
+		};
+		0EFE12B329767F7D004939DC /* DaumMap.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE12B429767F7D004939DC /* Resources */,
+				0EFE12D929767F7D004939DC /* DaumMap.framework */,
+			);
+			path = DaumMap.embeddedframework;
+			sourceTree = "<group>";
+		};
+		0EFE12B429767F7D004939DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE12B529767F7D004939DC /* map_pinup_custom@3x.png */,
+				0EFE12B629767F7D004939DC /* map_pin_custom.png */,
+				0EFE12B729767F7D004939DC /* shadow_balloon.png */,
+				0EFE12B829767F7D004939DC /* map_pinup.png */,
+				0EFE12B929767F7D004939DC /* detail_button.png */,
+				0EFE12BA29767F7D004939DC /* map_pin_custom@3x.png */,
+				0EFE12BB29767F7D004939DC /* map_pinup@3x.png */,
+				0EFE12BC29767F7D004939DC /* map_pin_shadow@3x.png */,
+				0EFE12BD29767F7D004939DC /* copyright.png */,
+				0EFE12BE29767F7D004939DC /* th_line.png */,
+				0EFE12BF29767F7D004939DC /* map_pin_red@3x.png */,
+				0EFE12C029767F7D004939DC /* daum_copyright.png */,
+				0EFE12C129767F7D004939DC /* map_pin@3x.png */,
+				0EFE12C229767F7D004939DC /* map_present_tracking.png */,
+				0EFE12C329767F7D004939DC /* map_pin_red.png */,
+				0EFE12C429767F7D004939DC /* Headers */,
+				0EFE12CD29767F7D004939DC /* info_box.png */,
+				0EFE12CE29767F7D004939DC /* point_sprite.png */,
+				0EFE12CF29767F7D004939DC /* map_pinup_custom.png */,
+				0EFE12D029767F7D004939DC /* info_box_tail.png */,
+				0EFE12D129767F7D004939DC /* noimage256.png */,
+				0EFE12D229767F7D004939DC /* map_present_direction.png */,
+				0EFE12D329767F7D004939DC /* map_pin.png */,
+				0EFE12D429767F7D004939DC /* map_present.png */,
+				0EFE12D529767F7D004939DC /* noimage.png */,
+				0EFE12D629767F7D004939DC /* map_present_background_update.png */,
+				0EFE12D729767F7D004939DC /* daum_th_line.png */,
+				0EFE12D829767F7D004939DC /* map_pin_shadow.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0EFE12C429767F7D004939DC /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE12C529767F7D004939DC /* MTMapPOIItem.h */,
+				0EFE12C629767F7D004939DC /* MTMapCameraUpdate.h */,
+				0EFE12C729767F7D004939DC /* MTMapReverseGeoCoder.h */,
+				0EFE12C829767F7D004939DC /* MTMapPolyline.h */,
+				0EFE12C929767F7D004939DC /* MTMapLocationMarkerItem.h */,
+				0EFE12CA29767F7D004939DC /* MTMapView.h */,
+				0EFE12CB29767F7D004939DC /* MTMapGeometry.h */,
+				0EFE12CC29767F7D004939DC /* MTMapCircle.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		0EFE130529768117004939DC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE130629768117004939DC /* MTMapViewError.swift */,
+				0EFE130729768117004939DC /* DetailListCellData.swift */,
+				0EFE130829768117004939DC /* KLDocument.swift */,
+				0EFE130929768117004939DC /* LocationData.swift */,
+			);
+			name = Entities;
+			path = ../../ConvenienceStoreProject/ConvenienceStoreProject/Entities;
+			sourceTree = "<group>";
+		};
+		1C3E140675291B1D839BA521 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EFE130329768054004939DC /* libsqlite3.tbd */,
+				0EFE130129768048004939DC /* libxml2.tbd */,
+				0EFE12FF29768037004939DC /* libc++.tbd */,
+				0EFE12FD29768029004939DC /* QuartzCore.framework */,
+				0EFE12FB29768020004939DC /* CoreLocation.framework */,
+				0EFE12F929768012004939DC /* SystemConfiguration.framework */,
+				0EFE12F729768007004939DC /* OpenGLES.framework */,
+				0EFE12B329767F7D004939DC /* DaumMap.embeddedframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73626F8DC27FAB86822ADEF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB4554028C8016EB99E9A42B /* Pods-ReConvenienceStoreProject.debug.xcconfig */,
+				E60EFD45FB7CE641C275CA80 /* Pods-ReConvenienceStoreProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EFE129B29767DEC004939DC /* ReConvenienceStoreProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EFE12B029767DED004939DC /* Build configuration list for PBXNativeTarget "ReConvenienceStoreProject" */;
+			buildPhases = (
+				E108BE9A67D37AD73B4207F8 /* [CP] Check Pods Manifest.lock */,
+				0EFE129829767DEC004939DC /* Sources */,
+				0EFE129929767DEC004939DC /* Frameworks */,
+				0EFE129A29767DEC004939DC /* Resources */,
+				D997DAD11311EB6781BE1DB7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReConvenienceStoreProject;
+			productName = ReConvenienceStoreProject;
+			productReference = 0EFE129C29767DEC004939DC /* ReConvenienceStoreProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EFE129429767DEC004939DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0EFE129B29767DEC004939DC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 0EFE129729767DEC004939DC /* Build configuration list for PBXProject "ReConvenienceStoreProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0EFE129329767DEC004939DC;
+			productRefGroup = 0EFE129D29767DEC004939DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EFE129B29767DEC004939DC /* ReConvenienceStoreProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EFE129A29767DEC004939DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFE12EC29767F7D004939DC /* info_box_tail.png in Resources */,
+				0EFE12E129767F7D004939DC /* map_pin_shadow@3x.png in Resources */,
+				0EFE12EF29767F7D004939DC /* map_pin.png in Resources */,
+				0EFE12E829767F7D004939DC /* map_pin_red.png in Resources */,
+				0EFE12E029767F7D004939DC /* map_pinup@3x.png in Resources */,
+				0EFE12EA29767F7D004939DC /* point_sprite.png in Resources */,
+				0EFE12E629767F7D004939DC /* map_pin@3x.png in Resources */,
+				0EFE12ED29767F7D004939DC /* noimage256.png in Resources */,
+				0EFE12F029767F7D004939DC /* map_present.png in Resources */,
+				0EFE12E529767F7D004939DC /* daum_copyright.png in Resources */,
+				0EFE12E229767F7D004939DC /* copyright.png in Resources */,
+				0EFE12DC29767F7D004939DC /* shadow_balloon.png in Resources */,
+				0EFE12DF29767F7D004939DC /* map_pin_custom@3x.png in Resources */,
+				0EFE12E329767F7D004939DC /* th_line.png in Resources */,
+				0EFE12EB29767F7D004939DC /* map_pinup_custom.png in Resources */,
+				0EFE12AC29767DED004939DC /* LaunchScreen.storyboard in Resources */,
+				0EFE12F329767F7D004939DC /* daum_th_line.png in Resources */,
+				0EFE12DA29767F7D004939DC /* map_pinup_custom@3x.png in Resources */,
+				0EFE12A929767DED004939DC /* Assets.xcassets in Resources */,
+				0EFE12E729767F7D004939DC /* map_present_tracking.png in Resources */,
+				0EFE12F429767F7D004939DC /* map_pin_shadow.png in Resources */,
+				0EFE12EE29767F7D004939DC /* map_present_direction.png in Resources */,
+				0EFE12F229767F7D004939DC /* map_present_background_update.png in Resources */,
+				0EFE12DE29767F7D004939DC /* detail_button.png in Resources */,
+				0EFE12E429767F7D004939DC /* map_pin_red@3x.png in Resources */,
+				0EFE12F129767F7D004939DC /* noimage.png in Resources */,
+				0EFE12E929767F7D004939DC /* info_box.png in Resources */,
+				0EFE12DB29767F7D004939DC /* map_pin_custom.png in Resources */,
+				0EFE12DD29767F7D004939DC /* map_pinup.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D997DAD11311EB6781BE1DB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReConvenienceStoreProject/Pods-ReConvenienceStoreProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E108BE9A67D37AD73B4207F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReConvenienceStoreProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EFE129829767DEC004939DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFE12A429767DEC004939DC /* ViewController.swift in Sources */,
+				0EFE12A029767DEC004939DC /* AppDelegate.swift in Sources */,
+				0EFE12A229767DEC004939DC /* SceneDelegate.swift in Sources */,
+				0EFE130B29768117004939DC /* DetailListCellData.swift in Sources */,
+				0EFE130D29768117004939DC /* LocationData.swift in Sources */,
+				0EFE130A29768117004939DC /* MTMapViewError.swift in Sources */,
+				0EFE130C29768117004939DC /* KLDocument.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0EFE12AA29767DED004939DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EFE12AB29767DED004939DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EFE12AE29767DED004939DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0EFE12AF29767DED004939DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EFE12B129767DED004939DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB4554028C8016EB99E9A42B /* Pods-ReConvenienceStoreProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YDTRVDUA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReConvenienceStoreProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReConvenienceStoreProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/junha/Desktop/iOS/Project/ConvenienceStoreProject/ConvenienceStoreProject/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0EFE12B229767DED004939DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E60EFD45FB7CE641C275CA80 /* Pods-ReConvenienceStoreProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92YDTRVDUA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReConvenienceStoreProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReConvenienceStoreProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/junha/Desktop/iOS/Project/ConvenienceStoreProject/ConvenienceStoreProject/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EFE129729767DEC004939DC /* Build configuration list for PBXProject "ReConvenienceStoreProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFE12AE29767DED004939DC /* Debug */,
+				0EFE12AF29767DED004939DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EFE12B029767DED004939DC /* Build configuration list for PBXNativeTarget "ReConvenienceStoreProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFE12B129767DED004939DC /* Debug */,
+				0EFE12B229767DED004939DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EFE129429767DEC004939DC /* Project object */;
+}
