@@ -1,0 +1,28 @@
+PODS:
+  - MarkdownKit (1.7.1)
+  - SnapKit (5.6.0)
+  - SwiftyMarkdown (1.2.4)
+  - Then (3.0.0)
+
+DEPENDENCIES:
+  - MarkdownKit
+  - SnapKit (~> 5.6.0)
+  - SwiftyMarkdown
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - MarkdownKit
+    - SnapKit
+    - SwiftyMarkdown
+    - Then
+
+SPEC CHECKSUMS:
+  MarkdownKit: 0b15195c63cf3e39387949c4bdeccde0055e252a
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyMarkdown: 7cdec87c6ab5cd9ea0e22ced288e889960649ba5
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+
+PODFILE CHECKSUM: d34579437ea893b70d33451bcf5880a7908ea601
+
+COCOAPODS: 1.11.3
