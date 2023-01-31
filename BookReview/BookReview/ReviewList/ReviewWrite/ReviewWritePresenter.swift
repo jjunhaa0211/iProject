@@ -9,6 +9,9 @@ import UIKit
 
 protocol ReviewWriteProtocol {
     func setupNavigationBar()
+    func showCloseAlertController()
+    func close()
+    func setupViews()
 }
 
 final class ReviewWritePresenter {
@@ -20,5 +23,14 @@ final class ReviewWritePresenter {
     
     func viewDidLoad() {
         viewController.setupNavigationBar()
+        viewController.setupViews()
+    }
+    
+    func didTapLeftBarButton() {
+        viewController.showCloseAlertController()
+    }
+    
+    func didTapRightBarButton() {
+        viewController.close()
     }
 }

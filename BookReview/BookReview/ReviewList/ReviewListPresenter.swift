@@ -11,6 +11,7 @@ protocol ReviewListProtocol{
     func setupNavigationBar()
     func setupViews()
     func presentToReviewWriteViewController()
+    func reloadTableView()
 }
 
 final class ReviewListPresenter: NSObject {
@@ -26,18 +27,18 @@ final class ReviewListPresenter: NSObject {
         viewController.setupViews()
     }
     
-    func didTapRightBarButtonItem() {
-        viewController.presentToReviewWriteViewController()
+    func viewWillAppear() {
+        viewController.reloadTableView()
     }
     
-    func print() {
-        Swift.print("asdfasfas")
+    func didTapRightBarButtonItem() {
+        viewController.presentToReviewWriteViewController()
     }
 }
 
 extension ReviewListPresenter: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
