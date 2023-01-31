@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E07B8BB29880F1B00E103F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07B8BA29880F1B00E103F4 /* AppDelegate.swift */; };
 		0E07B8BD29880F1B00E103F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07B8BC29880F1B00E103F4 /* SceneDelegate.swift */; };
-		0E07B8BF29880F1B00E103F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07B8BE29880F1B00E103F4 /* ViewController.swift */; };
-		0E07B8C229880F1B00E103F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E07B8C029880F1B00E103F4 /* Main.storyboard */; };
 		0E07B8C429880F1C00E103F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E07B8C329880F1C00E103F4 /* Assets.xcassets */; };
 		0E07B8C729880F1C00E103F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E07B8C529880F1C00E103F4 /* LaunchScreen.storyboard */; };
 		0E07B8D229880F1C00E103F4 /* BookReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07B8D129880F1C00E103F4 /* BookReviewTests.swift */; };
@@ -19,6 +17,8 @@
 		0E07B8EC2988101A00E103F4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0E07B8EB2988101A00E103F4 /* Alamofire */; };
 		0E07B8EF2988104A00E103F4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E07B8EE2988104A00E103F4 /* SnapKit */; };
 		0E07B8F22988105300E103F4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0E07B8F12988105300E103F4 /* Kingfisher */; };
+		0E07B8F4298811EC00E103F4 /* ReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07B8F3298811EC00E103F4 /* ReviewListViewController.swift */; };
+		0E07B8F62988121900E103F4 /* ReviewListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E07B8F52988121900E103F4 /* ReviewListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,6 @@
 		0E07B8B729880F1B00E103F4 /* BookReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E07B8BA29880F1B00E103F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E07B8BC29880F1B00E103F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E07B8BE29880F1B00E103F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0E07B8C129880F1B00E103F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E07B8C329880F1C00E103F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E07B8C629880F1C00E103F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E07B8C829880F1C00E103F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +50,8 @@
 		0E07B8D729880F1C00E103F4 /* BookReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E07B8DB29880F1C00E103F4 /* BookReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITests.swift; sourceTree = "<group>"; };
 		0E07B8DD29880F1C00E103F4 /* BookReviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0E07B8F3298811EC00E103F4 /* ReviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListViewController.swift; sourceTree = "<group>"; };
+		0E07B8F52988121900E103F4 /* ReviewListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,7 @@
 			children = (
 				0E07B8BA29880F1B00E103F4 /* AppDelegate.swift */,
 				0E07B8BC29880F1B00E103F4 /* SceneDelegate.swift */,
-				0E07B8BE29880F1B00E103F4 /* ViewController.swift */,
-				0E07B8C029880F1B00E103F4 /* Main.storyboard */,
+				0E07B8F82988122E00E103F4 /* Scene */,
 				0E07B8C329880F1C00E103F4 /* Assets.xcassets */,
 				0E07B8C529880F1C00E103F4 /* LaunchScreen.storyboard */,
 				0E07B8C829880F1C00E103F4 /* Info.plist */,
@@ -131,6 +130,24 @@
 				0E07B8DD29880F1C00E103F4 /* BookReviewUITestsLaunchTests.swift */,
 			);
 			path = BookReviewUITests;
+			sourceTree = "<group>";
+		};
+		0E07B8F72988122000E103F4 /* ReviewList */ = {
+			isa = PBXGroup;
+			children = (
+				0E07B8F3298811EC00E103F4 /* ReviewListViewController.swift */,
+				0E07B8F52988121900E103F4 /* ReviewListPresenter.swift */,
+			);
+			name = ReviewList;
+			sourceTree = "<group>";
+		};
+		0E07B8F82988122E00E103F4 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0E07B8F72988122000E103F4 /* ReviewList */,
+			);
+			name = Scene;
+			path = ReviewList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +266,6 @@
 			files = (
 				0E07B8C729880F1C00E103F4 /* LaunchScreen.storyboard in Resources */,
 				0E07B8C429880F1C00E103F4 /* Assets.xcassets in Resources */,
-				0E07B8C229880F1B00E103F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E07B8BF29880F1B00E103F4 /* ViewController.swift in Sources */,
+				0E07B8F4298811EC00E103F4 /* ReviewListViewController.swift in Sources */,
 				0E07B8BB29880F1B00E103F4 /* AppDelegate.swift in Sources */,
+				0E07B8F62988121900E103F4 /* ReviewListPresenter.swift in Sources */,
 				0E07B8BD29880F1B00E103F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0E07B8C029880F1B00E103F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E07B8C129880F1B00E103F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E07B8C529880F1C00E103F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -458,7 +467,7 @@
 				INFOPLIST_FILE = BookReview/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,7 +495,7 @@
 				INFOPLIST_FILE = BookReview/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
