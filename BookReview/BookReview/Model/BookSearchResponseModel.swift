@@ -10,10 +10,3 @@ import Foundation
 struct BookSearchResponseModel: Decodable {
     var items: [Book] = []
 }
-
-struct Book: Decodable {
-    let title: String
-    private let image: String?
-    
-    var imageURL: URL? { URL(string: image ?? "")}
-}
