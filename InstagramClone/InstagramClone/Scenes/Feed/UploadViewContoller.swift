@@ -46,7 +46,7 @@ final class UploadViewController: UIViewController {
 }
 
 extension UploadViewController: UITextViewDelegate {
-    func textViewDidBeginEditing(_ textView: UITextView) {  1
+    func textViewDidBeginEditing(_ textView: UITextView) {
         guard textView.textColor == .secondaryLabel else { return }
         
         textView.text = nil

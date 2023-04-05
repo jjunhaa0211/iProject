@@ -5,27 +5,28 @@
 //  Created by 박준하 on 2023/01/30.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 final class ReviewListViewController: UIViewController {
     private lazy var presenter = ReviewListPresenter(viewController: self)
-    
+
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.dataSource = presenter
+
         return tableView
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         presenter.viewDidLoad()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         presenter.viewWillAppear()
     }
 }
@@ -33,9 +34,8 @@ final class ReviewListViewController: UIViewController {
 extension ReviewListViewController: ReviewListProtocol {
     func setupNavigationBar() {
         navigationItem.title = "도서 리뷰"
-        navigationController?.navigationBar
-            .prefersLargeTitles = true
-        
+        navigationController?.navigationBar.prefersLargeTitles = true
+
         let rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,
@@ -43,23 +43,24 @@ extension ReviewListViewController: ReviewListProtocol {
         )
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
-    
+
     func setupViews() {
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
     }
+
     func presentToReviewWriteViewController() {
         let vc = UINavigationController(rootViewController: ReviewWriteViewController())
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
     }
-    
+
     func reloadTableView() {
         tableView.reloadData()
-        
-        printContent("최신의 도서리뷰 목록 보여주기")
+
+        print("최신의 도서리뷰 목록 보여주기.")
     }
 }
 

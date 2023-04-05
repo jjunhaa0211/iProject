@@ -18,6 +18,7 @@ final class TabBarController: UITabBarController {
             selectedImage: UIImage(systemName: "house.fill")
         )
         
+        
         let profileViewController = UINavigationController(rootViewController: ProfileViewController())
         profileViewController.tabBarItem = UITabBarItem(
             title: nil,
