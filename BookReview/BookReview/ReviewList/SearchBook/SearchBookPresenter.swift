@@ -9,6 +9,7 @@ import UIKit
 
 protocol SearchBookProtocol {
     func setupViews()
+    func dismiss()
 }
 
 final class SearchBookPresenter: NSObject {
@@ -28,15 +29,22 @@ extension SearchBookPresenter: UISearchBarDelegate {
 }
 
 extension SearchBookPresenter: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        var selectResults: [Book] = []
+//        let selectedBook = selectResults[indexPath.row]
+        viewController.dismiss()
     }
 }
 
 extension SearchBookPresenter: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "\(indexPath)"
+        
+        return cell
+    }
 }
