@@ -44,7 +44,7 @@ final class ReviewWritePresenter {
               contentsText != contentsTextViewPlaceHolderText
         else { return }
         
-        let bookReview = BookReview(
+        let bookReview = BookReView(
             title: book.title,
             contents: contentsText,
             imageURL: book.imageURL

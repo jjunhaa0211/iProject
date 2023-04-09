@@ -8,8 +8,8 @@
 import Foundation
 
 protocol UserDefaultsManagerProtocol {
-    func getReviews() -> [BookReview]
-    func setReview(_ newValue: BookReview)
+    func getReviews() -> [BookReView]
+    func setReview(_ newValue: BookReView)
 }
 
 struct UserDefaultsManager: UserDefaultsManagerProtocol {
@@ -18,14 +18,14 @@ struct UserDefaultsManager: UserDefaultsManagerProtocol {
         case review
     }
     
-    func getReviews() -> [BookReview] {
+    func getReviews() -> [BookReView] {
         guard let data = UserDefaults.standard.data(forKey: Key.review.rawValue) else { return [] }
         
-        return (try? PropertyListDecoder().decode([BookReview].self, from: data)) ?? []
+        return (try? PropertyListDecoder().decode([BookReView].self, from: data)) ?? []
     }
     
-    func setReview(_ newValue: BookReview) {
-        var currentReviews: [BookReview] = getReviews()
+    func setReview(_ newValue: BookReView) {
+        var currentReviews: [BookReView] = getReviews()
         currentReviews.insert(newValue, at: 0)
         
         UserDefaults.standard.setValue(try? PropertyListEncoder().encode(currentReviews),

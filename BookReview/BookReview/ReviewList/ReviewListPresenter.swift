@@ -19,7 +19,7 @@ final class ReviewListPresenter: NSObject {
     private let viewController: ReviewListProtocol
     private let userDefaultManger = UserDefaultsManager()
     
-    private var review: [BookReview] = []
+    private var review: [BookReView] = []
     
     init(viewController:
          ReviewListProtocol) {
