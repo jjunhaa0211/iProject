@@ -7,9 +7,6 @@
 
 import Foundation
 
-struct Book: Decodable {
+struct Passwords: Decodable {
     let title: String
-    private let image: String?
-    
-    var imageURL: URL? { URL(string: image ?? "")}
 }
